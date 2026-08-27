@@ -36,5 +36,28 @@
     "sending": "Envoi…",
     "success": "Merci — nous vous répondrons bientôt.",
     "error": "Une erreur s’est produite. Réessayez ou contactez-nous sur WhatsApp."
+  },
+  "heritage": {
+    "title": "Perpétuer la tradition",
+    "imageAlt": "Tisserands népalais devant des métiers à la main",
+    "p1": "Le tissage du tapis est ici un art populaire — un fil vivant de communauté, de religion et de dessin transmis par des générations de tisserands népalais.",
+    "p2": "Chaque pièce est nouée à la main selon la technique du double nœud, avec un velours dense : un travail lent qui fixe la couleur, le motif et la présence du métier.",
+    "p3": "Nous gardons ce savoir-faire proche — non comme une nostalgie, mais comme une pratique encore faite à la main, pour des pièces qui demandent quelque chose de durable."
+  },
+  "about": {
+    "title": "Kantipur Carpet Craft Industries",
+    "imageAlt": "Détail d’un tapis noué à la main en laine et soie",
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) est une maison de tapis népalais noués à la main — fibres naturelles, production soignée, et dessins destinés à apporter une beauté discrète dans une pièce.",
+    "p2": "Du premier croquis au dernier nœud, nous tenons nos propres ateliers pour que la qualité reste en famille. Notre société sœur, Chang Carpet Manufacturers Industries (C.C.M.I), se spécialise dans un design contemporain d’inspiration américaine sans renoncer au charme traditionnel.",
+    "p3": "Aujourd’hui, plus de deux cents métiers et près de douze cents tisserands népalais adultes travaillent la laine, la soie et d’autres matières naturelles en pièces classiques et modernes — un inventaire assez vaste pour les intérieurs intimes comme pour les grandes commandes."
+  },
+  "custom": {
+    "title": "Fait à votre mesure",
+    "imageAlt": "Texture de tapis tissé à la main dans une lumière douce",
+    "p1": "Lorsqu’une taille ou une couleur standard ne convient pas, nous tissons sur commande — teintes, motifs et dimensions conçus avec vous.",
+    "p2": "Les commandes spéciales peuvent atteindre jusqu’à vingt-cinq par quarante pieds, toujours nouées à la main et finies au même standard que les pièces de notre collection.",
+    "p3": "Partagez un croquis, une référence, ou simplement la pièce que vous imaginez. Nous répondrons avec des options, des délais et les prochaines étapes.",
+    "contactCta": "Écrivez-nous",
+    "whatsappHint": "Ou commencez sur WhatsApp"
   }
 }

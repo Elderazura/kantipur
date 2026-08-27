@@ -36,5 +36,28 @@
     "sending": "Wird gesendet…",
     "success": "Vielen Dank — wir melden uns in Kürze.",
     "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder uns per WhatsApp schreiben."
+  },
+  "heritage": {
+    "title": "Die Tradition lebendig halten",
+    "imageAlt": "Nepalesische Weber an Handwebstühlen",
+    "p1": "Teppichweberei ist hier Volkskunst — ein lebendiger Faden aus Gemeinschaft, Religion und Entwurf, weitergegeben über Generationen nepalesischer Weber.",
+    "p2": "Jedes Stück wird von Hand mit der Doppelknotentechnik und dichtem Flor geknüpft: langsame Arbeit, die Farbe, Muster und die Präsenz des Webstuhls festhält.",
+    "p3": "Wir halten dieses Handwerk nah — nicht als Nostalgie, sondern als Praxis, die noch von Hand entsteht, für Räume, die etwas Beständiges verlangen."
+  },
+  "about": {
+    "title": "Kantipur Carpet Craft Industries",
+    "imageAlt": "Detail eines handgeknüpften Teppichs aus Wolle und Seide",
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) ist ein Haus handgeknüpfter nepalesischer Teppiche — Naturfasern, sorgfältige Produktion und Entwürfe, die ruhige Schönheit in einen Raum bringen sollen.",
+    "p2": "Vom ersten Entwurf bis zum letzten Knoten führen wir eigene Werkstätten, damit die Qualität in der Familie bleibt. Unser Schwesterunternehmen Chang Carpet Manufacturers Industries (C.C.M.I) spezialisiert sich auf zeitgenössisches Design mit amerikanischer Prägung, ohne den traditionellen Charme aufzugeben.",
+    "p3": "Heute arbeiten mehr als zweihundert Webstühle und nahezu zwölfhundert erwachsene nepalesische Weber Wolle, Seide und andere Naturmaterialien zu klassischen und modernen Stücken — ein Inventar, das für intime Räume ebenso reicht wie für große Aufträge."
+  },
+  "custom": {
+    "title": "Nach Ihrem Maß",
+    "imageAlt": "Handgewebte Teppichtextur in sanftem Licht",
+    "p1": "Wenn eine Standardgröße oder -farbe nicht passt, weben wir auf Bestellung — individuelle Töne, Motive und Maße, gemeinsam mit Ihnen gestaltet.",
+    "p2": "Sonderanfertigungen können Größen bis fünfundzwanzig mal vierzig Fuß erreichen, weiterhin handgeknüpft und auf demselben Standard fertiggestellt wie unsere Kollektionsstücke.",
+    "p3": "Teilen Sie eine Skizze, eine Referenz oder einfach den Raum, den Sie im Sinn haben. Wir antworten mit Optionen, Zeitrahmen und nächsten Schritten.",
+    "contactCta": "Schreiben Sie uns",
+    "whatsappHint": "Oder beginnen Sie per WhatsApp"
   }
 }

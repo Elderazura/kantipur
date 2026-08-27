@@ -36,5 +36,28 @@
     "sending": "Sending…",
     "success": "Thank you — we will reply shortly.",
     "error": "Something went wrong. Please try again or WhatsApp us."
+  },
+  "heritage": {
+    "title": "Keeping the tradition alive",
+    "imageAlt": "Nepali weavers at hand looms",
+    "p1": "Carpet weaving here is folk art — a living thread of community, religion, and design passed through generations of Nepalese weavers.",
+    "p2": "Each piece is hand-knotted with the double-knot technique and a dense pile: slow work that holds colour, pattern, and the feel of the loom.",
+    "p3": "We keep that craft close — not as nostalgia, but as a practice still made by hand, for rooms that ask for something lasting."
+  },
+  "about": {
+    "title": "Kantipur Carpet Craft Industries",
+    "imageAlt": "Detail of wool and silk hand-knotted carpet",
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) is a house of hand-knotted Nepalese rugs — natural fibres, careful production, and designs meant to bring quiet beauty into a room.",
+    "p2": "From first sketch to finished knot, we hold our own workshops so quality stays in the family. Our sister concern, Chang Carpet Manufacturers Industries (C.C.M.I), specialises in contemporary American-leaning design without letting go of traditional charm.",
+    "p3": "Today more than two hundred looms and nearly twelve hundred adult Nepalese weavers work wool, silk, and other natural materials into both classic and modern pieces — inventory deep enough for intimate rooms and large commissions alike."
+  },
+  "custom": {
+    "title": "Made to your measure",
+    "imageAlt": "Handwoven carpet texture in soft natural light",
+    "p1": "When a standard size or colour will not do, we weave to order — custom hues, motifs, and dimensions shaped with you.",
+    "p2": "Special commissions can reach sizes as large as twenty-five by forty feet, still hand-knotted and finished to the same standard as our collection pieces.",
+    "p3": "Share a sketch, a reference, or simply the room you have in mind. We will answer with options, timing, and next steps.",
+    "contactCta": "Write to us",
+    "whatsappHint": "Or begin on WhatsApp"
   }
 }
