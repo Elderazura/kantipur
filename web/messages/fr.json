@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "siteName": "Kantipur Carpets",
+    "tagline": "Tapis artisanaux népalais"
+  },
+  "nav": {
+    "home": "Accueil",
+    "heritage": "Héritage",
+    "collection": "Collection",
+    "about": "À propos",
+    "contact": "Contact",
+    "custom": "Commandes sur mesure"
+  },
+  "cta": {
+    "exploreCollection": "Explorer la collection",
+    "whatsapp": "WhatsApp",
+    "inquire": "Demander",
+    "inquirePricing": "Demander disponibilité et prix"
+  },
+  "home": {
+    "heroLine": "Noués à la main au Népal. Fibres naturelles. Art vivant.",
+    "heritageTitle": "Perpétuer la tradition",
+    "heritageBody": "Nos tapis sont tissés par des communautés népalaises selon la technique du double nœud et une haute densité de velours — pour garder vivantes les traditions locales.",
+    "materialsTitle": "Matériaux",
+    "featuredTitle": "Pièces sélectionnées",
+    "customTitle": "Fait à votre mesure",
+    "customBody": "Couleurs et motifs sur mesure jusqu’à 25 × 40 pieds.",
+    "contactTitle": "Entamer une conversation"
+  },
+  "form": {
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "carpetRef": "Référence du tapis",
+    "send": "Envoyer la demande",
+    "sending": "Envoi…",
+    "success": "Merci — nous vous répondrons bientôt.",
+    "error": "Une erreur s’est produite. Réessayez ou contactez-nous sur WhatsApp."
+  }
+}

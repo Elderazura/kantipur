@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "siteName": "Kantipur Carpets",
+    "tagline": "Nepali handmade carpets"
+  },
+  "nav": {
+    "home": "Home",
+    "heritage": "Heritage",
+    "collection": "Collection",
+    "about": "About",
+    "contact": "Contact",
+    "custom": "Custom orders"
+  },
+  "cta": {
+    "exploreCollection": "Explore the collection",
+    "whatsapp": "WhatsApp",
+    "inquire": "Inquire",
+    "inquirePricing": "Inquire for availability & pricing"
+  },
+  "home": {
+    "heroLine": "Hand-knotted in Nepal. Natural fibres. Living craft.",
+    "heritageTitle": "Keeping the tradition alive",
+    "heritageBody": "Our carpets are woven by Nepalese communities using double-knotted technique and high pile density — made to keep local traditions alive.",
+    "materialsTitle": "Materials",
+    "featuredTitle": "Selected pieces",
+    "customTitle": "Made to your measure",
+    "customBody": "Custom colours and designs in sizes up to 25 × 40 feet.",
+    "contactTitle": "Begin a conversation"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "carpetRef": "Carpet reference",
+    "send": "Send inquiry",
+    "sending": "Sending…",
+    "success": "Thank you — we will reply shortly.",
+    "error": "Something went wrong. Please try again or WhatsApp us."
+  }
+}

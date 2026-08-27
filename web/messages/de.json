@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "siteName": "Kantipur Carpets",
+    "tagline": "Nepalesische handgefertigte Teppiche"
+  },
+  "nav": {
+    "home": "Start",
+    "heritage": "Erbe",
+    "collection": "Kollektion",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "custom": "Maßanfertigungen"
+  },
+  "cta": {
+    "exploreCollection": "Kollektion entdecken",
+    "whatsapp": "WhatsApp",
+    "inquire": "Anfragen",
+    "inquirePricing": "Verfügbarkeit und Preise anfragen"
+  },
+  "home": {
+    "heroLine": "Handgeknüpft in Nepal. Naturfasern. Lebendiges Handwerk.",
+    "heritageTitle": "Die Tradition lebendig halten",
+    "heritageBody": "Unsere Teppiche werden von nepalesischen Gemeinschaften mit Doppelknotentechnik und hoher Flor-Dichte gewebt — um lokale Traditionen zu bewahren.",
+    "materialsTitle": "Materialien",
+    "featuredTitle": "Ausgewählte Stücke",
+    "customTitle": "Nach Ihrem Maß",
+    "customBody": "Individuelle Farben und Designs in Größen bis 25 × 40 Fuß.",
+    "contactTitle": "Ein Gespräch beginnen"
+  },
+  "form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "carpetRef": "Teppichreferenz",
+    "send": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "success": "Vielen Dank — wir melden uns in Kürze.",
+    "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder uns per WhatsApp schreiben."
+  }
+}
