@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Kantipur Carpets",
-    "tagline": "Nepalesische handgefertigte Teppiche"
+    "tagline": "Handgeknüpft in Nepal — Naturfaser, lebendiges Handwerk"
   },
   "nav": {
     "home": "Start",
@@ -18,14 +18,29 @@
     "inquirePricing": "Verfügbarkeit und Preise anfragen"
   },
   "home": {
-    "heroLine": "Handgeknüpft in Nepal. Naturfasern. Lebendiges Handwerk.",
-    "heritageTitle": "Die Tradition lebendig halten",
-    "heritageBody": "Unsere Teppiche werden von nepalesischen Gemeinschaften mit Doppelknotentechnik und hoher Flor-Dichte gewebt — um lokale Traditionen zu bewahren.",
-    "materialsTitle": "Materialien",
-    "featuredTitle": "Ausgewählte Stücke",
-    "customTitle": "Nach Ihrem Maß",
-    "customBody": "Individuelle Farben und Designs in Größen bis 25 × 40 Fuß.",
-    "contactTitle": "Ein Gespräch beginnen"
+    "heroEyebrow": "Nepal · Handgeknüpft · Naturfaser",
+    "heroLine": "Teppiche vom Webstuhl — Wolle, Seide, Hanf, Nessel — damit ein Raum jahrzehntelang stille Schönheit hält.",
+    "heroPosterAlt": "Weber an vertikalen Webstühlen in einer nepalesischen Werkstatt",
+    "heritageEyebrow": "Das Handwerk",
+    "heritageTitle": "Knoten für Knoten, eine lebendige Tradition",
+    "heritagePull": "Doppelknoten. Dichter Flor. Gefertigt von Gemeinschaften, die die Arbeit in den Händen behalten.",
+    "heritageBody": "Weben ist hier keine Fabriklinie — es ist Volkskunst: Farbe, Glaube und Muster, weitergegeben über Generationen. Jeder Teppich wird langsam vollendet, damit die Faser das Licht hält, wie sie soll.",
+    "statLoomsLabel": "Webstühle",
+    "statLooms": "200+",
+    "statWeaversLabel": "Weber",
+    "statWeavers": "1.200",
+    "statDesignsLabel": "Designs",
+    "statDesigns": "500+",
+    "materialsTitle": "Fasern, denen wir vertrauen",
+    "materialsLead": "Vom Glanz aus Wolle und Seide bis zur ruhigen Kraft des Hanfs — öffnen Sie ein Material und treten Sie in die Kollektion.",
+    "materialsView": "Stücke ansehen",
+    "featuredTitle": "Ausgewählt vom Boden",
+    "featuredAll": "Gesamte Kollektion",
+    "customEyebrow": "Auftrag",
+    "customTitle": "Für den Raum, den Sie wirklich haben",
+    "customBody": "Farbe, Motiv und Maß nach Wunsch — auch Aufträge bis fünfundzwanzig mal vierzig Fuß — weiterhin handgeknüpft auf demselben Standard.",
+    "contactEyebrow": "Anfrage",
+    "contactTitle": "Erzählen Sie uns von dem Stück — oder dem Raum, der darauf wartet."
   },
   "form": {
     "name": "Name",
@@ -40,22 +55,22 @@
     "invalidEmail": "Gültige E-Mail eingeben"
   },
   "heritage": {
-    "title": "Die Tradition lebendig halten",
+    "title": "Ein Handwerk, das noch in den Händen lebt",
     "imageAlt": "Nepalesische Weber an Handwebstühlen",
-    "p1": "Teppichweberei ist hier Volkskunst — ein lebendiger Faden aus Gemeinschaft, Religion und Entwurf, weitergegeben über Generationen nepalesischer Weber.",
-    "p2": "Jedes Stück wird von Hand mit der Doppelknotentechnik und dichtem Flor geknüpft: langsame Arbeit, die Farbe, Muster und die Präsenz des Webstuhls festhält.",
-    "p3": "Wir halten dieses Handwerk nah — nicht als Nostalgie, sondern als Praxis, die noch von Hand entsteht, für Räume, die etwas Beständiges verlangen."
+    "p1": "Bei Kantipur ist Teppichweberei Volkskunst — eine Linie aus Gemeinschaft, Glauben und Design, getragen von nepalesischen Webern am Webstuhl.",
+    "p2": "Stücke werden von Hand mit Doppelknoten und dichtem Flor geknüpft: langsame Arbeit, die Farbe in die Naturfaser schließt.",
+    "p3": "Wir halten diese Praxis nah — nicht als Museumsgeschichte, sondern als tägliche Arbeit: Wolle, Seide, Hanf, Nessel und die Geduld, etwas zu vollenden, das eine Saison überdauert."
   },
   "about": {
     "title": "Kantipur Carpet Craft Industries",
-    "imageAlt": "Detail eines handgeknüpften Teppichs aus Wolle und Seide",
-    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) ist ein Haus handgeknüpfter nepalesischer Teppiche — Naturfasern, sorgfältige Produktion und Entwürfe, die ruhige Schönheit in einen Raum bringen sollen.",
-    "p2": "Vom ersten Entwurf bis zum letzten Knoten führen wir eigene Werkstätten, damit die Qualität in der Familie bleibt. Unser Schwesterunternehmen Chang Carpet Manufacturers Industries (C.C.M.I) spezialisiert sich auf zeitgenössisches Design mit amerikanischer Prägung, ohne den traditionellen Charme aufzugeben.",
-    "p3": "Heute arbeiten mehr als zweihundert Webstühle und nahezu zwölfhundert erwachsene nepalesische Weber Wolle, Seide und andere Naturmaterialien zu klassischen und modernen Stücken — ein Inventar, das für intime Räume ebenso reicht wie für große Aufträge."
+    "imageAlt": "Detail eines handgeknüpften Wolle-Seide-Teppichs",
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) fertigt handgeknüpfte nepalesische Teppiche für Räume, die bleibende Schönheit wollen — Naturfasern, eigene Werkstätten, Designs, die die Sinne berühren.",
+    "p2": "Vom ersten Entwurf bis zum letzten Knoten bleibt jemand aus dem Haus beim Stück. Unsere Schwesterfirma Chang Carpet Manufacturers Industries (C.C.M.I) spezialisiert sich auf zeitgenössisches, amerikanisch geprägtes Design und hält traditionellen Charme.",
+    "p3": "Heute arbeiten mehr als zweihundert Webstühle und nahezu zwölfhundert erwachsene nepalesische Weber an über fünfhundert Designs — für intime Räume und große Aufträge."
   },
   "collection": {
-    "title": "Kollektion",
-    "intro": "Handgeknüpfte Stücke aus Naturfasern — nach Material oder Farbe filtern.",
+    "title": "Die Kollektion",
+    "intro": "Handgeknüpfte Stücke aus Naturfasern — filtern Sie nach Material oder Farbe, dann fragen Sie nach dem Stück, das Ihren Blick hält.",
     "filtersLabel": "Kollektion filtern",
     "material": "Material",
     "colour": "Farbe",
@@ -65,11 +80,11 @@
     "reset": "Gesamte Kollektion anzeigen"
   },
   "custom": {
-    "title": "Nach Ihrem Maß",
-    "imageAlt": "Handgewebte Teppichtextur in sanftem Licht",
-    "p1": "Wenn eine Standardgröße oder -farbe nicht passt, weben wir auf Bestellung — individuelle Töne, Motive und Maße, gemeinsam mit Ihnen gestaltet.",
-    "p2": "Sonderanfertigungen können Größen bis fünfundzwanzig mal vierzig Fuß erreichen, weiterhin handgeknüpft und auf demselben Standard fertiggestellt wie unsere Kollektionsstücke.",
-    "p3": "Teilen Sie eine Skizze, eine Referenz oder einfach den Raum, den Sie im Sinn haben. Wir antworten mit Optionen, Zeitrahmen und nächsten Schritten.",
+    "title": "Auf den Zentimeter beauftragt",
+    "imageAlt": "Handgewebte Teppichtextur",
+    "p1": "Wenn der Raum eine Farbe verlangt, die nicht auf dem Boden liegt, oder ein Maß außerhalb des Standards, weben wir auf Bestellung.",
+    "p2": "Sonderaufträge können fünfundzwanzig mal vierzig Fuß erreichen — weiterhin handgeknüpft auf demselben Standard.",
+    "p3": "Senden Sie eine Skizze, einen Stoffrest oder einfach das Gefühl des Raums. Wir antworten mit Optionen, Zeit und einem klaren nächsten Schritt — nie mit einem Warenkorb.",
     "contactCta": "Schreiben Sie uns",
     "whatsappHint": "Oder beginnen Sie per WhatsApp"
   },

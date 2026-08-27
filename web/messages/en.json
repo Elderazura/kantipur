@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Kantipur Carpets",
-    "tagline": "Nepali handmade carpets"
+    "tagline": "Hand-knotted in Nepal — natural fibre, living craft"
   },
   "nav": {
     "home": "Home",
@@ -18,14 +18,29 @@
     "inquirePricing": "Inquire for availability & pricing"
   },
   "home": {
-    "heroLine": "Hand-knotted in Nepal. Natural fibres. Living craft.",
-    "heritageTitle": "Keeping the tradition alive",
-    "heritageBody": "Our carpets are woven by Nepalese communities using double-knotted technique and high pile density — made to keep local traditions alive.",
-    "materialsTitle": "Materials",
-    "featuredTitle": "Selected pieces",
-    "customTitle": "Made to your measure",
-    "customBody": "Custom colours and designs in sizes up to 25 × 40 feet.",
-    "contactTitle": "Begin a conversation"
+    "heroEyebrow": "Nepal · Hand-knotted · Natural fibre",
+    "heroLine": "Carpets woven on the loom — wool, silk, hemp, nettle — so a room can hold quiet beauty for decades.",
+    "heroPosterAlt": "Weavers at vertical looms in a Nepali carpet workshop",
+    "heritageEyebrow": "The craft",
+    "heritageTitle": "Knot by knot, a living tradition",
+    "heritagePull": "Double-knotted. Dense pile. Made by communities who keep the work in their hands.",
+    "heritageBody": "Weaving here is not a factory line — it is folk art: colour, religion, and pattern passed through generations. Each carpet is finished slowly, so the fibre can hold light the way it was meant to.",
+    "statLoomsLabel": "Looms",
+    "statLooms": "200+",
+    "statWeaversLabel": "Weavers",
+    "statWeavers": "1,200",
+    "statDesignsLabel": "Designs",
+    "statDesigns": "500+",
+    "materialsTitle": "The fibres we trust",
+    "materialsLead": "From wool-silk sheen to hemp’s quiet strength — open a material and step into the collection.",
+    "materialsView": "View pieces",
+    "featuredTitle": "Selected from the floor",
+    "featuredAll": "Full collection",
+    "customEyebrow": "Commission",
+    "customTitle": "Built for the room you actually have",
+    "customBody": "Custom colour, motif, and size — including commissions as large as twenty-five by forty feet — still hand-knotted to the same standard.",
+    "contactEyebrow": "Inquire",
+    "contactTitle": "Tell us about the piece — or the space waiting for one."
   },
   "form": {
     "name": "Name",
@@ -40,22 +55,22 @@
     "invalidEmail": "Enter a valid email"
   },
   "heritage": {
-    "title": "Keeping the tradition alive",
+    "title": "A craft that still lives in the hands",
     "imageAlt": "Nepali weavers at hand looms",
-    "p1": "Carpet weaving here is folk art — a living thread of community, religion, and design passed through generations of Nepalese weavers.",
-    "p2": "Each piece is hand-knotted with the double-knot technique and a dense pile: slow work that holds colour, pattern, and the feel of the loom.",
-    "p3": "We keep that craft close — not as nostalgia, but as a practice still made by hand, for rooms that ask for something lasting."
+    "p1": "At Kantipur, carpet weaving is folk art — a lineage of community, belief, and design carried by Nepalese weavers who still sit at the loom.",
+    "p2": "Pieces are hand-knotted with the double-knot technique and a high pile density: slow work that locks colour into natural fibre and gives the surface its depth.",
+    "p3": "We keep that practice close — not as a museum story, but as daily work: wool, silk, hemp, nettle, and the patience to finish something meant to outlast a season."
   },
   "about": {
     "title": "Kantipur Carpet Craft Industries",
     "imageAlt": "Detail of wool and silk hand-knotted carpet",
-    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) is a house of hand-knotted Nepalese rugs — natural fibres, careful production, and designs meant to bring quiet beauty into a room.",
-    "p2": "From first sketch to finished knot, we hold our own workshops so quality stays in the family. Our sister concern, Chang Carpet Manufacturers Industries (C.C.M.I), specialises in contemporary American-leaning design without letting go of traditional charm.",
-    "p3": "Today more than two hundred looms and nearly twelve hundred adult Nepalese weavers work wool, silk, and other natural materials into both classic and modern pieces — inventory deep enough for intimate rooms and large commissions alike."
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) makes hand-knotted Nepalese rugs for rooms that want lasting beauty — natural fibres, our own workshops, and designs that touch the senses rather than shout from a catalogue.",
+    "p2": "From first sketch to final knot, someone from the house stays with the piece. Our sister concern, Chang Carpet Manufacturers Industries (C.C.M.I), specialises in contemporary American-leaning design while keeping traditional charm and vegetable-dyed, loop-and-cut textures in play.",
+    "p3": "Today more than two hundred looms and nearly twelve hundred adult Nepalese weavers work over five hundred designs — for intimate rooms and for commissions large enough to fill a hall."
   },
   "collection": {
-    "title": "Collection",
-    "intro": "Hand-knotted pieces in natural fibres — browse by material or colour.",
+    "title": "The collection",
+    "intro": "Hand-knotted pieces in natural fibres — filter by material or colour, then inquire for the one that holds your eye.",
     "filtersLabel": "Filter collection",
     "material": "Material",
     "colour": "Colour",
@@ -65,11 +80,11 @@
     "reset": "View full collection"
   },
   "custom": {
-    "title": "Made to your measure",
+    "title": "Commissioned to the inch",
     "imageAlt": "Handwoven carpet texture in soft natural light",
-    "p1": "When a standard size or colour will not do, we weave to order — custom hues, motifs, and dimensions shaped with you.",
-    "p2": "Special commissions can reach sizes as large as twenty-five by forty feet, still hand-knotted and finished to the same standard as our collection pieces.",
-    "p3": "Share a sketch, a reference, or simply the room you have in mind. We will answer with options, timing, and next steps.",
+    "p1": "When the room asks for a colour that is not on the floor, or a size that will not fit a standard piece, we weave to order — motif, fibre, and finish shaped with you.",
+    "p2": "Special commissions can reach twenty-five by forty feet, still hand-knotted and finished to the same standard as every piece in the collection.",
+    "p3": "Send a sketch, a fabric swatch, or simply the feeling of the room. We answer with options, timing, and a clear next step — never a shopping cart.",
     "contactCta": "Write to us",
     "whatsappHint": "Or begin on WhatsApp"
   },
