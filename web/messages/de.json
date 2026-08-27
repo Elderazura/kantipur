@@ -51,6 +51,17 @@
     "p2": "Vom ersten Entwurf bis zum letzten Knoten führen wir eigene Werkstätten, damit die Qualität in der Familie bleibt. Unser Schwesterunternehmen Chang Carpet Manufacturers Industries (C.C.M.I) spezialisiert sich auf zeitgenössisches Design mit amerikanischer Prägung, ohne den traditionellen Charme aufzugeben.",
     "p3": "Heute arbeiten mehr als zweihundert Webstühle und nahezu zwölfhundert erwachsene nepalesische Weber Wolle, Seide und andere Naturmaterialien zu klassischen und modernen Stücken — ein Inventar, das für intime Räume ebenso reicht wie für große Aufträge."
   },
+  "collection": {
+    "title": "Kollektion",
+    "intro": "Handgeknüpfte Stücke aus Naturfasern — nach Material oder Farbe filtern.",
+    "filtersLabel": "Kollektion filtern",
+    "material": "Material",
+    "colour": "Farbe",
+    "allMaterials": "Alle",
+    "allColours": "Alle",
+    "empty": "Keine Stücke entsprechen diesen Filtern.",
+    "reset": "Gesamte Kollektion anzeigen"
+  },
   "custom": {
     "title": "Nach Ihrem Maß",
     "imageAlt": "Handgewebte Teppichtextur in sanftem Licht",

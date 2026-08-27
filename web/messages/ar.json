@@ -51,6 +51,17 @@
     "p2": "From first sketch to finished knot, we hold our own workshops so quality stays in the family. Our sister concern, Chang Carpet Manufacturers Industries (C.C.M.I), specialises in contemporary American-leaning design without letting go of traditional charm.",
     "p3": "Today more than two hundred looms and nearly twelve hundred adult Nepalese weavers work wool, silk, and other natural materials into both classic and modern pieces — inventory deep enough for intimate rooms and large commissions alike."
   },
+  "collection": {
+    "title": "Collection",
+    "intro": "Hand-knotted pieces in natural fibres — browse by material or colour.",
+    "filtersLabel": "Filter collection",
+    "material": "Material",
+    "colour": "Colour",
+    "allMaterials": "All",
+    "allColours": "All",
+    "empty": "No pieces match these filters.",
+    "reset": "View full collection"
+  },
   "custom": {
     "title": "Made to your measure",
     "imageAlt": "Handwoven carpet texture in soft natural light",

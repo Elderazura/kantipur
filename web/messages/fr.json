@@ -51,6 +51,17 @@
     "p2": "Du premier croquis au dernier nœud, nous tenons nos propres ateliers pour que la qualité reste en famille. Notre société sœur, Chang Carpet Manufacturers Industries (C.C.M.I), se spécialise dans un design contemporain d’inspiration américaine sans renoncer au charme traditionnel.",
     "p3": "Aujourd’hui, plus de deux cents métiers et près de douze cents tisserands népalais adultes travaillent la laine, la soie et d’autres matières naturelles en pièces classiques et modernes — un inventaire assez vaste pour les intérieurs intimes comme pour les grandes commandes."
   },
+  "collection": {
+    "title": "Collection",
+    "intro": "Pièces nouées à la main en fibres naturelles — parcourez par matière ou couleur.",
+    "filtersLabel": "Filtrer la collection",
+    "material": "Matière",
+    "colour": "Couleur",
+    "allMaterials": "Toutes",
+    "allColours": "Toutes",
+    "empty": "Aucune pièce ne correspond à ces filtres.",
+    "reset": "Voir toute la collection"
+  },
   "custom": {
     "title": "Fait à votre mesure",
     "imageAlt": "Texture de tapis tissé à la main dans une lumière douce",
