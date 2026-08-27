@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-paper: #ede6d9;
+  --color-ink: #1a1410;
+  --color-ink-muted: #5c534a;
+  --color-madder: #6b1e23;
+  --color-madder-deep: #3f1014;
+  --color-rule: #c4b8a5;
+  --color-surface: #f7f1e6;
 }
 
+/* Inline so theme utilities don't redefine next/font's --font-* on :root */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display), "Times New Roman", serif;
+  --font-body: var(--font-body), Georgia, serif;
+  --font-ui: var(--font-ui), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Georgia, serif;
+  line-height: 1.65;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-madder);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
