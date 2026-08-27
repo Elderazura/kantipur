@@ -35,7 +35,9 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet…",
     "success": "Vielen Dank — wir melden uns in Kürze.",
-    "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder uns per WhatsApp schreiben."
+    "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder uns per WhatsApp schreiben.",
+    "required": "Erforderlich",
+    "invalidEmail": "Gültige E-Mail eingeben"
   },
   "heritage": {
     "title": "Die Tradition lebendig halten",
@@ -70,5 +72,23 @@
     "p3": "Teilen Sie eine Skizze, eine Referenz oder einfach den Raum, den Sie im Sinn haben. Wir antworten mit Optionen, Zeitrahmen und nächsten Schritten.",
     "contactCta": "Schreiben Sie uns",
     "whatsappHint": "Oder beginnen Sie per WhatsApp"
+  },
+  "piece": {
+    "designNo": "Designnr.",
+    "material": "Material",
+    "quality": "Qualität",
+    "colour": "Farbe",
+    "sizes": "Größen",
+    "inquireTitle": "Dieses Stück anfragen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Schreiben Sie uns zu einem Stück, einer Maßanfertigung oder einem Raum, den Sie im Sinn haben.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "phone": "+977 9851020298",
+    "emailPrimary": "aglalit@gmail.com",
+    "emailSecondary": "kantipurtep@gmail.com",
+    "whatsappHint": "Lieber per WhatsApp?"
   }
 }

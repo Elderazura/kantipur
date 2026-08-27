@@ -35,7 +35,9 @@
     "send": "Send inquiry",
     "sending": "Sending…",
     "success": "Thank you — we will reply shortly.",
-    "error": "Something went wrong. Please try again or WhatsApp us."
+    "error": "Something went wrong. Please try again or WhatsApp us.",
+    "required": "Required",
+    "invalidEmail": "Enter a valid email"
   },
   "heritage": {
     "title": "Keeping the tradition alive",
@@ -70,5 +72,23 @@
     "p3": "Share a sketch, a reference, or simply the room you have in mind. We will answer with options, timing, and next steps.",
     "contactCta": "Write to us",
     "whatsappHint": "Or begin on WhatsApp"
+  },
+  "piece": {
+    "designNo": "Design no.",
+    "material": "Material",
+    "quality": "Quality",
+    "colour": "Colour",
+    "sizes": "Sizes",
+    "inquireTitle": "Inquire about this piece"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Write to us about a piece, a commission, or a room you have in mind.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "phone": "+977 9851020298",
+    "emailPrimary": "aglalit@gmail.com",
+    "emailSecondary": "kantipurtep@gmail.com",
+    "whatsappHint": "Prefer WhatsApp?"
   }
 }

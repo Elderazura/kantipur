@@ -35,7 +35,9 @@
     "send": "Envoyer la demande",
     "sending": "Envoi…",
     "success": "Merci — nous vous répondrons bientôt.",
-    "error": "Une erreur s’est produite. Réessayez ou contactez-nous sur WhatsApp."
+    "error": "Une erreur s’est produite. Réessayez ou contactez-nous sur WhatsApp.",
+    "required": "Obligatoire",
+    "invalidEmail": "Indiquez une adresse e-mail valide"
   },
   "heritage": {
     "title": "Perpétuer la tradition",
@@ -70,5 +72,23 @@
     "p3": "Partagez un croquis, une référence, ou simplement la pièce que vous imaginez. Nous répondrons avec des options, des délais et les prochaines étapes.",
     "contactCta": "Écrivez-nous",
     "whatsappHint": "Ou commencez sur WhatsApp"
+  },
+  "piece": {
+    "designNo": "N° de dessin",
+    "material": "Matière",
+    "quality": "Qualité",
+    "colour": "Couleur",
+    "sizes": "Tailles",
+    "inquireTitle": "Demander cette pièce"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Écrivez-nous au sujet d’une pièce, d’une commande sur mesure, ou d’une pièce que vous imaginez.",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "phone": "+977 9851020298",
+    "emailPrimary": "aglalit@gmail.com",
+    "emailSecondary": "kantipurtep@gmail.com",
+    "whatsappHint": "Préférez WhatsApp ?"
   }
 }
