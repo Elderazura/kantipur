@@ -2,7 +2,8 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import featuredSlugs from "../../content/featured.json";
-import { getProductBySlug, toPublicImageSrc } from "@/lib/catalog";
+import { getProductBySlug } from "@/lib/catalog";
+import { toPublicImageSrc } from "@/lib/images";
 
 export default async function FeaturedGrid() {
   const t = await getTranslations("home");

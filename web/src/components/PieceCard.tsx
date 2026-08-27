@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { toPublicImageSrc } from "@/lib/catalog";
+import { toPublicImageSrc } from "@/lib/images";
 import type { Product } from "@/types/product";
 
 type PieceCardProps = {

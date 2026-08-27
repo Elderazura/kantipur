@@ -70,8 +70,3 @@ export function filterProducts(opts: {
     return true;
   });
 }
-
-export function toPublicImageSrc(localPath: string): string {
-  // localPath like "assets/images/products/.../file.jpg"
-  return "/" + localPath.replace(/^assets\//, "assets/");
-}

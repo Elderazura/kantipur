@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { toPublicImageSrc } from "@/lib/catalog";
+import { toPublicImageSrc } from "@/lib/images";
 import type { ProductImage } from "@/types/product";
 
 type PieceGalleryProps = {
