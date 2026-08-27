@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { buildWhatsAppUrl, getWhatsAppNumber } from "@/lib/whatsapp";
 
