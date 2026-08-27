@@ -19,7 +19,7 @@ export default function WhatsAppCta({ text, className }: WhatsAppCtaProps) {
       rel="noopener noreferrer"
       className={
         className ??
-        "font-ui text-sm tracking-wide text-madder underline underline-offset-4 decoration-madder/60 hover:decoration-madder"
+        "inline-flex min-h-11 items-center font-ui text-sm tracking-wide text-madder underline decoration-madder/60 underline-offset-4 hover:decoration-madder"
       }
     >
       {t("whatsapp")}

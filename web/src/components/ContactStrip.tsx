@@ -7,7 +7,7 @@ export default async function ContactStrip() {
   const tNav = await getTranslations("nav");
 
   return (
-    <section className="border-t border-rule bg-paper">
+    <section className="chapter-reveal border-t border-rule bg-paper">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 sm:flex-row sm:items-end sm:justify-between sm:px-10 sm:py-24">
         <h2 className="max-w-md font-display text-3xl tracking-wide text-ink sm:text-4xl">
           {t("contactTitle")}

@@ -29,7 +29,7 @@ export default async function SiteHeader() {
           <ul className="flex items-center gap-7 font-ui text-xs uppercase tracking-[0.14em] text-ink-muted">
             {NAV_ITEMS.map((item) => (
               <li key={item.key}>
-                <Link href={item.href} className="hover:text-ink transition-colors">
+                <Link href={item.href} className="inline-flex min-h-11 items-center transition-colors hover:text-ink">
                   {t(item.key)}
                 </Link>
               </li>
@@ -47,7 +47,7 @@ export default async function SiteHeader() {
         <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 px-6 py-3 font-ui text-xs uppercase tracking-[0.14em] text-ink-muted sm:px-10">
           {NAV_ITEMS.map((item) => (
             <li key={item.key}>
-              <Link href={item.href} className="hover:text-ink transition-colors">
+              <Link href={item.href} className="inline-flex min-h-11 items-center transition-colors hover:text-ink">
                 {t(item.key)}
               </Link>
             </li>

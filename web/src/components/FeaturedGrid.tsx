@@ -12,7 +12,7 @@ export default async function FeaturedGrid() {
     .filter((p): p is NonNullable<typeof p> => Boolean(p && p.primaryImage));
 
   return (
-    <section className="bg-surface">
+    <section className="chapter-reveal bg-surface">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-10 sm:py-28">
         <h2 className="font-display text-2xl tracking-wide text-ink sm:text-3xl">
           {t("featuredTitle")}

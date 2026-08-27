@@ -79,7 +79,7 @@ export default function InquireForm({ carpetRef }: InquireFormProps) {
   }
 
   const fieldClass =
-    "mt-2 w-full border border-rule bg-paper px-3 py-2.5 font-body text-base text-ink placeholder:text-ink-muted/60 focus-visible:border-madder focus-visible:outline-none";
+    "mt-2 w-full border border-rule bg-paper px-3 py-2.5 font-body text-base text-ink placeholder:text-ink-muted/60 focus-visible:border-madder";
   const labelClass = "font-ui text-xs tracking-[0.14em] uppercase text-ink-muted";
 
   return (

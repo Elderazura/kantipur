@@ -1,94 +1,94 @@
 {
   "meta": {
     "siteName": "Kantipur Carpets",
-    "tagline": "Nepali handmade carpets"
+    "tagline": "سجاد نيبالي مصنوع يدوياً"
   },
   "nav": {
-    "home": "Home",
-    "heritage": "Heritage",
-    "collection": "Collection",
-    "about": "About",
-    "contact": "Contact",
-    "custom": "Custom orders"
+    "home": "الرئيسية",
+    "heritage": "التراث",
+    "collection": "المجموعة",
+    "about": "من نحن",
+    "contact": "تواصل",
+    "custom": "طلبات خاصة"
   },
   "cta": {
-    "exploreCollection": "Explore the collection",
+    "exploreCollection": "استكشف المجموعة",
     "whatsapp": "WhatsApp",
-    "inquire": "Inquire",
-    "inquirePricing": "Inquire for availability & pricing"
+    "inquire": "استفسار",
+    "inquirePricing": "استفسر عن التوفر والأسعار"
   },
   "home": {
-    "heroLine": "Hand-knotted in Nepal. Natural fibres. Living craft.",
-    "heritageTitle": "Keeping the tradition alive",
-    "heritageBody": "Our carpets are woven by Nepalese communities using double-knotted technique and high pile density — made to keep local traditions alive.",
-    "materialsTitle": "Materials",
-    "featuredTitle": "Selected pieces",
-    "customTitle": "Made to your measure",
-    "customBody": "Custom colours and designs in sizes up to 25 × 40 feet.",
-    "contactTitle": "Begin a conversation"
+    "heroLine": "معقود يدوياً في نيبال. ألياف طبيعية. حرفة حية.",
+    "heritageTitle": "الحفاظ على التقليد حياً",
+    "heritageBody": "تُنسج سجادنا مجتمعات نيبالية بتقنية العقدة المزدوجة وكثافة وبر عالية — لإبقاء التقاليد المحلية حية.",
+    "materialsTitle": "المواد",
+    "featuredTitle": "قطع مختارة",
+    "customTitle": "مصنوع حسب مقاسك",
+    "customBody": "ألوان وتصاميم خاصة بمقاسات تصل إلى ٢٥ × ٤٠ قدماً.",
+    "contactTitle": "ابدأ حواراً"
   },
   "form": {
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "carpetRef": "Carpet reference",
-    "send": "Send inquiry",
-    "sending": "Sending…",
-    "success": "Thank you — we will reply shortly.",
-    "error": "Something went wrong. Please try again or WhatsApp us.",
-    "required": "Required",
-    "invalidEmail": "Enter a valid email"
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "message": "الرسالة",
+    "carpetRef": "مرجع السجادة",
+    "send": "إرسال الاستفسار",
+    "sending": "جارٍ الإرسال…",
+    "success": "شكراً لك — سنرد قريباً.",
+    "error": "حدث خطأ. يُرجى المحاولة مجدداً أو مراسلتنا عبر WhatsApp.",
+    "required": "مطلوب",
+    "invalidEmail": "أدخل بريداً إلكترونياً صالحاً"
   },
   "heritage": {
-    "title": "Keeping the tradition alive",
-    "imageAlt": "Nepali weavers at hand looms",
-    "p1": "Carpet weaving here is folk art — a living thread of community, religion, and design passed through generations of Nepalese weavers.",
-    "p2": "Each piece is hand-knotted with the double-knot technique and a dense pile: slow work that holds colour, pattern, and the feel of the loom.",
-    "p3": "We keep that craft close — not as nostalgia, but as a practice still made by hand, for rooms that ask for something lasting."
+    "title": "الحفاظ على التقليد حياً",
+    "imageAlt": "نسّاجون نيباليون عند أنوال يدوية",
+    "p1": "نسج السجاد هنا فن شعبي — خيط حي من المجتمع والدين والتصميم يتناقله أجيال من النسّاجين النيباليين.",
+    "p2": "كل قطعة تُعقد يدوياً بتقنية العقدة المزدوجة ووبر كثيف: عمل بطيء يحتفظ باللون والنمط وإحساس النول.",
+    "p3": "نُبقي هذه الحرفة قريبة — لا كحنين، بل كممارسة لا تزال تُصنع باليد، لغرف تطلب شيئاً يدوم."
   },
   "about": {
     "title": "Kantipur Carpet Craft Industries",
-    "imageAlt": "Detail of wool and silk hand-knotted carpet",
-    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) is a house of hand-knotted Nepalese rugs — natural fibres, careful production, and designs meant to bring quiet beauty into a room.",
-    "p2": "From first sketch to finished knot, we hold our own workshops so quality stays in the family. Our sister concern, Chang Carpet Manufacturers Industries (C.C.M.I), specialises in contemporary American-leaning design without letting go of traditional charm.",
-    "p3": "Today more than two hundred looms and nearly twelve hundred adult Nepalese weavers work wool, silk, and other natural materials into both classic and modern pieces — inventory deep enough for intimate rooms and large commissions alike."
+    "imageAlt": "تفاصيل سجادة صوف وحرير معقودة يدوياً",
+    "p1": "Kantipur Carpet Craft Industries (K.C.C.I) بيت للسجاد النيبالي المعقود يدوياً — ألياف طبيعية، إنتاج دقيق، وتصاميم تهدف إلى إدخال جمال هادئ إلى المكان.",
+    "p2": "من أول رسمة إلى آخر عقدة، ندير ورشنا الخاصة لتبقى الجودة في العائلة. شركتنا الشقيقة Chang Carpet Manufacturers Industries (C.C.M.I) متخصصة في التصميم المعاصر ذي الطابع الأمريكي دون التخلي عن السحر التقليدي.",
+    "p3": "اليوم يعمل أكثر من مئتي نول ونحو ألف ومئتي نسّاج نيبالي بالغ الصوف والحرير ومواد طبيعية أخرى في قطع كلاسيكية وحديثة — مخزون يكفي للغرف الحميمة والطلبات الكبيرة على حد سواء."
   },
   "collection": {
-    "title": "Collection",
-    "intro": "Hand-knotted pieces in natural fibres — browse by material or colour.",
-    "filtersLabel": "Filter collection",
-    "material": "Material",
-    "colour": "Colour",
-    "allMaterials": "All",
-    "allColours": "All",
-    "empty": "No pieces match these filters.",
-    "reset": "View full collection"
+    "title": "المجموعة",
+    "intro": "قطع معقودة يدوياً من ألياف طبيعية — تصفّح حسب المادة أو اللون.",
+    "filtersLabel": "تصفية المجموعة",
+    "material": "المادة",
+    "colour": "اللون",
+    "allMaterials": "الكل",
+    "allColours": "الكل",
+    "empty": "لا توجد قطع تطابق هذه التصفية.",
+    "reset": "عرض المجموعة كاملة"
   },
   "custom": {
-    "title": "Made to your measure",
-    "imageAlt": "Handwoven carpet texture in soft natural light",
-    "p1": "When a standard size or colour will not do, we weave to order — custom hues, motifs, and dimensions shaped with you.",
-    "p2": "Special commissions can reach sizes as large as twenty-five by forty feet, still hand-knotted and finished to the same standard as our collection pieces.",
-    "p3": "Share a sketch, a reference, or simply the room you have in mind. We will answer with options, timing, and next steps.",
-    "contactCta": "Write to us",
-    "whatsappHint": "Or begin on WhatsApp"
+    "title": "مصنوع حسب مقاسك",
+    "imageAlt": "نسيج سجادة يدوي في ضوء طبيعي ناعم",
+    "p1": "عندما لا يكفي المقاس أو اللون القياسي، ننسج حسب الطلب — ألوان وزخارف وأبعاد تُشكَّل معك.",
+    "p2": "يمكن للطلبات الخاصة أن تصل إلى خمسة وعشرين في أربعين قدماً، معقودة يدوياً ومُنهاة بنفس معيار قطع مجموعتنا.",
+    "p3": "شاركنا رسماً أو مرجعاً أو ببساطة الغرفة التي تفكر فيها. نرد بالخيارات والوقت والخطوات التالية.",
+    "contactCta": "اكتب إلينا",
+    "whatsappHint": "أو ابدأ عبر WhatsApp"
   },
   "piece": {
-    "designNo": "Design no.",
-    "material": "Material",
-    "quality": "Quality",
-    "colour": "Colour",
-    "sizes": "Sizes",
-    "inquireTitle": "Inquire about this piece"
+    "designNo": "رقم التصميم",
+    "material": "المادة",
+    "quality": "الجودة",
+    "colour": "اللون",
+    "sizes": "المقاسات",
+    "inquireTitle": "استفسر عن هذه القطعة"
   },
   "contact": {
-    "title": "Contact",
-    "intro": "Write to us about a piece, a commission, or a room you have in mind.",
-    "phoneLabel": "Phone",
-    "emailLabel": "Email",
+    "title": "تواصل",
+    "intro": "اكتب إلينا عن قطعة أو طلب خاص أو غرفة تفكر فيها.",
+    "phoneLabel": "الهاتف",
+    "emailLabel": "البريد الإلكتروني",
     "phone": "+977 9851020298",
     "emailPrimary": "aglalit@gmail.com",
     "emailSecondary": "kantipurtep@gmail.com",
-    "whatsappHint": "Prefer WhatsApp?"
+    "whatsappHint": "تفضل WhatsApp؟"
   }
 }

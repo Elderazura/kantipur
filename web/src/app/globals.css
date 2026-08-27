@@ -52,11 +52,52 @@ h3 {
   }
 }
 
+@keyframes chapter-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.65rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes filter-crossfade {
+  from {
+    opacity: 0.28;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Home chapters: fade in as they enter the viewport (CSS-only). */
+@supports (animation-timeline: view()) {
+  .chapter-reveal {
+    animation: chapter-reveal 0.85s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 22%;
+  }
+}
+
+/* Collection grid: soft crossfade when filter results remount. */
+.filter-crossfade {
+  animation: filter-crossfade 0.4s ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .chapter-reveal,
+  .filter-crossfade {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

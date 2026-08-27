@@ -6,7 +6,7 @@ export default async function MaterialStrip() {
   const t = await getTranslations("home");
 
   return (
-    <section className="border-y border-rule bg-paper">
+    <section className="chapter-reveal border-y border-rule bg-paper">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-10 sm:py-24">
         <h2 className="font-display text-2xl tracking-wide text-ink sm:text-3xl">
           {t("materialsTitle")}
@@ -25,7 +25,7 @@ export default async function MaterialStrip() {
                 <span>{material.label}</span>
                 <span
                   aria-hidden
-                  className="font-ui text-sm tracking-widest text-ink-muted opacity-0 transition-opacity group-hover:opacity-100"
+                  className="font-ui text-sm tracking-widest text-ink-muted opacity-0 transition-opacity group-hover:opacity-100 rtl:rotate-180"
                 >
                   →
                 </span>

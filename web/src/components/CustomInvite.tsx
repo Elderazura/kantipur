@@ -6,12 +6,12 @@ export default async function CustomInvite() {
   const tNav = await getTranslations("nav");
 
   return (
-    <section className="bg-paper">
-      <div className="mx-auto max-w-3xl px-6 py-24 text-center sm:px-10 sm:py-32">
+    <section className="chapter-reveal bg-paper">
+      <div className="mx-auto max-w-3xl px-6 py-24 sm:px-10 sm:py-32">
         <h2 className="font-display text-3xl tracking-wide text-ink sm:text-4xl">
           {t("customTitle")}
         </h2>
-        <p className="mx-auto mt-6 max-w-xl font-body text-lg leading-relaxed text-ink-muted">
+        <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-ink-muted">
           {t("customBody")}
         </p>
         <Link
