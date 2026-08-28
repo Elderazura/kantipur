@@ -1,48 +1,110 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import materials from "../../content/materials.json";
+import { fibreFacets, getAllProducts } from "@/lib/catalog";
+import { FIBRE_LABELS, type Fibre } from "@/lib/vocabulary";
+import { toPublicImageSrc } from "@/lib/images";
+import { Reveal, Stagger, StaggerItem, WordsUp } from "./motion/Reveal";
+
+/**
+ * One representative photograph per fibre, drawn from the catalogue. Blends
+ * belong to several fibres, so covers are claimed in order and a photo already
+ * used is skipped — otherwise Wool and Hemp both show the same hemp-wool piece.
+ */
+function pickCovers(fibres: Fibre[]): Map<Fibre, string> {
+  const products = getAllProducts().filter((p) => p.primaryImage);
+  const used = new Set<string>();
+  const covers = new Map<Fibre, string>();
+
+  for (const fibre of fibres) {
+    const candidates = products.filter((p) => p.fibres.includes(fibre));
+    // prefer a piece that is *only* this fibre, then any unused photo
+    const pick =
+      candidates.find((p) => p.fibres.length === 1 && !used.has(p.primaryImage!)) ??
+      candidates.find((p) => !used.has(p.primaryImage!)) ??
+      candidates[0];
+    if (pick?.primaryImage) {
+      used.add(pick.primaryImage);
+      covers.set(fibre, toPublicImageSrc(pick.primaryImage));
+    }
+  }
+  return covers;
+}
 
 export default async function MaterialStrip() {
   const t = await getTranslations("home");
+  const tf = await getTranslations("fibre");
+
+  const gallery = getAllProducts().filter((p) => p.primaryImage);
+  const fibres = fibreFacets(gallery).slice(0, 8);
+  const covers = pickCovers(fibres.map((f) => f.key));
 
   return (
-    <section className="chapter-reveal overflow-hidden border-y border-rule bg-paper">
-      <div className="mx-auto max-w-6xl px-6 pt-20 sm:px-10 sm:pt-24">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 className="font-display text-2xl tracking-wide text-ink sm:text-3xl">
-            {t("materialsTitle")}
+    <section className="border-b border-rule bg-paper">
+      <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <h2 className="max-w-[14ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
+            <WordsUp text={t("materialsTitle")} />
           </h2>
-          <p className="max-w-sm font-body text-sm text-ink-muted">
-            {t("materialsLead")}
-          </p>
+          <Reveal delay={0.1}>
+            <p className="max-w-sm font-body text-base leading-relaxed text-ink-muted">
+              {t("materialsLead")}
+            </p>
+          </Reveal>
         </div>
-      </div>
 
-      {/* Horizontal craft ribbon — large type, scroll on small screens */}
-      <div className="mt-12 pb-20 sm:mt-16 sm:pb-24">
-        <ul className="flex snap-x snap-mandatory gap-0 overflow-x-auto px-6 sm:px-10 lg:mx-auto lg:max-w-6xl lg:flex-wrap lg:overflow-visible lg:px-10">
-          {materials.map((material, index) => (
-            <li
-              key={material.query}
-              className="w-[min(78vw,22rem)] shrink-0 snap-start border-e border-rule lg:w-auto lg:min-w-[14rem] lg:flex-1 lg:border-e-0 lg:border-t lg:border-rule"
-            >
-              <Link
-                href={`/collection?material=${encodeURIComponent(material.query)}`}
-                className="group flex h-full min-h-36 flex-col justify-between px-5 py-8 transition-colors hover:bg-surface lg:min-h-44 lg:px-6"
-              >
-                <span className="font-ui text-[0.65rem] tracking-[0.22em] text-ink-muted">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="mt-8 font-display text-2xl leading-tight text-ink group-hover:text-madder sm:text-3xl">
-                  {material.label}
-                </span>
-                <span className="mt-6 font-ui text-xs tracking-[0.18em] uppercase text-ink-muted opacity-0 transition-opacity group-hover:opacity-100">
-                  {t("materialsView")} →
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <Stagger
+          as="ul"
+          className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:mt-14 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4"
+          gap={0.07}
+        >
+          {fibres.map((f) => {
+            const cover = covers.get(f.key) ?? null;
+            const label = tf.has(f.key) ? tf(f.key) : FIBRE_LABELS[f.key];
+            return (
+              <StaggerItem as="li" key={f.key}>
+                <Link href={`/collection?fibre=${f.key}`} className="group block">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-surface">
+                    {cover ? (
+                      <Image
+                        src={cover}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
+                        className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] motion-safe:group-hover:scale-[1.06]"
+                      />
+                    ) : null}
+                    <span
+                      aria-hidden
+                      className="absolute inset-0 bg-ink/15 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    />
+                  </div>
+
+                  <div className="mt-4 flex items-baseline justify-between gap-3 border-t border-rule pt-3 transition-colors duration-300 group-hover:border-madder">
+                    <span className="font-display text-lg text-ink transition-colors group-hover:text-madder sm:text-xl">
+                      {label}
+                    </span>
+                    <span className="font-ui text-[0.65rem] tracking-[0.16em] text-ink-muted tabular-nums">
+                      {f.count}
+                    </span>
+                  </div>
+                </Link>
+              </StaggerItem>
+            );
+          })}
+        </Stagger>
+
+        <Reveal delay={0.15}>
+          <Link
+            href="/collection"
+            className="group mt-14 inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-madder underline decoration-madder/40 underline-offset-[7px] hover:decoration-madder"
+          >
+            {t("materialsView")}
+            <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">
+              →
+            </span>
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

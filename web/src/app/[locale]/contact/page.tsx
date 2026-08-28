@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import InquireForm from "@/components/InquireForm";
-import WhatsAppCta from "@/components/WhatsAppCta";
+import { localeAlternates } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+
+  return {
+    title: t("title"),
+    description: t("intro"),
+    alternates: {
+      canonical: `/${locale}/contact`,
+      languages: localeAlternates("/contact"),
+    },
+  };
+}
 
 export default async function ContactPage({
   params,
@@ -26,9 +45,9 @@ export default async function ContactPage({
 
   return (
     <main className="flex flex-1 flex-col bg-paper">
-      <div className="mx-auto w-full max-w-3xl px-6 py-16 sm:px-10 sm:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-3xl px-5 py-12 sm:px-10 sm:py-20 lg:py-28 xl:max-w-4xl">
         <header>
-          <h1 className="font-display text-4xl leading-tight tracking-wide text-ink sm:text-5xl lg:text-[3.25rem]">
+          <h1 className="text-balance font-display text-3xl leading-tight tracking-wide text-ink sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
             {t("title")}
           </h1>
           <p className="mt-4 max-w-xl font-body text-lg leading-relaxed text-ink-muted sm:text-xl">
@@ -67,13 +86,6 @@ export default async function ContactPage({
             >
               {t("emailSecondary")}
             </a>
-          </p>
-          <p className="pt-2 font-body text-base text-ink-muted">
-            {t("whatsappHint")}{" "}
-            <WhatsAppCta
-              text={carpetRef}
-              className="font-ui text-sm tracking-wide text-madder underline underline-offset-4 decoration-madder/60 hover:decoration-madder"
-            />
           </p>
         </div>
 

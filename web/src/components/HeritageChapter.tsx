@@ -4,7 +4,7 @@ export default async function HeritageChapter() {
   const t = await getTranslations("home");
 
   return (
-    <section className="chapter-reveal bg-ink text-paper">
+    <section className="bg-ink text-paper">
       <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 sm:px-10 sm:py-32 lg:grid-cols-12 lg:gap-10 lg:py-40">
         <div className="lg:col-span-5 lg:pt-4">
           <p className="font-ui text-[0.7rem] tracking-[0.24em] uppercase text-paper/55">

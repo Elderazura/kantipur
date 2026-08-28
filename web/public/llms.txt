@@ -1,0 +1,47 @@
+# Kantipur Carpets
+
+> Hand-knotted Nepalese carpets from Kathmandu workshops — wool, silk, hemp, nettle, and natural fibres.
+
+Kantipur Carpet Craft Industries (K.C.C.I) weaves carpets on its own looms in Kathmandu, Nepal. The site is an editorial catalogue and enquiry channel — not an e-commerce checkout.
+
+## Primary pages
+
+- Home: /en
+- Heritage & craft: /en/heritage
+- Collection (catalogue): /en/collection
+- Custom commissions: /en/custom
+- Contact & enquiries: /en/contact
+
+Locales: English (/en), Arabic (/ar), French (/fr), German (/de).
+
+## What we make
+
+- Hand-knotted carpets and rugs
+- Natural and blended fibres: wool, silk, hemp, nettle, bamboo, linen, pashmina, banana
+- Standard collection pieces and bespoke commissions (size, colour, motif, knot grade)
+- Workshop visits in Kathmandu by appointment
+
+## How to enquire
+
+- Contact form: /en/contact
+- WhatsApp (floating button on site)
+- Email enquiries handled via the contact form
+
+## Standards
+
+- Hand-knotted in Kathmandu workshops (not outsourced)
+- Child-labour-free production; GoodWeave-aligned ethical standards
+- Export-quality finishing
+
+## Company
+
+- Name: Kantipur Carpet Craft Industries / Kantipur Carpets
+- Location: Kathmandu, Nepal
+- Production: 200+ looms, 1,200+ weavers (as stated on site)
+
+## Technical
+
+- Sitemap: /sitemap.xml
+- Robots: /robots.txt
+
+For product details, browse /en/collection or enquire about a specific design number on the contact page.

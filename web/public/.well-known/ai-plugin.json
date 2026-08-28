@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.org/specification",
+  "name": "Kantipur Carpets",
+  "description": "Hand-knotted Nepalese carpets — catalogue, heritage, and custom commissions from Kathmandu workshops.",
+  "url": "https://kantipurcarpets.com",
+  "contact": {
+    "enquiries": "/en/contact"
+  },
+  "documentation": "/llms.txt"
+}

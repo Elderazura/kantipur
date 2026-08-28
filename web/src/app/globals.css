@@ -20,6 +20,9 @@
 html {
   background: var(--color-paper);
   color: var(--color-ink);
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -27,6 +30,35 @@ body {
   line-height: 1.65;
   background: var(--color-paper);
   color: var(--color-ink);
+  overflow-x: clip;
+}
+
+/* Shared horizontal rhythm — one place to tune edge padding */
+.page-x {
+  padding-inline: max(1.25rem, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 640px) {
+  .page-x {
+    padding-inline: max(2.5rem, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+  }
+}
+
+/* Section vertical rhythm */
+.section-y {
+  padding-block: 4rem;
+}
+
+@media (min-width: 640px) {
+  .section-y {
+    padding-block: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-y {
+    padding-block: 8rem;
+  }
 }
 
 h1,
@@ -52,17 +84,6 @@ h3 {
   }
 }
 
-@keyframes chapter-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(0.65rem);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 @keyframes filter-crossfade {
   from {
     opacity: 0.28;
@@ -72,13 +93,25 @@ h3 {
   }
 }
 
-/* Home chapters: fade in as they enter the viewport (CSS-only). */
-@supports (animation-timeline: view()) {
-  .chapter-reveal {
-    animation: chapter-reveal 0.85s ease-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 22%;
+/* Scroll reveals are handled in one place — components/motion/Reveal.tsx —
+   so there is a single system to reason about.
+
+   The hero is the exception: its entry animation is CSS, not JS, so the
+   headline is painted by the server and can never be left invisible by a
+   failed hydration or a throttled background tab. */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
 /* Collection grid: soft crossfade when filter results remount. */
@@ -94,7 +127,6 @@ h3 {
     transition-duration: 0.01ms !important;
   }
 
-  .chapter-reveal,
   .filter-crossfade {
     animation: none !important;
     opacity: 1 !important;

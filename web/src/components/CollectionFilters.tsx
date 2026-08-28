@@ -1,115 +1,63 @@
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import CollectionFiltersBar from "./CollectionFiltersBar";
+import type { Fibre } from "@/lib/vocabulary";
+import { FIBRE_LABELS, colourSlug } from "@/lib/vocabulary";
 
-type CollectionFiltersProps = {
-  materials: string[];
-  colours: string[];
-  activeMaterial?: string;
-  activeColour?: string;
+type Facets = {
+  fibres: { key: Fibre; count: number }[];
+  colours: { slug: string; label: string; count: number }[];
+  knots: { knots: number; count: number }[];
 };
 
-function collectionHref(material?: string, colour?: string): string {
-  const params = new URLSearchParams();
-  if (material) params.set("material", material);
-  if (colour) params.set("colour", colour);
-  const query = params.toString();
-  return query ? `/collection?${query}` : "/collection";
-}
-
-function isActive(value: string, active?: string): boolean {
-  return active != null && value.toLowerCase() === active.toLowerCase();
-}
+type CollectionFiltersProps = Facets & {
+  activeFibre?: string;
+  activeColour?: string;
+  activeKnots?: number;
+  total: number;
+  shown: number;
+};
 
 export default async function CollectionFilters({
-  materials,
+  fibres,
   colours,
-  activeMaterial,
+  knots,
+  activeFibre,
   activeColour,
+  activeKnots,
+  total,
+  shown,
 }: CollectionFiltersProps) {
-  const t = await getTranslations("collection");
-  const hasFilters = Boolean(activeMaterial || activeColour);
+  const tf = await getTranslations("fibre");
+  const tc = await getTranslations("colour");
+
+  const fibreLabel = (k: Fibre) => (tf.has(k) ? tf(k) : FIBRE_LABELS[k]);
+  const colourLabel = (slug: string, fallback: string) =>
+    tc.has(slug) ? tc(slug) : fallback;
 
   return (
-    <nav
-      aria-label={t("filtersLabel")}
-      className="border-y border-rule py-8 sm:py-10"
-    >
-      <div className="flex flex-col gap-8 sm:gap-10 lg:flex-row lg:gap-16">
-        <div className="min-w-0 flex-1">
-          <p className="font-ui text-xs tracking-[0.18em] uppercase text-ink-muted">
-            {t("material")}
-          </p>
-          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-            <li>
-              <Link
-                href={collectionHref(undefined, activeColour)}
-                className={`font-body text-sm transition-colors hover:text-madder ${
-                  !activeMaterial ? "text-ink underline decoration-rule underline-offset-4" : "text-ink-muted"
-                }`}
-              >
-                {t("allMaterials")}
-              </Link>
-            </li>
-            {materials.map((material) => (
-              <li key={material}>
-                <Link
-                  href={collectionHref(material, activeColour)}
-                  className={`font-body text-sm transition-colors hover:text-madder ${
-                    isActive(material, activeMaterial)
-                      ? "text-ink underline decoration-rule underline-offset-4"
-                      : "text-ink-muted"
-                  }`}
-                >
-                  {material}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="min-w-0 flex-1">
-          <p className="font-ui text-xs tracking-[0.18em] uppercase text-ink-muted">
-            {t("colour")}
-          </p>
-          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-            <li>
-              <Link
-                href={collectionHref(activeMaterial, undefined)}
-                className={`font-body text-sm transition-colors hover:text-madder ${
-                  !activeColour ? "text-ink underline decoration-rule underline-offset-4" : "text-ink-muted"
-                }`}
-              >
-                {t("allColours")}
-              </Link>
-            </li>
-            {colours.map((colour) => (
-              <li key={colour}>
-                <Link
-                  href={collectionHref(activeMaterial, colour)}
-                  className={`font-body text-sm transition-colors hover:text-madder ${
-                    isActive(colour, activeColour)
-                      ? "text-ink underline decoration-rule underline-offset-4"
-                      : "text-ink-muted"
-                  }`}
-                >
-                  {colour}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {hasFilters ? (
-        <p className="mt-8 font-body text-sm text-ink-muted">
-          <Link
-            href="/collection"
-            className="text-madder underline decoration-madder/50 underline-offset-4 transition-colors hover:decoration-madder"
-          >
-            {t("reset")}
-          </Link>
-        </p>
-      ) : null}
-    </nav>
+    <CollectionFiltersBar
+      fibres={fibres.map((f) => ({
+        value: f.key,
+        label: fibreLabel(f.key),
+        count: f.count,
+      }))}
+      colours={colours.map((c) => ({
+        value: c.slug,
+        label: colourLabel(c.slug, c.label),
+        count: c.count,
+      }))}
+      knots={knots.map((k) => ({
+        value: k.knots,
+        label: `${k.knots} K.N.`,
+        count: k.count,
+      }))}
+      activeFibre={activeFibre}
+      activeColour={activeColour}
+      activeKnots={activeKnots}
+      total={total}
+      shown={shown}
+    />
   );
 }
+
+export { colourSlug };

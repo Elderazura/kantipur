@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kantipur Carpets — deployment
 
-## Getting Started
+Next.js 16 site for **Kantipur Carpet Craft Industries** (hand-knotted Nepalese carpets).
 
-First, run the development server:
+## Stack
+
+- Next.js App Router, TypeScript, Tailwind CSS v4
+- [next-intl](https://next-intl.dev) — English, Arabic, French, German
+- Resend — contact form (`/api/inquire`)
+
+## Local development
 
 ```bash
+cd web
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/en](http://localhost:3000/en).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Product data lives in `web/data/catalog.json` (also mirrored at repo `data/` for local monorepo workflows).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment variables
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `NEXT_PUBLIC_SITE_URL` | Production | Canonical URL, e.g. `https://kantipurcarpets.com` |
+| `RESEND_API_KEY` | For contact form | Resend API key |
+| `INQUIRE_TO_EMAIL` | Optional | Inbox for enquiries |
+| `INQUIRE_CC_EMAIL` | Optional | CC address |
+| `INQUIRE_FROM_EMAIL` | Optional | From header for Resend |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Optional | Defaults to `9779851020298` |
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Import the GitHub repository [Elderazura/kantipur](https://github.com/Elderazura/kantipur).
+2. Set **Root Directory** to `web`.
+3. Add environment variables above.
+4. Deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Framework preset: **Next.js** (auto-detected).
+
+## SEO & discoverability
+
+- `/sitemap.xml` — all locales, collection, and product URLs
+- `/robots.txt`
+- JSON-LD: Organization, WebSite, FAQPage (home), Product (piece pages)
+- `/llms.txt` — summary for AI assistants and crawlers
+
+## Scripts
+
+```bash
+npm run dev      # development
+npm run build    # production build
+npm run start    # production server
+npm run lint     # ESLint
+npm run test     # Vitest
+```
+
+## Structure
+
+```
+web/
+  src/app/[locale]/   # localized routes
+  src/components/     # UI
+  messages/           # i18n copy
+  public/assets/      # images & video
+  data/               # product catalogue JSON
+```

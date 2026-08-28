@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import CollectionFilters from "@/components/CollectionFilters";
-import PieceCard from "@/components/PieceCard";
-import { filterProducts, getAllProducts } from "@/lib/catalog";
+import CollectionGrid from "@/components/CollectionGrid";
+import CollectionIntro from "@/components/CollectionIntro";
+import type { PieceCardProduct } from "@/components/PieceCard";
+import {
+  filterProducts,
+  getAllProducts,
+  fibreFacets,
+  colourFacets,
+  knotFacets,
+} from "@/lib/catalog";
+import { toPublicImageSrc } from "@/lib/images";
+import { localeAlternates } from "@/lib/seo";
 
 function decodeParam(value: string | string[] | undefined): string | undefined {
   const raw = Array.isArray(value) ? value[0] : value;
@@ -14,10 +25,35 @@ function decodeParam(value: string | string[] | undefined): string | undefined {
   }
 }
 
-function uniqueSorted(values: (string | null)[]): string[] {
-  return [...new Set(values.filter((v): v is string => Boolean(v)))].sort((a, b) =>
-    a.localeCompare(b, undefined, { sensitivity: "base" }),
-  );
+function toCardProduct(
+  product: ReturnType<typeof getAllProducts>[number],
+): PieceCardProduct | null {
+  if (!product.primaryImage) return null;
+  return {
+    slug: product.slug,
+    name: product.name,
+    material: product.material,
+    colour: product.colour,
+    knots: product.knots,
+    image: toPublicImageSrc(product.primaryImage),
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "collection" });
+  return {
+    title: t("title"),
+    description: t("intro"),
+    alternates: {
+      canonical: `/${locale}/collection`,
+      languages: localeAlternates("/collection"),
+    },
+  };
 }
 
 export default async function CollectionPage({
@@ -25,63 +61,70 @@ export default async function CollectionPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ material?: string | string[]; colour?: string | string[] }>;
+  searchParams: Promise<{
+    fibre?: string | string[];
+    colour?: string | string[];
+    knots?: string | string[];
+  }>;
 }) {
   const { locale } = await params;
   const sp = await searchParams;
   setRequestLocale(locale);
 
-  const material = decodeParam(sp.material);
+  const fibre = decodeParam(sp.fibre);
   const colour = decodeParam(sp.colour);
+  const knotsRaw = decodeParam(sp.knots);
+  const knots = knotsRaw && /^\d+$/.test(knotsRaw) ? Number(knotsRaw) : undefined;
   const t = await getTranslations("collection");
 
   const galleryReady = getAllProducts().filter((p) => p.primaryImage);
-  const products = filterProducts({ material, colour }).filter((p) => p.primaryImage);
-
-  const materials = uniqueSorted(galleryReady.map((p) => p.material));
-  const colours = uniqueSorted(galleryReady.map((p) => p.colour));
+  const products = filterProducts({ fibre, colour, knots }).filter((p) => p.primaryImage);
+  const hasFilters = Boolean(fibre || colour || knots);
+  const filterKey = `${fibre ?? ""}|${colour ?? ""}|${knots ?? ""}`;
+  const cardProducts = products
+    .map(toCardProduct)
+    .filter((p): p is PieceCardProduct => p !== null);
 
   return (
     <main className="flex flex-1 flex-col bg-paper">
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:px-10 sm:py-24 lg:py-28">
-        <header>
-          <h1 className="font-display text-4xl leading-tight tracking-wide text-ink sm:text-5xl lg:text-[3.25rem]">
-            {t("title")}
-          </h1>
-          <p className="mt-4 max-w-2xl font-body text-lg leading-relaxed text-ink-muted sm:text-xl">
-            {t("intro")}
-          </p>
-        </header>
+      <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-10 sm:py-14 lg:max-w-7xl">
+        <CollectionIntro total={galleryReady.length} />
 
-        <CollectionFilters
-          materials={materials}
-          colours={colours}
-          activeMaterial={material}
-          activeColour={colour}
-        />
+        <div
+          className="sticky z-30 -mx-5 border-b border-rule bg-paper/90 px-5 backdrop-blur-sm sm:-mx-10 sm:px-10"
+          style={{ top: "var(--site-header-h, 4rem)" }}
+        >
+          <CollectionFilters
+            fibres={fibreFacets(galleryReady)}
+            colours={colourFacets(galleryReady)}
+            knots={knotFacets(galleryReady)}
+            activeFibre={fibre}
+            activeColour={colour}
+            activeKnots={knots}
+            total={galleryReady.length}
+            shown={products.length}
+          />
+        </div>
 
-        {products.length === 0 ? (
-          <div className="py-16 text-center sm:py-20">
-            <p className="font-body text-lg text-ink-muted sm:text-xl">{t("empty")}</p>
-            <Link
-              href="/collection"
-              className="mt-6 inline-flex min-h-11 items-center font-ui text-sm tracking-[0.14em] uppercase text-madder underline decoration-madder/50 underline-offset-[6px] transition-colors hover:decoration-madder"
-            >
-              {t("reset")}
-            </Link>
-          </div>
-        ) : (
-          <ul
-            key={`${material ?? ""}|${colour ?? ""}`}
-            className="filter-crossfade grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3"
-          >
-            {products.map((product) => (
-              <li key={product.slug}>
-                <PieceCard product={product} />
-              </li>
-            ))}
-          </ul>
-        )}
+        <div className="mt-10 sm:mt-12">
+          {cardProducts.length === 0 ? (
+            <div className="py-16 text-center sm:py-20">
+              <p className="font-body text-lg text-ink-muted sm:text-xl">{t("empty")}</p>
+              <Link
+                href="/collection"
+                className="mt-6 inline-flex min-h-11 items-center font-ui text-sm tracking-[0.14em] uppercase text-madder underline decoration-madder/50 underline-offset-[6px] transition-colors hover:decoration-madder"
+              >
+                {t("reset")}
+              </Link>
+            </div>
+          ) : (
+            <CollectionGrid
+              products={cardProducts}
+              filterKey={filterKey}
+              featuredLead={!hasFilters}
+            />
+          )}
+        </div>
       </div>
     </main>
   );

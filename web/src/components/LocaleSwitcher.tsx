@@ -11,18 +11,36 @@ const LABELS: Record<AppLocale, string> = {
   de: "DE",
 };
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({
+  className = "",
+  compact = false,
+  tone = "light",
+}: {
+  className?: string;
+  compact?: boolean;
+  tone?: "light" | "dark";
+}) {
   const locale = useLocale();
   const pathname = usePathname();
+  const dark = tone === "dark";
 
   return (
-    <nav aria-label="Language" className="font-ui text-xs tracking-[0.12em] text-ink-muted">
-      <ul className="flex items-center gap-1.5">
+    <nav
+      aria-label="Language"
+      className={`font-ui text-xs tracking-[0.12em] ${
+        dark ? "text-paper/45" : "text-ink-muted"
+      } ${className}`}
+    >
+      <ul className={`flex items-center ${compact ? "gap-1" : "gap-1.5"}`}>
         {routing.locales.map((loc, i) => {
           const active = loc === locale;
           return (
             <li key={loc} className="flex items-center gap-1.5">
-              {i > 0 && <span aria-hidden="true" className="text-rule">|</span>}
+              {i > 0 && (
+                <span aria-hidden="true" className={dark ? "text-paper/25" : "text-rule"}>
+                  |
+                </span>
+              )}
               <Link
                 href={pathname}
                 locale={loc}
@@ -30,8 +48,12 @@ export default function LocaleSwitcher() {
                 aria-current={active ? "page" : undefined}
                 className={
                   active
-                    ? "inline-flex min-h-11 items-center text-ink"
-                    : "inline-flex min-h-11 items-center text-ink-muted transition-colors hover:text-ink"
+                    ? `inline-flex items-center ${dark ? "text-paper" : "text-ink"} ${compact ? "min-h-11 px-0.5" : "min-h-11"}`
+                    : `inline-flex items-center transition-colors ${compact ? "min-h-11 px-0.5" : "min-h-11"} ${
+                        dark
+                          ? "text-paper/60 hover:text-paper"
+                          : "text-ink-muted hover:text-ink"
+                      }`
                 }
               >
                 {LABELS[loc]}

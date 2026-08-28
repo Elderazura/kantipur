@@ -32,7 +32,7 @@ export default function PieceGallery({ images, name }: PieceGalleryProps) {
       </div>
 
       {images.length > 1 ? (
-        <ul className="mt-4 flex gap-3 overflow-x-auto pb-1" role="list">
+        <ul className="mt-3 flex gap-2 overflow-x-auto pb-1 sm:mt-4 sm:gap-3" role="list">
           {images.map((image, index) => {
             const thumbSrc = toPublicImageSrc(image.local);
             const selected = index === active;
@@ -43,7 +43,7 @@ export default function PieceGallery({ images, name }: PieceGalleryProps) {
                   onClick={() => setActive(index)}
                   aria-label={`${name} — image ${index + 1}`}
                   aria-pressed={selected}
-                  className={`relative block h-20 w-16 overflow-hidden bg-ink/5 focus-visible:outline-offset-2 ${
+                  className={`relative block h-16 w-14 overflow-hidden bg-ink/5 focus-visible:outline-offset-2 sm:h-20 sm:w-16 ${
                     selected ? "ring-1 ring-madder" : "ring-1 ring-transparent hover:ring-rule"
                   }`}
                 >

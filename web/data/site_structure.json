@@ -1,0 +1,44 @@
+{
+ "navigation": [
+  {
+   "label": "Home",
+   "href": "https://kantipurcarpets.com/"
+  },
+  {
+   "label": "Shop",
+   "href": "https://kantipurcarpets.com/shop/"
+  },
+  {
+   "label": "Contact",
+   "href": "https://kantipurcarpets.com/#contact"
+  },
+  {
+   "label": "About",
+   "href": "https://kantipurcarpets.com/about/"
+  }
+ ],
+ "contact": {
+  "emails": [
+   "aglalit@gmail.com",
+   "kantipurtep@gmail.com"
+  ],
+  "phones": [
+   "+977 9851020298",
+   "0 \n \n \n \n \n \n \n \n \n \n \n \n \n \n 0"
+  ]
+ },
+ "social": [
+  "https://www.facebook.com/@Kantipurcarpets.np",
+  "https://www.facebook.com/Kantipur-Carpet-101901395225824",
+  "https://www.instagram.com/@Kantipurcarpets.np",
+  "https://www.instagram.com/kantipurcarpets/"
+ ],
+ "page_files": [
+  "about",
+  "home",
+  "my-account",
+  "shop",
+  "track-order",
+  "wishlist-2"
+ ]
+}

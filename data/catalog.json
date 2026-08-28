@@ -147,20 +147,20 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/04/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.png",
-     "local": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.png",
+     "local": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.jpg",
      "alt": "",
      "width": 628,
      "height": 389
     },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/04/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-1.png",
-     "local": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-1.png",
+     "local": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-1.jpg",
      "alt": "",
      "width": 628,
      "height": 355
     }
    ],
-   "primary_image": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.png"
+   "primary_image": "assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.jpg"
   },
   {
    "id": 3031,
@@ -186,7 +186,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/04/wmremove-transformed-2.png",
-     "local": "assets/images/products/wool-linen-bamboo-carpet/wmremove-transformed-2.png",
+     "local": "assets/images/products/wool-linen-bamboo-carpet/wmremove-transformed-2.jpg",
      "alt": "",
      "width": 1264,
      "height": 842
@@ -199,7 +199,7 @@
      "height": 1600
     }
    ],
-   "primary_image": "assets/images/products/wool-linen-bamboo-carpet/wmremove-transformed-2.png"
+   "primary_image": "assets/images/products/wool-linen-bamboo-carpet/wmremove-transformed-2.jpg"
   },
   {
    "id": 3029,
@@ -627,7 +627,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/fnqakvs7exrmt0cwhtf8q8gzmw.png",
-     "local": "assets/images/products/kcc-10/fnqakvs7exrmt0cwhtf8q8gzmw.png",
+     "local": "assets/images/products/kcc-10/fnqakvs7exrmt0cwhtf8q8gzmw.jpg",
      "alt": "",
      "width": 1224,
      "height": 816
@@ -647,7 +647,7 @@
      "height": 1600
     }
    ],
-   "primary_image": "assets/images/products/kcc-10/fnqakvs7exrmt0cwhtf8q8gzmw.png"
+   "primary_image": "assets/images/products/kcc-10/fnqakvs7exrmt0cwhtf8q8gzmw.jpg"
   },
   {
    "id": 2993,
@@ -673,7 +673,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/0t5zk9z1t9rmt0cwht893zhydm.png",
-     "local": "assets/images/products/j-1451/0t5zk9z1t9rmt0cwht893zhydm.png",
+     "local": "assets/images/products/j-1451/0t5zk9z1t9rmt0cwht893zhydm.jpg",
      "alt": "",
      "width": 1224,
      "height": 816
@@ -693,7 +693,7 @@
      "height": 1600
     }
    ],
-   "primary_image": "assets/images/products/j-1451/0t5zk9z1t9rmt0cwht893zhydm.png"
+   "primary_image": "assets/images/products/j-1451/0t5zk9z1t9rmt0cwht893zhydm.jpg"
   },
   {
    "id": 2988,
@@ -719,7 +719,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/wmremove-transformed-2.png",
-     "local": "assets/images/products/e-1882/wmremove-transformed-2.png",
+     "local": "assets/images/products/e-1882/wmremove-transformed-2.jpg",
      "alt": "",
      "width": 1248,
      "height": 832
@@ -739,7 +739,7 @@
      "height": 1066
     }
    ],
-   "primary_image": "assets/images/products/e-1882/wmremove-transformed-2.png"
+   "primary_image": "assets/images/products/e-1882/wmremove-transformed-2.jpg"
   },
   {
    "id": 2984,
@@ -765,7 +765,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/wmremove-transformed-1.png",
-     "local": "assets/images/products/x-268/wmremove-transformed-1.png",
+     "local": "assets/images/products/x-268/wmremove-transformed-1.jpg",
      "alt": "",
      "width": 1088,
      "height": 960
@@ -785,7 +785,7 @@
      "height": 1600
     }
    ],
-   "primary_image": "assets/images/products/x-268/wmremove-transformed-1.png"
+   "primary_image": "assets/images/products/x-268/wmremove-transformed-1.jpg"
   },
   {
    "id": 2980,
@@ -811,13 +811,13 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/removed-ai.png",
-     "local": "assets/images/products/leaves-designed-carpet/removed-ai.png",
+     "local": "assets/images/products/leaves-designed-carpet/removed-ai.jpg",
      "alt": "",
      "width": 1224,
      "height": 816
     }
    ],
-   "primary_image": "assets/images/products/leaves-designed-carpet/removed-ai.png"
+   "primary_image": "assets/images/products/leaves-designed-carpet/removed-ai.jpg"
   },
   {
    "id": 2975,
@@ -843,7 +843,7 @@
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/upscalemedia-transformed-1-scaled.png",
-     "local": "assets/images/products/r-131/upscalemedia-transformed-1-scaled.png",
+     "local": "assets/images/products/r-131/upscalemedia-transformed-1-scaled.jpg",
      "alt": "",
      "width": 2560,
      "height": 2259
@@ -856,7 +856,7 @@
      "height": 1408
     }
    ],
-   "primary_image": "assets/images/products/r-131/upscalemedia-transformed-1-scaled.png"
+   "primary_image": "assets/images/products/r-131/upscalemedia-transformed-1-scaled.jpg"
   },
   {
    "id": 2971,
