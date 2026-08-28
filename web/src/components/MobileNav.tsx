@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
+import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -47,6 +48,9 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
   const panelId = useId();
   const reduce = useReducedMotion();
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     setOpen(false);
@@ -74,6 +78,90 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
     ? "text-paper hover:text-paper/90"
     : "text-ink hover:text-ink-muted";
 
+  const menu = (
+    <AnimatePresence>
+      {open ? (
+        <div className="fixed inset-0 z-[100] md:hidden">
+          <motion.button
+            type="button"
+            aria-label={t("closeMenu")}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: reduce ? 0 : 0.2 }}
+            className="absolute inset-0 bg-ink/60"
+            onClick={() => setOpen(false)}
+          />
+
+          <motion.div
+            id={panelId}
+            role="dialog"
+            aria-modal="true"
+            aria-label={t("menuLabel")}
+            initial={{ opacity: reduce ? 1 : 0, y: reduce ? 0 : 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: reduce ? 0 : 8 }}
+            transition={{ duration: reduce ? 0 : 0.28, ease: [0.22, 0.61, 0.36, 1] }}
+            className="absolute inset-x-0 top-0 flex max-h-[100dvh] min-h-[100dvh] flex-col bg-paper pt-[env(safe-area-inset-top,0px)] pb-[env(safe-area-inset-bottom,0px)]"
+          >
+            <div className="mx-auto flex w-full max-w-6xl items-center justify-between border-b border-rule px-5 py-3 sm:px-10">
+              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+                {t("menuLabel")}
+              </p>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                className="inline-flex min-h-11 min-w-11 items-center justify-center font-ui text-xs tracking-[0.16em] uppercase text-ink transition-colors hover:text-madder"
+                aria-label={t("closeMenu")}
+              >
+                ✕
+              </button>
+            </div>
+
+            <nav
+              aria-label="Primary mobile"
+              className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 py-8 sm:px-10 sm:py-10"
+            >
+              <ul className="flex flex-col">
+                {NAV_ITEMS.map((item) => {
+                  const active = isActive(pathname, item.href);
+                  return (
+                    <li key={item.key} className="border-b border-rule/70">
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        aria-current={active ? "page" : undefined}
+                        className={`flex min-h-14 items-center justify-between py-3 font-display text-[clamp(1.75rem,7vw,2.35rem)] leading-none tracking-wide transition-colors ${
+                          active ? "text-madder" : "text-ink hover:text-madder"
+                        }`}
+                      >
+                        {t(item.key)}
+                        <span aria-hidden className="font-ui text-base text-ink-muted/50">
+                          →
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+
+            <div className="mx-auto w-full max-w-6xl border-t border-rule px-5 py-5 sm:px-10">
+              <LocaleSwitcher tone="light" />
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="mt-5 inline-flex min-h-11 w-full items-center justify-center bg-ink px-4 font-ui text-xs tracking-[0.16em] uppercase text-paper transition-opacity hover:opacity-90"
+              >
+                {tCta("inquire")}
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      ) : null}
+    </AnimatePresence>
+  );
+
   return (
     <div className="md:hidden">
       <button
@@ -87,93 +175,7 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
         <MenuIcon open={open} />
       </button>
 
-      <AnimatePresence>
-        {open ? (
-          <>
-            <motion.button
-              type="button"
-              aria-label={t("closeMenu")}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: reduce ? 0 : 0.25 }}
-              className="fixed inset-0 z-50 bg-ink/55 backdrop-blur-[2px]"
-              onClick={() => setOpen(false)}
-            />
-
-            <motion.div
-              id={panelId}
-              role="dialog"
-              aria-modal="true"
-              aria-label={t("menuLabel")}
-              initial={{ x: reduce ? 0 : "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: reduce ? 0 : "100%" }}
-              transition={{ duration: reduce ? 0 : 0.32, ease: [0.22, 0.61, 0.36, 1] }}
-              className="fixed inset-y-0 end-0 z-50 flex w-[min(100vw,20rem)] flex-col border-s border-rule bg-paper pt-[env(safe-area-inset-top,0px)] pb-[env(safe-area-inset-bottom,0px)] shadow-[-12px_0_40px_rgba(26,24,20,0.12)] rtl:end-auto rtl:start-0 rtl:border-s-0 rtl:border-e rtl:shadow-[12px_0_40px_rgba(26,24,20,0.12)]"
-            >
-              <div className="flex items-center justify-between border-b border-rule px-5 py-3">
-                <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
-                  {t("menuLabel")}
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setOpen(false)}
-                  className="inline-flex min-h-11 min-w-11 items-center justify-center font-ui text-xs tracking-[0.16em] uppercase text-ink-muted transition-colors hover:text-ink"
-                >
-                  {t("closeMenu")}
-                </button>
-              </div>
-
-              <nav aria-label="Primary mobile" className="flex-1 overflow-y-auto px-5 py-6">
-                <ul className="flex flex-col gap-1">
-                  {NAV_ITEMS.map((item, i) => {
-                    const active = isActive(pathname, item.href);
-                    return (
-                      <motion.li
-                        key={item.key}
-                        initial={reduce ? false : { opacity: 0, x: 16 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: reduce ? 0 : 0.05 + i * 0.04, duration: 0.28 }}
-                      >
-                        <Link
-                          href={item.href}
-                          onClick={() => setOpen(false)}
-                          aria-current={active ? "page" : undefined}
-                          className={`group flex min-h-12 items-center border-b border-rule/60 py-3 font-display text-2xl tracking-wide transition-colors ${
-                            active ? "text-madder" : "text-ink hover:text-madder"
-                          }`}
-                        >
-                          {t(item.key)}
-                          <span
-                            aria-hidden
-                            className={`ms-auto font-ui text-sm transition-transform duration-300 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 ${
-                              active ? "text-madder" : "text-ink-muted/40"
-                            }`}
-                          >
-                            →
-                          </span>
-                        </Link>
-                      </motion.li>
-                    );
-                  })}
-                </ul>
-              </nav>
-
-              <div className="border-t border-rule px-5 py-5">
-                <LocaleSwitcher tone="light" />
-                <Link
-                  href="/contact"
-                  onClick={() => setOpen(false)}
-                  className="mt-5 inline-flex min-h-11 w-full items-center justify-center border border-ink bg-ink px-4 font-ui text-xs tracking-[0.16em] uppercase text-paper transition-colors hover:bg-ink/90"
-                >
-                  {tCta("inquire")}
-                </Link>
-              </div>
-            </motion.div>
-          </>
-        ) : null}
-      </AnimatePresence>
+      {mounted ? createPortal(menu, document.body) : null}
     </div>
   );
 }

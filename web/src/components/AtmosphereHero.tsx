@@ -13,7 +13,11 @@ export default async function AtmosphereHero() {
       aria-label={tMeta("siteName")}
       className="relative isolate min-h-[100svh] min-h-[100dvh] w-full overflow-hidden bg-ink"
     >
-      <HeroBackdrop posterAlt={t("heroPosterAlt")} />
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_20%,rgba(58,48,40,0.55)_0%,rgba(26,20,16,1)_55%)]"
+      />
+      <HeroBackdrop />
 
       {/* Lighter than a flat wash: the film stays legible, the type still lands.
           A wedge from the lower-left carries the copy; the rest opens up. */}
