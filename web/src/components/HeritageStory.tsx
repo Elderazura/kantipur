@@ -11,7 +11,7 @@ export default async function HeritageStory() {
   return (
     <section id="heritage" className="relative overflow-hidden bg-ink text-paper">
       {/* The name — the page's quietest, most important claim */}
-      <div className="mx-auto max-w-6xl px-5 pt-16 sm:px-10 sm:pt-24 lg:max-w-7xl lg:pt-32">
+      <div className="mx-auto max-w-6xl px-5 pt-12 pb-12 sm:px-10 sm:pt-24 sm:pb-0 lg:max-w-7xl lg:pt-32">
         <Reveal>
           <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/50">
             {t("nameEyebrow")}
@@ -23,14 +23,26 @@ export default async function HeritageStory() {
         </h2>
 
         <Reveal delay={0.15}>
-          <p className="mt-8 max-w-2xl font-body text-lg leading-relaxed text-paper/75 sm:text-xl">
+          <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-paper/75 line-clamp-4 sm:mt-8 sm:text-xl md:line-clamp-none">
             {t("nameBody")}
           </p>
         </Reveal>
+
+        <Reveal delay={0.2} className="mt-8 md:hidden">
+          <Link
+            href="/heritage"
+            className="group inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-paper underline decoration-madder decoration-2 underline-offset-[7px]"
+          >
+            {t("originCta")}
+            <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">
+              →
+            </span>
+          </Link>
+        </Reveal>
       </div>
 
-      {/* Story + image, side by side */}
-      <div className="mx-auto mt-14 grid max-w-6xl gap-10 px-5 sm:px-10 lg:mt-28 lg:max-w-7xl lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-20">
+      {/* Story + image, side by side — desktop only; full chapter lives on /heritage */}
+      <div className="mx-auto mt-14 hidden max-w-6xl gap-10 px-5 sm:px-10 md:grid lg:mt-28 lg:max-w-7xl lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-20">
         <Reveal>
           <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/4] lg:aspect-[4/5]">
             <Parallax distance={34} className="absolute inset-[-12%]">
@@ -83,7 +95,7 @@ export default async function HeritageStory() {
       </div>
 
       {/* Four moments that made the craft an industry */}
-      <div className="mx-auto mt-16 max-w-6xl px-5 sm:px-10 lg:mt-32 lg:max-w-7xl">
+      <div className="mx-auto mt-16 hidden max-w-6xl px-5 sm:px-10 md:block lg:mt-32 lg:max-w-7xl">
         <Reveal>
           <h3 className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/50">
             {t("timelineEyebrow")}
@@ -110,7 +122,7 @@ export default async function HeritageStory() {
       </div>
 
       {/* Pull quote — the emotional close of the chapter */}
-      <div className="mx-auto mt-16 max-w-4xl px-5 pb-16 text-center sm:px-10 sm:pb-24 lg:mt-32 lg:pb-32">
+      <div className="mx-auto mt-16 hidden max-w-4xl px-5 pb-12 text-center sm:px-10 sm:pb-24 md:block lg:mt-32 lg:pb-32">
         <Reveal>
           <blockquote className="font-display text-[clamp(1.5rem,3.4vw,2.5rem)] leading-[1.24] text-paper/95">
             <span className="text-madder">“</span>

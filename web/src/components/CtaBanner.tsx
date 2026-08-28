@@ -29,8 +29,8 @@ export default function CtaBanner({
     <section
       className={`relative isolate overflow-hidden bg-ink ${
         height === "tall"
-          ? "min-h-[48svh] sm:min-h-[56svh] lg:min-h-[62vh]"
-          : "min-h-[36svh] sm:min-h-[40svh] lg:min-h-[44vh]"
+          ? "min-h-[34svh] sm:min-h-[56svh] lg:min-h-[62vh]"
+          : "min-h-[28svh] sm:min-h-[40svh] lg:min-h-[44vh]"
       } flex items-center`}
     >
       <Parallax distance={48} className="absolute inset-[-10%]">

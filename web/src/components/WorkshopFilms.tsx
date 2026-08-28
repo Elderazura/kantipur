@@ -75,7 +75,7 @@ export default function WorkshopFilms() {
 
   return (
     <section className="border-y border-rule bg-surface" aria-labelledby="films-heading">
-      <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
+      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 md:py-24 lg:max-w-7xl lg:py-32">
         <Reveal>
           <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
@@ -100,8 +100,8 @@ export default function WorkshopFilms() {
           className="mt-12 grid gap-8 sm:mt-16 lg:grid-cols-2 lg:gap-10"
           gap={0.1}
         >
-          {FILMS.map(({ key, src }) => (
-            <StaggerItem as="li" key={key}>
+          {FILMS.map(({ key, src }, index) => (
+            <StaggerItem as="li" key={key} className={index > 0 ? "hidden md:block" : undefined}>
               <FilmPlayer
                 filmKey={key}
                 src={src}

@@ -41,7 +41,7 @@ export default async function MaterialStrip() {
 
   return (
     <section className="border-b border-rule bg-paper">
-      <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
+      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 md:py-24 lg:max-w-7xl lg:py-32">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <h2 className="max-w-[14ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
             <WordsUp text={t("materialsTitle")} />

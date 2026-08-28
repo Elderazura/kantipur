@@ -11,6 +11,8 @@ import CustomInvite from "@/components/CustomInvite";
 import WorldReach from "@/components/WorldReach";
 import PeopleSection from "@/components/PeopleSection";
 import EthicalStandards from "@/components/EthicalStandards";
+import HomeTrustBrief from "@/components/HomeTrustBrief";
+import HomeContactNudge from "@/components/HomeContactNudge";
 import FaqSection, { getFaqItems } from "@/components/FaqSection";
 import JsonLd from "@/components/JsonLd";
 import { faqPageJsonLd } from "@/lib/jsonld";
@@ -52,7 +54,9 @@ export default async function Home({
       <AtmosphereHero />
       <HeritageStory />
       <WorkshopFilms />
-      <KnotCraft />
+      <div className="hidden md:block">
+        <KnotCraft />
+      </div>
       <MaterialStrip />
       <FeaturedGrid />
 
@@ -64,23 +68,28 @@ export default async function Home({
         ctaHref="/custom"
         ctaLabel={tCta("startCommission")}
       />
-      <CustomInvite />
+      <div className="hidden md:block">
+        <CustomInvite />
+        <WorldReach />
+        <PeopleSection />
+        <EthicalStandards />
+      </div>
+      <HomeTrustBrief />
+      <FaqSection mobileLimit={4} />
 
-      <WorldReach />
-      <PeopleSection />
-      <EthicalStandards />
-      <FaqSection />
-
-      <CtaBanner
-        image="/assets/images/site/IMG_9255-scaled.jpg"
-        imageAlt={t("visitAlt")}
-        eyebrow={t("visitEyebrow")}
-        title={t("visitTitle")}
-        body={t("visitBody")}
-        ctaHref="/contact"
-        ctaLabel={t("visitCta")}
-        height="short"
-      />
+      <div className="hidden md:block">
+        <CtaBanner
+          image="/assets/images/site/IMG_9255-scaled.jpg"
+          imageAlt={t("visitAlt")}
+          eyebrow={t("visitEyebrow")}
+          title={t("visitTitle")}
+          body={t("visitBody")}
+          ctaHref="/contact"
+          ctaLabel={t("visitCta")}
+          height="short"
+        />
+      </div>
+      <HomeContactNudge />
     </main>
   );
 }

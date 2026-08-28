@@ -113,7 +113,7 @@ export default function FeaturedGallery({
 
   return (
     <section className="bg-surface" aria-label={title}>
-      <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-28">
+      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 lg:max-w-7xl lg:py-28">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
