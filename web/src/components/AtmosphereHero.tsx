@@ -36,11 +36,6 @@ export default async function AtmosphereHero() {
         line={t("heroLine")}
         siteName={tMeta("siteName")}
         tagline={tMeta("tagline")}
-        stats={[
-          { value: t("statLooms"), label: t("statLoomsLabel") },
-          { value: t("statWeavers"), label: t("statWeaversLabel") },
-          { value: t("statDesigns"), label: t("statDesignsLabel") },
-        ]}
       >
         <Link
           href="/collection"
