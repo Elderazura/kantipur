@@ -34,12 +34,19 @@ Product data lives in `web/data/catalog.json` (also mirrored at repo `data/` for
 
 ## Deploy on Vercel
 
-1. Import the GitHub repository [Elderazura/kantipur](https://github.com/Elderazura/kantipur).
-2. Set **Root Directory** to `web`.
-3. Add environment variables above.
-4. Deploy.
+1. Import [github.com/Elderazura/kantipur](https://github.com/Elderazura/kantipur).
+2. **Root Directory:** set to `web` (required — the Next.js app is not at repo root).
+3. **Framework preset:** Next.js (auto-detected once root is `web`).
+4. **Do not** set a custom Output Directory — leave it blank. Vercel runs the Next.js server from the build output automatically.
+5. Add environment variables (see table above).
+6. Deploy.
 
-Framework preset: **Next.js** (auto-detected).
+If you see `404: NOT_FOUND` on Vercel, the usual causes are:
+- Root Directory is not `web`
+- A custom **Output Directory** was set to `.next` (remove it)
+- `NEXT_PUBLIC_SITE_URL` missing (won’t cause 404, but breaks canonical URLs)
+
+After deploy, open `/en` (all routes are locale-prefixed).
 
 ## SEO & discoverability
 
