@@ -6,6 +6,7 @@ import { motion, useReducedMotion } from "motion/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useScrolledPast } from "@/lib/useScrolledPast";
 import LocaleSwitcher from "./LocaleSwitcher";
+import MobileNav from "./MobileNav";
 
 const NAV_ITEMS = [
   { href: "/heritage", key: "heritage" as const },
@@ -20,7 +21,6 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const reduce = useReducedMotion();
 
-  // Only the homepage opens on a full-bleed dark hero worth sitting over.
   const overlayCapable = pathname === "/";
   const scrolled = useScrolledPast(0.75);
   const solid = !overlayCapable || scrolled;
@@ -36,11 +36,11 @@ export default function SiteHeader() {
       className="fixed inset-x-0 top-0 z-40 border-b backdrop-blur-[2px] pt-[env(safe-area-inset-top,0px)]"
       data-solid={solid}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:gap-6 sm:px-10 sm:py-3.5 lg:max-w-7xl">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 sm:px-10 sm:py-3.5 lg:max-w-7xl">
         <Link
           href="/"
           aria-label={tMeta("siteName")}
-          className="group flex min-w-0 shrink items-center gap-2.5 sm:gap-3"
+          className="group flex min-w-0 flex-1 items-center gap-2.5 sm:gap-3"
         >
           <Image
             src="/assets/images/site/logo-mark.png"
@@ -92,33 +92,13 @@ export default function SiteHeader() {
           </ul>
         </nav>
 
-        <div className={`flex shrink-0 items-center ${solid ? "" : "[&_*]:text-paper"}`}>
-          <LocaleSwitcher className="hidden min-[420px]:block" />
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
+          <div className={`hidden md:block ${solid ? "" : "[&_*]:text-paper"}`}>
+            <LocaleSwitcher />
+          </div>
+          <MobileNav light={!solid} />
         </div>
       </div>
-
-      <nav
-        aria-label="Primary mobile"
-        className="border-t border-rule/40 md:hidden overflow-x-auto overscroll-x-contain [-webkit-overflow-scrolling:touch]"
-      >
-        <ul className="flex min-w-max items-center gap-x-4 px-5 py-2 font-ui text-[0.68rem] uppercase tracking-[0.12em] sm:gap-x-5 sm:px-10 sm:text-xs sm:tracking-[0.14em]">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.key} className="shrink-0">
-              <Link
-                href={item.href}
-                className={`inline-flex min-h-11 items-center whitespace-nowrap transition-colors ${
-                  solid ? "text-ink-muted hover:text-ink" : "text-paper/80"
-                }`}
-              >
-                {t(item.key)}
-              </Link>
-            </li>
-          ))}
-          <li className="shrink-0 min-[420px]:hidden">
-            <LocaleSwitcher compact />
-          </li>
-        </ul>
-      </nav>
     </motion.header>
   );
 }

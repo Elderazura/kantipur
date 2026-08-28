@@ -11,7 +11,10 @@
     "collection": "Collection",
     "about": "À propos",
     "contact": "Contact",
-    "custom": "Commandes sur mesure"
+    "custom": "Commandes sur mesure",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menuLabel": "Menu"
   },
   "cta": {
     "exploreCollection": "Explorer la collection",

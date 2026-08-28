@@ -11,7 +11,10 @@
     "collection": "المجموعة",
     "about": "من نحن",
     "contact": "تواصل",
-    "custom": "طلبات خاصة"
+    "custom": "طلبات خاصة",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "menuLabel": "القائمة"
   },
   "cta": {
     "exploreCollection": "استكشف المجموعة",

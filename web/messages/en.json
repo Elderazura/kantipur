@@ -32,7 +32,10 @@
     "collection": "Collection",
     "about": "About",
     "contact": "Contact",
-    "custom": "Custom orders"
+    "custom": "Custom orders",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Menu"
   },
   "cta": {
     "exploreCollection": "Explore the collection",

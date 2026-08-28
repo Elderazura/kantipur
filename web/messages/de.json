@@ -11,7 +11,10 @@
     "collection": "Kollektion",
     "about": "Über uns",
     "contact": "Kontakt",
-    "custom": "Maßanfertigungen"
+    "custom": "Maßanfertigungen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "menuLabel": "Menü"
   },
   "cta": {
     "exploreCollection": "Kollektion entdecken",
