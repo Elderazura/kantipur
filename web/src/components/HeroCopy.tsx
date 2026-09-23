@@ -42,7 +42,7 @@ export default function HeroCopy({
       style={reduce ? undefined : { y, opacity }}
       className="relative z-10 flex min-h-[100svh] min-h-[100dvh] flex-col justify-end px-5 pb-[max(4rem,env(safe-area-inset-bottom))] pt-[calc(var(--site-header-h,5.5rem)+1rem)] sm:px-10 sm:pb-24 lg:px-16 xl:max-w-7xl xl:px-20"
     >
-      <h1 className="max-w-[13ch] text-balance font-display text-[clamp(2rem,6.4vw,4.75rem)] leading-[0.98] tracking-[0.01em] text-paper sm:max-w-[16ch]">
+      <h1 className="max-w-[22ch] text-balance font-display text-[clamp(2rem,6.4vw,4.75rem)] leading-[0.98] tracking-[0.01em] text-paper sm:max-w-[22ch]">
         <span style={rise(0.15)} className="hero-rise block">
           {titleTop}
         </span>

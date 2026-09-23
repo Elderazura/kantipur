@@ -77,14 +77,14 @@ export default function WorkshopFilms() {
     <section className="border-y border-rule bg-surface" aria-labelledby="films-heading">
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 md:py-24 lg:max-w-7xl lg:py-32">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
           </p>
         </Reveal>
 
         <h2
           id="films-heading"
-          className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink"
+          className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink"
         >
           <WordsUp text={t("title")} />
         </h2>
@@ -115,7 +115,7 @@ export default function WorkshopFilms() {
         </Stagger>
 
         <Reveal delay={0.12}>
-          <p className="mt-8 font-ui text-[0.62rem] tracking-[0.16em] uppercase text-ink-muted">
+          <p className="mt-8 font-ui text-[0.74rem] tracking-[0.16em] uppercase text-ink-muted">
             {t("soundNote")}
           </p>
         </Reveal>

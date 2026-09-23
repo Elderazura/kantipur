@@ -33,7 +33,7 @@ export default async function FaqSection({
     >
       <div className="mx-auto max-w-3xl px-5 py-12 sm:px-10 sm:py-16 lg:max-w-4xl lg:py-24">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
           </p>
           <h2

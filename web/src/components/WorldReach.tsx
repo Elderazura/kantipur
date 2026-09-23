@@ -43,13 +43,13 @@ export default function WorldReach() {
     <section className="border-b border-rule bg-paper">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
           </p>
         </Reveal>
 
         <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-20">
-          <h2 className="max-w-[16ch] font-display text-[clamp(1.9rem,4.6vw,3.4rem)] leading-[1.06] text-ink">
+          <h2 className="max-w-[20ch] font-display text-[clamp(1.9rem,4.6vw,3.4rem)] leading-[1.06] text-ink">
             <WordsUp text={t("title")} />
           </h2>
           <Reveal delay={0.12}>
@@ -68,7 +68,7 @@ export default function WorldReach() {
               <span className="block font-display text-[clamp(2.1rem,4.4vw,3rem)] leading-none text-ink tabular-nums">
                 <CountUp to={f.to} suffix={f.suffix} />
               </span>
-              <span className="mt-4 block font-ui text-[0.62rem] tracking-[0.22em] uppercase text-ink-muted">
+              <span className="mt-4 block font-ui text-[0.74rem] tracking-[0.22em] uppercase text-ink-muted">
                 {t(`fig_${f.key}`)}
               </span>
             </StaggerItem>

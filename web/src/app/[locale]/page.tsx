@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import AtmosphereHero from "@/components/AtmosphereHero";
+import StatementSection from "@/components/StatementSection";
+import CarpetMacro from "@/components/CarpetMacro";
+import ClosingInvitation from "@/components/ClosingInvitation";
 import HeritageStory from "@/components/HeritageStory";
 import WorkshopFilms from "@/components/WorkshopFilms";
 import KnotCraft from "@/components/KnotCraft";
@@ -52,6 +55,8 @@ export default async function Home({
       <JsonLd data={faqPageJsonLd(faqItems)} />
 
       <AtmosphereHero />
+      <StatementSection />
+      <CarpetMacro />
       <HeritageStory />
       <WorkshopFilms />
       <div className="hidden md:block">
@@ -90,6 +95,7 @@ export default async function Home({
         />
       </div>
       <HomeContactNudge />
+      <ClosingInvitation />
     </main>
   );
 }

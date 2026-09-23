@@ -58,7 +58,7 @@ export default function CollectionFiltersBar({
     >
       <div className="flex flex-wrap items-end gap-x-5 gap-y-3 sm:gap-x-6">
         <label className="flex min-w-0 flex-col gap-1">
-          <span className="font-ui text-[0.58rem] tracking-[0.16em] uppercase text-ink-muted">
+          <span className="font-ui text-[0.72rem] tracking-[0.16em] uppercase text-ink-muted">
             {t("material")}
           </span>
           <select
@@ -79,7 +79,7 @@ export default function CollectionFiltersBar({
         </label>
 
         <label className="flex min-w-0 flex-col gap-1">
-          <span className="font-ui text-[0.58rem] tracking-[0.16em] uppercase text-ink-muted">
+          <span className="font-ui text-[0.72rem] tracking-[0.16em] uppercase text-ink-muted">
             {t("knots")}
           </span>
           <select
@@ -102,7 +102,7 @@ export default function CollectionFiltersBar({
         </label>
 
         <label className="flex min-w-0 flex-col gap-1">
-          <span className="font-ui text-[0.58rem] tracking-[0.16em] uppercase text-ink-muted">
+          <span className="font-ui text-[0.72rem] tracking-[0.16em] uppercase text-ink-muted">
             {t("colour")}
           </span>
           <select
@@ -123,7 +123,7 @@ export default function CollectionFiltersBar({
         </label>
       </div>
 
-      <p className="flex flex-wrap items-baseline gap-x-3 font-ui text-[0.68rem] tracking-[0.06em] text-ink-muted sm:justify-end">
+      <p className="flex flex-wrap items-baseline gap-x-3 font-ui text-[0.74rem] tracking-[0.06em] text-ink-muted sm:justify-end">
         <span>{t("showing", { shown, total })}</span>
         {hasFilters ? (
           <Link

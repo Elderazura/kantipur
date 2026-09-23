@@ -4,7 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { siteUrl, localeAlternates, OG_IMAGE } from "@/lib/seo";
-import { fraunces, sourceSerif, dmSans } from "@/lib/fonts";
+import { cormorant, inter, interUi } from "@/lib/fonts";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import HeaderSpacer from "@/components/HeaderSpacer";
@@ -77,7 +77,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${fraunces.variable} ${sourceSerif.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${inter.variable} ${interUi.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden font-body">
         <NextIntlClientProvider messages={messages}>

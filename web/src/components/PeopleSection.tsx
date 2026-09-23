@@ -28,12 +28,12 @@ export default async function PeopleSection() {
 
           <div>
             <Reveal>
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                 {t("eyebrow")}
               </p>
             </Reveal>
 
-            <h2 className="mt-6 max-w-[15ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
+            <h2 className="mt-6 max-w-[23ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
               <WordsUp text={t("title")} />
             </h2>
 

@@ -13,12 +13,12 @@ export default async function HeritageStory() {
       {/* The name — the page's quietest, most important claim */}
       <div className="mx-auto max-w-6xl px-5 pt-12 pb-12 sm:px-10 sm:pt-24 sm:pb-0 lg:max-w-7xl lg:pt-32">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/50">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/50">
             {t("nameEyebrow")}
           </p>
         </Reveal>
 
-        <h2 className="mt-7 max-w-[19ch] font-display text-[clamp(2rem,5.2vw,4rem)] leading-[1.04] tracking-[0.01em]">
+        <h2 className="mt-7 max-w-[23ch] font-display text-[clamp(2rem,5.2vw,4rem)] leading-[1.04] tracking-[0.01em]">
           <WordsUp text={t("nameTitle")} />
         </h2>
 
@@ -59,10 +59,10 @@ export default async function HeritageStory() {
 
         <div>
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/50">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/50">
               {t("originEyebrow")}
             </p>
-            <h3 className="mt-6 max-w-[16ch] font-display text-[clamp(1.7rem,3.4vw,2.6rem)] leading-[1.1]">
+            <h3 className="mt-6 max-w-[20ch] font-display text-[clamp(1.7rem,3.4vw,2.6rem)] leading-[1.1]">
               {t("originTitle")}
             </h3>
           </Reveal>
@@ -97,7 +97,7 @@ export default async function HeritageStory() {
       {/* Four moments that made the craft an industry */}
       <div className="mx-auto mt-16 hidden max-w-6xl px-5 sm:px-10 md:block lg:mt-32 lg:max-w-7xl">
         <Reveal>
-          <h3 className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/50">
+          <h3 className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/50">
             {t("timelineEyebrow")}
           </h3>
         </Reveal>
@@ -129,7 +129,7 @@ export default async function HeritageStory() {
             {t("pull")}
             <span className="text-madder">”</span>
           </blockquote>
-          <p className="mt-7 font-ui text-[0.6rem] tracking-[0.26em] uppercase text-paper/45">
+          <p className="mt-7 font-ui text-[0.66rem] tracking-[0.26em] uppercase text-paper/45">
             {t("pullAttrib")}
           </p>
         </Reveal>

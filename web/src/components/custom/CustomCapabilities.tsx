@@ -27,7 +27,7 @@ export default async function CustomCapabilities() {
     <section className="border-b border-rule bg-surface" aria-labelledby="custom-capabilities-heading">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-24">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("capabilitiesEyebrow")}
           </p>
           <h2

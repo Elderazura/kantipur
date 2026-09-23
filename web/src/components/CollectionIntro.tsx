@@ -11,13 +11,13 @@ export default async function CollectionIntro({ total }: CollectionIntroProps) {
   return (
     <header className="border-b border-rule pb-10 sm:pb-12">
       <Reveal>
-        <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+        <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
           {t("eyebrow")}
         </p>
       </Reveal>
 
       <div className="mt-6 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
-        <h1 className="max-w-[14ch] font-display text-[clamp(2.25rem,5.5vw,4rem)] leading-[1.04] text-ink">
+        <h1 className="max-w-[22ch] font-display text-[clamp(2.25rem,5.5vw,4rem)] leading-[1.04] text-ink">
           <WordsUp text={t("title")} />
         </h1>
 
@@ -25,7 +25,7 @@ export default async function CollectionIntro({ total }: CollectionIntroProps) {
           <p className="font-body text-base leading-relaxed text-ink-muted sm:text-lg">
             {t("intro")}
           </p>
-          <p className="mt-4 font-ui text-[0.62rem] tracking-[0.18em] uppercase text-madder">
+          <p className="mt-4 font-ui text-[0.74rem] tracking-[0.18em] uppercase text-madder">
             {t("pieceCount", { count: total })}
           </p>
         </Reveal>

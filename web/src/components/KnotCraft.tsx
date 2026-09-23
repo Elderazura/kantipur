@@ -24,12 +24,12 @@ export default function KnotCraft() {
     <section className="border-y border-rule bg-surface">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
           </p>
         </Reveal>
 
-        <h2 className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4.6vw,3.4rem)] leading-[1.06] text-ink">
+        <h2 className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4.6vw,3.4rem)] leading-[1.06] text-ink">
           <WordsUp text={t("title")} />
         </h2>
 
@@ -92,7 +92,7 @@ export default function KnotCraft() {
                   transition={{ duration: 0.5 }}
                   style={{
                     backgroundImage:
-                      "radial-gradient(rgba(237,230,217,0.92) 40%, transparent 42%)",
+                      "radial-gradient(rgba(243,239,231,0.92) 40%, transparent 42%)",
                     backgroundSize: `${grade.pitch}px ${grade.pitch}px`,
                     mixBlendMode: "overlay",
                   }}
@@ -108,7 +108,7 @@ export default function KnotCraft() {
                       type="button"
                       onClick={() => setActive(g.knots)}
                       aria-pressed={on}
-                      className={`flex-1 border-t border-rule px-2 py-3.5 font-ui text-[0.65rem] tracking-[0.08em] transition-colors first:border-s-0 sm:px-3 sm:py-4 sm:text-xs sm:tracking-[0.12em] [&+&]:border-s [&+&]:border-s-rule ${
+                      className={`flex-1 border-t border-rule px-2 py-3.5 font-ui text-[0.72rem] tracking-[0.08em] transition-colors first:border-s-0 sm:px-3 sm:py-4 sm:text-xs sm:tracking-[0.12em] [&+&]:border-s [&+&]:border-s-rule ${
                         on ? "bg-ink text-paper" : "text-ink-muted hover:bg-surface hover:text-ink"
                       }`}
                     >

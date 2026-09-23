@@ -50,7 +50,7 @@ export default function CtaBanner({
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl">
         {eyebrow ? (
           <Reveal>
-            <p className="font-ui text-[0.62rem] tracking-[0.24em] uppercase text-paper/60 sm:text-[0.65rem] sm:tracking-[0.28em]">
+            <p className="font-ui text-[0.7rem] tracking-[0.24em] uppercase text-paper/60 sm:text-[0.74rem] sm:tracking-[0.28em]">
               {eyebrow}
             </p>
           </Reveal>
@@ -58,7 +58,7 @@ export default function CtaBanner({
 
         <h2
           className={`mt-5 text-balance font-display text-[clamp(1.55rem,5vw,3.2rem)] leading-[1.1] text-paper sm:mt-6 sm:leading-[1.08] ${
-            body ? "max-w-2xl" : "max-w-[18ch] sm:max-w-[17ch]"
+            body ? "max-w-2xl" : "max-w-[22ch] sm:max-w-[21ch]"
           }`}
         >
           <WordsUp text={title} />

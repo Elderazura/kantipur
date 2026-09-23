@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { inquireSchema } from "@/lib/inquire";
+import { inquireSchema, commissionSummary } from "@/lib/inquire";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -39,18 +39,26 @@ export async function POST(request: Request) {
     process.env.INQUIRE_FROM_EMAIL?.trim() ||
     "Kantipur Carpets <onboarding@resend.dev>";
 
+  // Lead the subject with the audience so enquiries triage in the inbox.
+  const audience = data.projectType ? `[${data.projectType}] ` : "";
   const subject = data.carpetRef
-    ? `Inquiry: ${data.carpetRef}`
-    : `Inquiry from ${data.name}`;
+    ? `${audience}Enquiry: ${data.carpetRef}`
+    : `${audience}Enquiry from ${data.name}`;
 
+  const summary = commissionSummary(data);
   const lines = [
     `Name: ${data.name}`,
     `Email: ${data.email}`,
-    data.carpetRef ? `Carpet: ${data.carpetRef}` : null,
     data.locale ? `Locale: ${data.locale}` : null,
+    summary ? `\n--- Project ---\n${summary}` : null,
     "",
     data.message,
   ].filter((line): line is string => line !== null);
+
+  const attachments = (data.attachments ?? []).map((a) => ({
+    filename: a.filename,
+    content: a.content,
+  }));
 
   const resend = new Resend(apiKey);
   const { data: sent, error } = await resend.emails.send({
@@ -60,6 +68,7 @@ export async function POST(request: Request) {
     replyTo: data.email,
     subject,
     text: lines.join("\n"),
+    ...(attachments.length ? { attachments } : {}),
   });
 
   if (error) {

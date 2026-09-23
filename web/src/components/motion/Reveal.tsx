@@ -1,9 +1,64 @@
 "use client";
 
-import { motion, useReducedMotion, useInView, useSpring, useTransform, useScroll } from "motion/react";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  motion,
+  useReducedMotion,
+  useInView,
+  useSpring,
+  useTransform,
+  useScroll,
+} from "motion/react";
+import {
+  Children,
+  Fragment,
+  cloneElement,
+  createElement,
+  isValidElement,
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 
-const EASE = [0.22, 0.61, 0.36, 1] as const;
+/**
+ * Scroll reveals, built so the markup is *visible by default*.
+ *
+ * Earlier versions rendered `opacity: 0` and relied on JS to bring content in,
+ * which meant a failed hydration, a throttled background tab or reduced-motion
+ * left whole sections blank. Here the server paints finished content and an
+ * IntersectionObserver simply replays it as an animation on the way in. The
+ * element is below the fold when that happens, so there is nothing to flash.
+ */
+function useRevealOnce<T extends HTMLElement>(attr: string) {
+  const ref = useRef<T>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            // Direct DOM write: no state, so no re-render and no cascade.
+            el.setAttribute(attr, "run");
+            io.disconnect();
+          }
+        }
+      },
+      { rootMargin: "-8% 0px -8% 0px" },
+    );
+
+    io.observe(el);
+    return () => io.disconnect();
+  }, [attr]);
+
+  return ref;
+}
+
+type Tag = "div" | "section" | "li" | "figure" | "ul" | "ol";
 
 /** Fade-and-rise as the block enters the viewport. Runs once. */
 export function Reveal({
@@ -17,25 +72,21 @@ export function Reveal({
   delay?: number;
   y?: number;
   className?: string;
-  as?: "div" | "section" | "li" | "figure";
+  as?: Tag;
 }) {
-  const reduce = useReducedMotion();
-  const Tag = motion[as];
-
-  return (
-    <Tag
-      className={className}
-      initial={reduce ? false : { opacity: 0, y }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-12% 0px -12% 0px" }}
-      transition={{ duration: 0.85, delay, ease: EASE }}
-    >
-      {children}
-    </Tag>
+  const ref = useRevealOnce<HTMLElement>("data-reveal");
+  return createElement(
+    as,
+    {
+      ref,
+      className,
+      style: { "--reveal-delay": `${delay}s`, "--reveal-y": `${y}px` } as CSSProperties,
+    },
+    children,
   );
 }
 
-/** Parent that walks its Reveal children in one after another. */
+/** Parent that walks its children in one after another. */
 export function Stagger({
   children,
   className,
@@ -45,21 +96,23 @@ export function Stagger({
   children: ReactNode;
   className?: string;
   gap?: number;
-  as?: "div" | "ul" | "section";
+  as?: Tag;
 }) {
-  const reduce = useReducedMotion();
-  const Tag = motion[as];
+  const ref = useRevealOnce<HTMLElement>("data-stagger");
 
-  return (
-    <Tag
-      className={className}
-      initial={reduce ? false : "hidden"}
-      whileInView={reduce ? undefined : "shown"}
-      viewport={{ once: true, margin: "-10% 0px" }}
-      variants={{ hidden: {}, shown: { transition: { staggerChildren: gap } } }}
-    >
-      {children}
-    </Tag>
+  // Index each child so CSS can offset its delay.
+  const indexed = Children.map(children, (child, i) =>
+    isValidElement(child)
+      ? cloneElement(child as ReactElement<{ style?: CSSProperties }>, {
+          style: { ...(child.props as { style?: CSSProperties }).style, "--i": i } as CSSProperties,
+        })
+      : child,
+  );
+
+  return createElement(
+    as,
+    { ref, className, style: { "--stagger-gap": `${gap}s` } as CSSProperties },
+    indexed,
   );
 }
 
@@ -68,23 +121,18 @@ export function StaggerItem({
   className,
   y = 22,
   as = "div",
+  style,
 }: {
   children: ReactNode;
   className?: string;
   y?: number;
-  as?: "div" | "li" | "figure";
+  as?: Tag;
+  style?: CSSProperties;
 }) {
-  const Tag = motion[as];
-  return (
-    <Tag
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y },
-        shown: { opacity: 1, y: 0, transition: { duration: 0.75, ease: EASE } },
-      }}
-    >
-      {children}
-    </Tag>
+  return createElement(
+    as,
+    { className, style: { ...style, "--reveal-y": `${y}px` } as CSSProperties },
+    children,
   );
 }
 
@@ -101,38 +149,28 @@ export function WordsUp({
   className?: string;
   delay?: number;
 }) {
-  const reduce = useReducedMotion();
-  if (reduce) return <span className={className}>{text}</span>;
+  const ref = useRevealOnce<HTMLSpanElement>("data-words");
+  const words = text.split(" ");
 
   return (
-    <motion.span
-      className={className}
-      initial="hidden"
-      whileInView="shown"
-      viewport={{ once: true, margin: "-15% 0px" }}
-      variants={{ hidden: {}, shown: { transition: { staggerChildren: 0.055, delayChildren: delay } } }}
-      aria-label={text}
-    >
-      {text.split(" ").map((word, i) => (
-        <span key={`${word}-${i}`} className="inline-block overflow-hidden align-bottom">
-          <motion.span
-            aria-hidden
-            className="inline-block"
-            variants={{
-              hidden: { y: "108%" },
-              shown: { y: 0, transition: { duration: 0.75, ease: EASE } },
-            }}
-          >
-            {word}
-            {i < text.split(" ").length - 1 ? " " : ""}
-          </motion.span>
-        </span>
+    <span ref={ref} className={className} style={{ "--reveal-delay": `${delay}s` } as CSSProperties}>
+      {words.map((word, i) => (
+        <Fragment key={`${word}-${i}`}>
+          <span className="inline-block overflow-hidden align-bottom">
+            <span className="word-rise inline-block" style={{ "--word-i": i } as CSSProperties}>
+              {word}
+            </span>
+          </span>
+          {/* The separator sits *outside* the clipping box. Inside it, the
+              trailing space is collapsed away and words render flush. */}
+          {i < words.length - 1 ? " " : null}
+        </Fragment>
       ))}
-    </motion.span>
+    </span>
   );
 }
 
-/** Gentle vertical drift tied to scroll position. */
+/** Gentle vertical drift tied to scroll position. Enhancement only. */
 export function Parallax({
   children,
   distance = 60,
@@ -173,18 +211,23 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-20% 0px" });
   const reduce = useReducedMotion();
-  const [shown, setShown] = useState(reduce ? to : 0);
+  const [counted, setCounted] = useState(0);
   const spring = useSpring(0, { stiffness: 60, damping: 18 });
 
+  // Until the count is actually running we render the real figure, so the
+  // server, a client without JS and reduced motion all show the number.
+  const counting = inView && !reduce;
+
   useEffect(() => {
-    if (reduce || !inView) return;
+    if (!counting) return;
+    const unsubscribe = spring.on("change", (v) => setCounted(Math.round(v)));
     spring.set(to);
-    return spring.on("change", (v) => setShown(Math.round(v)));
-  }, [inView, reduce, spring, to]);
+    return unsubscribe;
+  }, [counting, spring, to]);
 
   return (
     <span ref={ref} className={className}>
-      {shown.toLocaleString()}
+      {(counting ? counted : to).toLocaleString()}
       {suffix}
     </span>
   );

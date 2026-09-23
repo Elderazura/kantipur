@@ -33,11 +33,11 @@ export default async function CustomPageView() {
         />
         <div className="relative mx-auto flex min-h-[50svh] max-w-6xl flex-col justify-end px-5 pb-12 pt-28 sm:min-h-[56svh] sm:px-10 sm:pb-16 lg:max-w-7xl lg:min-h-[62vh] lg:pb-20">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/55">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/55">
               {t("eyebrow")}
             </p>
           </Reveal>
-          <h1 className="mt-6 max-w-[14ch] font-display text-[clamp(2.2rem,6vw,4.25rem)] leading-[1.04] text-paper">
+          <h1 className="mt-6 max-w-[22ch] font-display text-[clamp(2.2rem,6vw,4.25rem)] leading-[1.04] text-paper">
             <WordsUp text={t("title")} />
           </h1>
           <Reveal delay={0.1}>
@@ -67,12 +67,12 @@ export default async function CustomPageView() {
         <div className="mx-auto grid max-w-6xl lg:max-w-7xl lg:grid-cols-[1fr_1.05fr]">
           <div className="flex flex-col justify-center gap-5 px-5 py-10 sm:px-10 sm:py-12">
             <Reveal>
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                 {t("scaleEyebrow")}
               </p>
               <h2
                 id="custom-scale-heading"
-                className="mt-4 max-w-[14ch] font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.08] text-ink"
+                className="mt-4 max-w-[22ch] font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.08] text-ink"
               >
                 {t("scaleTitle")}
               </h2>
@@ -81,7 +81,7 @@ export default async function CustomPageView() {
               </p>
               <p className="mt-8 font-display text-[clamp(2rem,5vw,3rem)] leading-none text-madder/90">
                 25×40
-                <span className="mt-2 block font-ui text-[0.58rem] tracking-[0.22em] uppercase text-ink-muted">
+                <span className="mt-2 block font-ui text-[0.72rem] tracking-[0.22em] uppercase text-ink-muted">
                   {t("scaleExampleLabel")}
                 </span>
               </p>
@@ -103,7 +103,7 @@ export default async function CustomPageView() {
       <section className="border-b border-rule bg-paper" aria-labelledby="custom-paths-heading">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-24">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
               {t("pathsEyebrow")}
             </p>
             <h2
@@ -182,12 +182,12 @@ export default async function CustomPageView() {
       <section className="border-b border-rule bg-ink text-paper" aria-labelledby="custom-process-heading">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-24">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/45">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
               {t("processEyebrow")}
             </p>
             <h2
               id="custom-process-heading"
-              className="mt-5 max-w-[18ch] font-display text-[clamp(1.75rem,3.8vw,2.75rem)] leading-[1.08]"
+              className="mt-5 max-w-[22ch] font-display text-[clamp(1.75rem,3.8vw,2.75rem)] leading-[1.08]"
             >
               {t("processTitle")}
             </h2>
@@ -267,7 +267,7 @@ export default async function CustomPageView() {
           <div className="absolute inset-0 bg-ink/85" />
         </div>
         <div className="relative mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-24">
-          <h2 className="max-w-[16ch] font-display text-[clamp(1.75rem,3.8vw,2.75rem)] leading-[1.08]">
+          <h2 className="max-w-[20ch] font-display text-[clamp(1.75rem,3.8vw,2.75rem)] leading-[1.08]">
             {t("closingTitle")}
           </h2>
           <p className="mt-6 max-w-xl font-body text-base leading-relaxed text-paper/70 sm:text-lg">

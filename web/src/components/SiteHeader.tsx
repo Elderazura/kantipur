@@ -8,11 +8,14 @@ import { useScrolledPast } from "@/lib/useScrolledPast";
 import LocaleSwitcher from "./LocaleSwitcher";
 import MobileNav from "./MobileNav";
 
+/* Order follows the brand navigation: what you can buy, what we can make for
+   you, how it is made, who makes it. */
 const NAV_ITEMS = [
-  { href: "/heritage", key: "heritage" as const },
   { href: "/collection", key: "collection" as const },
   { href: "/custom", key: "custom" as const },
-  { href: "/contact", key: "contact" as const },
+  { href: "/designers", key: "designers" as const },
+  { href: "/heritage", key: "heritage" as const },
+  { href: "/about", key: "about" as const },
 ];
 
 export default function SiteHeader() {
@@ -29,8 +32,8 @@ export default function SiteHeader() {
     <motion.header
       initial={false}
       animate={{
-        backgroundColor: solid ? "rgba(237,230,217,1)" : "rgba(237,230,217,0)",
-        borderBottomColor: solid ? "rgba(196,184,165,1)" : "rgba(196,184,165,0)",
+        backgroundColor: solid ? "rgba(243,239,231,1)" : "rgba(243,239,231,0)",
+        borderBottomColor: solid ? "rgba(216,208,195,1)" : "rgba(216,208,195,0)",
       }}
       transition={{ duration: reduce ? 0 : 0.45, ease: "easeOut" }}
       className="fixed inset-x-0 top-0 z-40 border-b backdrop-blur-[2px] pt-[env(safe-area-inset-top,0px)]"
@@ -61,7 +64,7 @@ export default function SiteHeader() {
               KANTIPUR
             </span>
             <span
-              className={`mt-1 truncate font-ui text-[0.5rem] tracking-[0.38em] transition-colors duration-500 sm:text-[0.55rem] sm:tracking-[0.42em] ${
+              className={`mt-1 truncate font-ui text-[0.66rem] tracking-[0.38em] transition-colors duration-500 sm:text-[0.74rem] sm:tracking-[0.42em] ${
                 solid ? "text-ink-muted" : "text-paper/70"
               }`}
             >

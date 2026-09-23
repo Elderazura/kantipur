@@ -18,7 +18,7 @@ export default async function EthicalStandards() {
     <section className="border-y border-rule bg-paper" aria-labelledby="standards-heading">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("eyebrow")}
           </p>
         </Reveal>
@@ -26,7 +26,7 @@ export default async function EthicalStandards() {
         <div className="mt-6 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end lg:gap-16">
           <h2
             id="standards-heading"
-            className="max-w-[16ch] font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.08] text-ink"
+            className="max-w-[20ch] font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.08] text-ink"
           >
             <WordsUp text={t("title")} />
           </h2>

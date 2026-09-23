@@ -11,7 +11,7 @@ export default async function PieceStandards() {
     <section className="border-t border-rule bg-surface" aria-labelledby="piece-standards-heading">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-16 lg:max-w-7xl lg:py-20">
         <Reveal>
-          <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+          <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
             {t("standardsEyebrow")}
           </p>
           <h2

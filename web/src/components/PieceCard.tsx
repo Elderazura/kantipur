@@ -63,12 +63,12 @@ export default function PieceCard({ product, featured = false }: PieceCardProps)
         />
 
         {product.knots ? (
-          <span className="absolute start-3 top-3 rounded-full border border-paper/25 bg-ink/45 px-2.5 py-1 font-ui text-[0.58rem] tracking-[0.12em] uppercase text-paper backdrop-blur-[2px]">
+          <span className="absolute start-3 top-3 rounded-full border border-paper/25 bg-ink/45 px-2.5 py-1 font-ui text-[0.72rem] tracking-[0.12em] uppercase text-paper backdrop-blur-[2px]">
             {product.knots} K.N.
           </span>
         ) : null}
 
-        <span className="absolute inset-x-0 bottom-0 translate-y-2 px-4 pb-4 font-ui text-[0.62rem] tracking-[0.16em] uppercase text-paper opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+        <span className="absolute inset-x-0 bottom-0 translate-y-2 px-4 pb-4 font-ui text-[0.74rem] tracking-[0.16em] uppercase text-paper opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           {t("viewPiece")}
           <span aria-hidden className="ms-1.5 inline-block transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1">
             →

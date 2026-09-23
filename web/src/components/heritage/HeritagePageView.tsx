@@ -32,11 +32,11 @@ export default async function HeritagePageView() {
         />
         <div className="relative mx-auto flex min-h-[52svh] max-w-6xl flex-col justify-end px-5 pb-14 pt-28 sm:min-h-[58svh] sm:px-10 sm:pb-20 lg:max-w-7xl lg:min-h-[64vh] lg:pb-24">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/55">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/55">
               {t("heroEyebrow")}
             </p>
           </Reveal>
-          <h1 className="mt-6 max-w-[14ch] font-display text-[clamp(2.2rem,6vw,4.5rem)] leading-[1.04] text-paper">
+          <h1 className="mt-6 max-w-[22ch] font-display text-[clamp(2.2rem,6vw,4.5rem)] leading-[1.04] text-paper">
             <WordsUp text={t("heroTitle")} />
           </h1>
           <Reveal delay={0.12}>
@@ -52,10 +52,10 @@ export default async function HeritagePageView() {
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:grid-cols-[1fr_0.9fr] lg:items-center lg:gap-20 lg:py-32">
           <div>
             <Reveal>
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                 {t("introEyebrow")}
               </p>
-              <h2 className="mt-6 max-w-[16ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+              <h2 className="mt-6 max-w-[20ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
                 {t("introTitle")}
               </h2>
             </Reveal>
@@ -95,12 +95,12 @@ export default async function HeritagePageView() {
       <section className="bg-ink text-paper" aria-labelledby="heritage-timeline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/45">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
               {t("timelineEyebrow")}
             </p>
             <h2
               id="heritage-timeline"
-              className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08]"
+              className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08]"
             >
               {t("timelineTitle")}
             </h2>
@@ -149,10 +149,10 @@ export default async function HeritagePageView() {
 
             <div>
               <Reveal>
-                <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+                <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                   {t("knotEyebrow")}
                 </p>
-                <h2 className="mt-6 max-w-[16ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+                <h2 className="mt-6 max-w-[20ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
                   {t("knotTitle")}
                 </h2>
                 <p className="mt-7 font-body text-lg leading-relaxed text-ink-muted">
@@ -191,10 +191,10 @@ export default async function HeritagePageView() {
       <section className="border-b border-rule bg-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
               {t("loomsEyebrow")}
             </p>
-            <h2 className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+            <h2 className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
               {t("loomsTitle")}
             </h2>
             <p className="mt-7 max-w-2xl font-body text-lg leading-relaxed text-ink-muted">
@@ -212,7 +212,7 @@ export default async function HeritagePageView() {
                 <p className="font-display text-[clamp(2rem,5vw,3rem)] leading-none text-madder">
                   {t(`stat_${key}_value`)}
                 </p>
-                <p className="mt-3 font-ui text-[0.62rem] tracking-[0.18em] uppercase text-ink-muted">
+                <p className="mt-3 font-ui text-[0.74rem] tracking-[0.18em] uppercase text-ink-muted">
                   {t(`stat_${key}_label`)}
                 </p>
               </StaggerItem>
@@ -251,10 +251,10 @@ export default async function HeritagePageView() {
       <section className="border-b border-rule bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
               {t("materialsEyebrow")}
             </p>
-            <h2 className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+            <h2 className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
               {t("materialsTitle")}
             </h2>
             <p className="mt-7 max-w-2xl font-body text-lg leading-relaxed text-ink-muted">
@@ -315,10 +315,10 @@ export default async function HeritagePageView() {
 
           <div>
             <Reveal>
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-paper/45">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
                 {t("peopleEyebrow")}
               </p>
-              <h2 className="mt-6 max-w-[16ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.06]">
+              <h2 className="mt-6 max-w-[20ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.06]">
                 {t("peopleTitle")}
               </h2>
             </Reveal>
@@ -347,10 +347,10 @@ export default async function HeritagePageView() {
       <section className="border-b border-rule bg-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
           <Reveal>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
               {t("housesEyebrow")}
             </p>
-            <h2 className="mt-6 max-w-[18ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+            <h2 className="mt-6 max-w-[22ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
               {t("housesTitle")}
             </h2>
           </Reveal>
@@ -381,7 +381,7 @@ export default async function HeritagePageView() {
               {t("pull")}
               <span className="text-madder">”</span>
             </blockquote>
-            <p className="mt-7 font-ui text-[0.6rem] tracking-[0.26em] uppercase text-ink-muted">
+            <p className="mt-7 font-ui text-[0.66rem] tracking-[0.26em] uppercase text-ink-muted">
               {t("pullAttrib")}
             </p>
           </Reveal>
@@ -391,7 +391,7 @@ export default async function HeritagePageView() {
       {/* Close */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
-          <h2 className="max-w-[16ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
+          <h2 className="max-w-[20ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.08] text-ink">
             {t("ctaTitle")}
           </h2>
           <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-ink-muted">

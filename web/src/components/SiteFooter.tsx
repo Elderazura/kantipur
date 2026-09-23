@@ -6,8 +6,11 @@ import { buildWhatsAppUrl, getWhatsAppNumber } from "@/lib/whatsapp";
 
 const EXPLORE_LINKS = [
   { href: "/collection", key: "collection" as const },
-  { href: "/heritage", key: "heritage" as const },
   { href: "/custom", key: "custom" as const },
+  { href: "/designers", key: "designers" as const },
+  { href: "/hospitality", key: "hospitality" as const },
+  { href: "/heritage", key: "heritage" as const },
+  { href: "/about", key: "about" as const },
   { href: "/contact", key: "contact" as const },
 ] as const;
 
@@ -39,14 +42,16 @@ export default async function SiteFooter() {
                 <span className="truncate font-display text-lg tracking-[0.06em] sm:text-xl">
                   KANTIPUR
                 </span>
-                <span className="mt-1 truncate font-ui text-[0.52rem] tracking-[0.38em] text-paper/55 sm:text-[0.55rem]">
+                <span className="mt-1 truncate font-ui text-[0.66rem] tracking-[0.38em] text-paper/55 sm:text-[0.74rem]">
                   CARPETS
                 </span>
               </span>
             </Link>
 
-            <p className="mt-6 max-w-sm font-body text-sm leading-relaxed text-paper/70 sm:text-[0.95rem]">
-              {tMeta("tagline")}
+            {/* The brand line, set as two statements rather than a sentence. */}
+            <p className="mt-7 max-w-sm font-display text-lg leading-[1.25] text-paper sm:text-xl">
+              <span className="block">{tMeta("brandLine1")}</span>
+              <span className="block text-paper/70">{tMeta("brandLine2")}</span>
             </p>
             <p className="mt-4 max-w-sm font-body text-sm leading-relaxed text-paper/55">
               {tFooter("visitLine")}
@@ -68,7 +73,7 @@ export default async function SiteFooter() {
 
           {/* Explore */}
           <nav aria-label={tFooter("exploreHeading")}>
-            <p className="font-ui text-[0.62rem] tracking-[0.24em] uppercase text-paper/45">
+            <p className="font-ui text-[0.74rem] tracking-[0.24em] uppercase text-paper/45">
               {tFooter("exploreHeading")}
             </p>
             <ul className="mt-5 flex flex-col gap-3 font-ui text-sm tracking-[0.04em] text-paper/70">
@@ -87,18 +92,18 @@ export default async function SiteFooter() {
 
           {/* Reach us */}
           <div>
-            <p className="font-ui text-[0.62rem] tracking-[0.24em] uppercase text-paper/45">
+            <p className="font-ui text-[0.74rem] tracking-[0.24em] uppercase text-paper/45">
               {tFooter("reachHeading")}
             </p>
             <ul className="mt-5 space-y-4 font-body text-sm text-paper/75">
               <li>
-                <p className="font-ui text-[0.58rem] tracking-[0.18em] uppercase text-paper/45">
+                <p className="font-ui text-[0.72rem] tracking-[0.18em] uppercase text-paper/45">
                   {tContact("locationLabel")}
                 </p>
                 <p className="mt-1">{tContact("location")}</p>
               </li>
               <li>
-                <p className="font-ui text-[0.58rem] tracking-[0.18em] uppercase text-paper/45">
+                <p className="font-ui text-[0.72rem] tracking-[0.18em] uppercase text-paper/45">
                   {tContact("phoneLabel")}
                 </p>
                 <a
@@ -109,7 +114,7 @@ export default async function SiteFooter() {
                 </a>
               </li>
               <li>
-                <p className="font-ui text-[0.58rem] tracking-[0.18em] uppercase text-paper/45">
+                <p className="font-ui text-[0.72rem] tracking-[0.18em] uppercase text-paper/45">
                   {tContact("emailLabel")}
                 </p>
                 <div className="mt-1 flex flex-col gap-1">
@@ -144,7 +149,7 @@ export default async function SiteFooter() {
         <div className="mt-12 border-t border-paper/12 pt-8 lg:mt-14">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl space-y-2">
-              <p className="font-ui text-[0.58rem] tracking-[0.14em] uppercase text-paper/40">
+              <p className="font-ui text-[0.72rem] tracking-[0.14em] uppercase text-paper/40">
                 {tFooter("legal")}
               </p>
               <p className="font-body text-xs leading-relaxed text-paper/45">{tFooter("sisterNote")}</p>

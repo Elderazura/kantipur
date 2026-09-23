@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useCallback, useEffect, useId, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
@@ -8,9 +8,11 @@ import { Link, usePathname } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 const NAV_ITEMS = [
-  { href: "/heritage", key: "heritage" as const },
   { href: "/collection", key: "collection" as const },
   { href: "/custom", key: "custom" as const },
+  { href: "/designers", key: "designers" as const },
+  { href: "/heritage", key: "heritage" as const },
+  { href: "/about", key: "about" as const },
   { href: "/contact", key: "contact" as const },
 ];
 
@@ -47,14 +49,30 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
   const pathname = usePathname();
   const panelId = useId();
   const reduce = useReducedMotion();
-  const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  /*
+   * The panel is open only while the route it was opened on is still current,
+   * so navigating closes it without an effect writing state. `mounted` gates
+   * the portal and is read from the environment rather than set in an effect —
+   * both avoid the cascading-render pattern.
+   */
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const open = openedAt !== null && openedAt === pathname;
+  const setOpen = useCallback(
+    (next: boolean | ((v: boolean) => boolean)) => {
+      setOpenedAt((current) => {
+        const isOpen = current !== null && current === pathname;
+        const wanted = typeof next === "function" ? next(isOpen) : next;
+        return wanted ? pathname : null;
+      });
+    },
+    [pathname],
+  );
 
-  useEffect(() => setMounted(true), []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -72,7 +90,7 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [open, setOpen]);
 
   const buttonClass = light
     ? "text-paper hover:text-paper/90"
@@ -105,7 +123,7 @@ export default function MobileNav({ light = false }: { light?: boolean }) {
             className="absolute inset-x-0 top-0 flex max-h-[100dvh] min-h-[100dvh] flex-col bg-paper pt-[env(safe-area-inset-top,0px)] pb-[env(safe-area-inset-bottom,0px)]"
           >
             <div className="mx-auto flex w-full max-w-6xl items-center justify-between border-b border-rule px-5 py-3 sm:px-10">
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                 {t("menuLabel")}
               </p>
               <button

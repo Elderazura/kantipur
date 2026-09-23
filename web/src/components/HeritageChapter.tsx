@@ -25,7 +25,7 @@ export default async function HeritageChapter() {
 
           <dl className="mt-14 grid grid-cols-2 gap-8 border-t border-paper/15 pt-10 sm:grid-cols-3">
             <div>
-              <dt className="font-ui text-[0.65rem] tracking-[0.2em] uppercase text-paper/50">
+              <dt className="font-ui text-[0.72rem] tracking-[0.2em] uppercase text-paper/50">
                 {t("statLoomsLabel")}
               </dt>
               <dd className="mt-2 font-display text-4xl text-paper sm:text-5xl">
@@ -33,7 +33,7 @@ export default async function HeritageChapter() {
               </dd>
             </div>
             <div>
-              <dt className="font-ui text-[0.65rem] tracking-[0.2em] uppercase text-paper/50">
+              <dt className="font-ui text-[0.72rem] tracking-[0.2em] uppercase text-paper/50">
                 {t("statWeaversLabel")}
               </dt>
               <dd className="mt-2 font-display text-4xl text-paper sm:text-5xl">
@@ -41,7 +41,7 @@ export default async function HeritageChapter() {
               </dd>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <dt className="font-ui text-[0.65rem] tracking-[0.2em] uppercase text-paper/50">
+              <dt className="font-ui text-[0.72rem] tracking-[0.2em] uppercase text-paper/50">
                 {t("statDesignsLabel")}
               </dt>
               <dd className="mt-2 font-display text-4xl text-paper sm:text-5xl">

@@ -18,7 +18,7 @@ export default async function RelatedPieces({ products }: RelatedPiecesProps) {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <Reveal>
-              <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
                 {t("relatedEyebrow")}
               </p>
               <h2

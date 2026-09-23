@@ -43,7 +43,7 @@ export default async function MaterialStrip() {
     <section className="border-b border-rule bg-paper">
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 md:py-24 lg:max-w-7xl lg:py-32">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <h2 className="max-w-[14ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
+          <h2 className="max-w-[22ch] font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[1.06] text-ink">
             <WordsUp text={t("materialsTitle")} />
           </h2>
           <Reveal delay={0.1}>
@@ -84,7 +84,7 @@ export default async function MaterialStrip() {
                     <span className="font-display text-lg text-ink transition-colors group-hover:text-madder sm:text-xl">
                       {label}
                     </span>
-                    <span className="font-ui text-[0.65rem] tracking-[0.16em] text-ink-muted tabular-nums">
+                    <span className="font-ui text-[0.72rem] tracking-[0.16em] text-ink-muted tabular-nums">
                       {f.count}
                     </span>
                   </div>

@@ -11,11 +11,11 @@ export default async function AtmosphereHero() {
   return (
     <section
       aria-label={tMeta("siteName")}
-      className="relative isolate min-h-[100svh] min-h-[100dvh] w-full overflow-hidden bg-ink"
+      className="relative isolate min-h-[100svh] min-h-[100dvh] w-full overflow-hidden bg-obsidian"
     >
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_20%,rgba(58,48,40,0.55)_0%,rgba(26,20,16,1)_55%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_20%,rgba(42,40,36,0.55)_0%,rgba(17,17,15,1)_55%)]"
       />
       <HeroBackdrop />
 
@@ -23,11 +23,11 @@ export default async function AtmosphereHero() {
           A wedge from the lower-left carries the copy; the rest opens up. */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(to_top,rgba(26,20,16,0.92)_0%,rgba(26,20,16,0.55)_26%,rgba(26,20,16,0.12)_55%,rgba(26,20,16,0.28)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(to_top,rgba(17,17,15,0.92)_0%,rgba(17,17,15,0.55)_26%,rgba(17,17,15,0.12)_55%,rgba(17,17,15,0.28)_100%)]"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(105deg,rgba(26,20,16,0.72)_0%,rgba(26,20,16,0.28)_38%,transparent_66%)]"
+        className="absolute inset-0 bg-[linear-gradient(105deg,rgba(17,17,15,0.72)_0%,rgba(17,17,15,0.28)_38%,transparent_66%)]"
       />
 
       <HeroCopy

@@ -1,13 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #ede6d9;
-  --color-ink: #1a1410;
-  --color-ink-muted: #5c534a;
-  --color-madder: #6b1e23;
-  --color-madder-deep: #3f1014;
-  --color-rule: #c4b8a5;
-  --color-surface: #f7f1e6;
+  /* Ivory / natural wool ground, deep charcoal text, muted brass accent.
+     Brass is used sparingly: rules, marks, and display accents only. */
+  --color-paper: #f3efe7; /* ivory — primary ground */
+  --color-surface: #faf7f1; /* a shade above paper, for panels */
+  --color-stone: #d8d0c3; /* warm stone — secondary ground */
+  --color-ink: #191816; /* deep charcoal — 15.5:1 on ivory */
+  --color-ink-muted: #57504a; /* 6.9:1 on ivory */
+  --color-rule: #d8d0c3; /* hairlines, dividers */
+  --color-obsidian: #11110f; /* dark sections */
+
+  /* Brass comes in two weights. The brand brass is 3.1:1 on ivory — fine for
+     rules and large display, below AA for body-size text — so links and small
+     labels use the darkened one at 5.2:1. */
+  --color-brass: #9a8460;
+  --color-brass-ink: #75613c;
+
+  /* Existing components reference `madder` for the accent. Kept as an alias so
+     the accent moves in one place rather than across every component. */
+  --color-madder: #75613c;
+  --color-madder-deep: #5c4c2f;
 }
 
 /* Inline so theme utilities don't redefine next/font's --font-* on :root */
@@ -112,6 +125,44 @@ h3 {
 
 .hero-rise {
   animation: hero-rise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Scroll reveals. The base state is finished content; these rules only apply
+   once the observer marks an element as in view, so nothing depends on JS to
+   be readable. */
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 26px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes words-in {
+  from {
+    transform: translateY(108%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+[data-reveal="run"] {
+  animation: reveal-in 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: var(--reveal-delay, 0s);
+}
+
+[data-stagger="run"] > * {
+  animation: reveal-in 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: calc(var(--stagger-gap, 0.09s) * var(--i, 0));
+}
+
+[data-words="run"] .word-rise {
+  animation: words-in 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: calc(var(--reveal-delay, 0s) + var(--word-i, 0) * 0.055s);
 }
 
 /* Collection grid: soft crossfade when filter results remount. */

@@ -116,7 +116,7 @@ export default function FeaturedGallery({
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-10 sm:py-16 lg:max-w-7xl lg:py-28">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="font-ui text-[0.65rem] tracking-[0.28em] uppercase text-ink-muted">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-ink-muted">
               {eyebrow}
             </p>
             <h2 className="mt-3 text-balance font-display text-[clamp(1.75rem,4vw,2.25rem)] tracking-wide text-ink">
@@ -161,7 +161,7 @@ export default function FeaturedGallery({
                   >
                     <div className="flex items-center gap-3">
                       <span className="h-px w-8 bg-madder/70" aria-hidden />
-                      <span className="font-ui text-[0.6rem] tabular-nums tracking-[0.22em] uppercase text-ink-muted">
+                      <span className="font-ui text-[0.66rem] tabular-nums tracking-[0.22em] uppercase text-ink-muted">
                         {String(active + 1).padStart(2, "0")}
                         <span className="text-rule"> / </span>
                         {String(count).padStart(2, "0")}
@@ -302,7 +302,7 @@ export default function FeaturedGallery({
                     />
                   </span>
                   <span
-                    className={`relative z-10 mt-2 block truncate font-ui text-[0.58rem] tracking-[0.1em] uppercase sm:text-[0.62rem] ${
+                    className={`relative z-10 mt-2 block truncate font-ui text-[0.72rem] tracking-[0.1em] uppercase sm:text-[0.74rem] ${
                       on ? "text-ink" : "text-ink-muted group-hover:text-ink"
                     }`}
                   >
