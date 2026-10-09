@@ -1,5 +1,4 @@
-import fs from "fs";
-import path from "path";
+import catalog from "../../data/catalog.json";
 import type { Product, ProductImage } from "@/types/product";
 import {
   fibresOf,
@@ -13,17 +12,6 @@ const PLACEHOLDER_RE = /LALIT-AGRAWAL-PHOTO/i;
 
 export function isPlaceholderImage(localPath: string): boolean {
   return PLACEHOLDER_RE.test(localPath);
-}
-
-function catalogPath() {
-  const candidates = [
-    path.resolve(process.cwd(), "data/catalog.json"),
-    path.resolve(process.cwd(), "../data/catalog.json"),
-  ];
-  for (const candidate of candidates) {
-    if (fs.existsSync(candidate)) return candidate;
-  }
-  return candidates[0];
 }
 
 export function normalizeProduct(raw: Record<string, unknown>): Product {
@@ -68,8 +56,7 @@ let cache: Product[] | null = null;
 
 export function getAllProducts(): Product[] {
   if (cache) return cache;
-  const json = JSON.parse(fs.readFileSync(catalogPath(), "utf8"));
-  cache = (json.products as Record<string, unknown>[]).map(normalizeProduct);
+  cache = (catalog.products as Record<string, unknown>[]).map(normalizeProduct);
   return cache;
 }
 

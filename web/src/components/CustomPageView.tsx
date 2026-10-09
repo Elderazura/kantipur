@@ -92,7 +92,7 @@ export default async function CustomPageView() {
               src="/assets/images/custom/scale-weaving.jpg"
               alt={t("scaleImageAlt")}
               fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 640px"
               className="object-cover object-center"
             />
           </Reveal>
@@ -121,7 +121,7 @@ export default async function CustomPageView() {
                   src="/assets/images/custom/path-online.jpg"
                   alt={t("pathOnlineImageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
@@ -151,7 +151,7 @@ export default async function CustomPageView() {
                   src="/assets/images/custom/path-visit.jpg"
                   alt={t("pathVisitImageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                   className="object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
@@ -208,7 +208,7 @@ export default async function CustomPageView() {
                     src={image}
                     alt={t(`${key}ImageAlt`)}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 30vw"
+                    sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 30vw, 400px"
                     className="object-cover"
                   />
                   <span className="absolute start-4 top-4 font-display text-2xl text-paper drop-shadow-sm">
@@ -246,7 +246,7 @@ export default async function CustomPageView() {
                 src="/assets/images/custom/story-fibres.jpg"
                 alt={t("imageAlt")}
                 fill
-                sizes="(max-width: 1024px) 100vw, 46vw"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                 className="object-cover"
               />
             </div>

@@ -5,8 +5,16 @@ import { useTranslations } from "next-intl";
 import { Reveal, Stagger, StaggerItem, WordsUp } from "./motion/Reveal";
 
 const FILMS = [
-  { key: "manufacturing", src: "/assets/videos/manufacturing.mp4" },
-  { key: "packaging", src: "/assets/videos/packaging.mp4" },
+  {
+    key: "manufacturing",
+    src: "/assets/videos/manufacturing.mp4",
+    poster: "/assets/images/site/film-manufacturing.jpg",
+  },
+  {
+    key: "packaging",
+    src: "/assets/videos/packaging.mp4",
+    poster: "/assets/images/site/film-packaging.jpg",
+  },
 ] as const;
 
 type FilmKey = (typeof FILMS)[number]["key"];
@@ -14,6 +22,7 @@ type FilmKey = (typeof FILMS)[number]["key"];
 function FilmPlayer({
   filmKey,
   src,
+  poster,
   title,
   caption,
   pauseOthers,
@@ -21,6 +30,7 @@ function FilmPlayer({
 }: {
   filmKey: FilmKey;
   src: string;
+  poster: string;
   title: string;
   caption: string;
   pauseOthers: (active: FilmKey) => void;
@@ -44,7 +54,8 @@ function FilmPlayer({
           src={src}
           controls
           playsInline
-          preload="metadata"
+          poster={poster}
+          preload="none"
           aria-label={title}
           onPlay={() => pauseOthers(filmKey)}
           className="aspect-video w-full object-cover"
@@ -100,11 +111,12 @@ export default function WorkshopFilms() {
           className="mt-12 grid gap-8 sm:mt-16 lg:grid-cols-2 lg:gap-10"
           gap={0.1}
         >
-          {FILMS.map(({ key, src }, index) => (
+          {FILMS.map(({ key, src, poster }, index) => (
             <StaggerItem as="li" key={key} className={index > 0 ? "hidden md:block" : undefined}>
               <FilmPlayer
                 filmKey={key}
                 src={src}
+                poster={poster}
                 title={t(`${key}Title`)}
                 caption={t(`${key}Caption`)}
                 pauseOthers={pauseOthers}

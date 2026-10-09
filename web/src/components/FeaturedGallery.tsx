@@ -250,7 +250,7 @@ export default function FeaturedGallery({
                         alt={piece.name}
                         fill
                         priority={active === 0}
-                        sizes="(max-width: 1024px) 100vw, 52vw"
+                        sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 52vw, 680px"
                         className="object-cover transition-transform duration-700 motion-safe:group-hover:scale-[1.02]"
                       />
                       <span

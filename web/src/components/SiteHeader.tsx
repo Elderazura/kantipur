@@ -50,6 +50,7 @@ export default function SiteHeader() {
             alt=""
             width={210}
             height={98}
+            sizes="80px"
             priority
             className={`h-7 w-auto shrink-0 transition-[filter,opacity] duration-500 sm:h-9 ${
               solid ? "" : "brightness-0 invert opacity-90"

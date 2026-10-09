@@ -83,7 +83,7 @@ export default async function AboutPage({
                 src="/assets/images/site/Wool-Silk-scaled.jpg"
                 alt={t("imageAlt")}
                 fill
-                sizes="(max-width: 1024px) 100vw, 46vw"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                 className="object-cover"
               />
             </div>

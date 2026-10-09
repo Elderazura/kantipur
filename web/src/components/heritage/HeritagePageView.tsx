@@ -83,7 +83,7 @@ export default async function HeritagePageView() {
                 src="/assets/images/site/IMG_9255-scaled.jpg"
                 alt={t("introImageAlt")}
                 fill
-                sizes="(max-width: 1024px) 100vw, 42vw"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 42vw, 540px"
                 className="object-cover"
               />
             </div>
@@ -141,7 +141,7 @@ export default async function HeritagePageView() {
                   src="/assets/images/site/Wool-Silk-scaled.jpg"
                   alt={t("knotImageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                   className="object-cover"
                 />
               </div>
@@ -238,7 +238,7 @@ export default async function HeritagePageView() {
                   src="/assets/images/site/IMG_9277-scaled.jpg"
                   alt={t("loomsImageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
                   className="object-cover"
                 />
               </div>
@@ -306,7 +306,7 @@ export default async function HeritagePageView() {
                   src="/assets/images/site/IMG_9255-scaled.jpg"
                   alt={t("peopleImageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 48vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"
                   className="object-cover"
                 />
               </Parallax>

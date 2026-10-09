@@ -70,7 +70,7 @@ export default async function MaterialStrip() {
                         src={cover}
                         alt=""
                         fill
-                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
+                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, (max-width: 1280px) 22vw, 300px"
                         className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] motion-safe:group-hover:scale-[1.06]"
                       />
                     ) : null}

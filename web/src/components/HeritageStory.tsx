@@ -50,7 +50,7 @@ export default async function HeritageStory() {
                 src="/assets/images/site/IMG_9255-scaled.jpg"
                 alt={t("imageAlt")}
                 fill
-                sizes="(max-width: 1024px) 100vw, 52vw"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 52vw, 680px"
                 className="object-cover"
               />
             </Parallax>

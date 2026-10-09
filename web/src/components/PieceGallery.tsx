@@ -26,7 +26,7 @@ export default function PieceGallery({ images, name }: PieceGalleryProps) {
           alt={current.alt || name}
           fill
           priority
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 600px"
           className="object-cover"
         />
       </div>

@@ -3,7 +3,7 @@
  "scraped": "2026-08-27",
  "currency": "NPR",
  "counts": {
-  "products": 69,
+  "products": 87,
   "categories": 25,
   "tags": 36,
   "images": 217,
@@ -182,7 +182,12 @@
    "quality": "60 K.N.",
    "colour": null,
    "size": "170x240 CM",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/04/wmremove-transformed-2.png",
@@ -217,12 +222,24 @@
    ],
    "tags": [],
    "design_no": "TC 6022",
-   "material": null,
-   "quality": "80 K.N. NATURAL NETTLE/ BLEACH NETTLE",
+   "material": "Nettle Bleach Nettle",
+   "quality": "100 K.N.",
    "colour": "NATURAL WHITE",
    "size": "300x400cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "300 X 400",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/80-k-n-natural-nettle-bleach-nettle-carpet/o-235-1.jpg",
+     "alt": "O 235 \u00b7 Nettle Bleach Nettle \u00b7 300 x 400 cm",
+     "width": 2400,
+     "height": 1762
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/03/IMG-20231113-WA0022.jpg",
      "local": "assets/images/products/80-k-n-natural-nettle-bleach-nettle-carpet/IMG-20231113-WA0022.jpg",
@@ -238,7 +255,7 @@
      "height": 728
     }
    ],
-   "primary_image": "assets/images/products/80-k-n-natural-nettle-bleach-nettle-carpet/IMG-20231113-WA0022.jpg"
+   "primary_image": "assets/images/products/80-k-n-natural-nettle-bleach-nettle-carpet/o-235-1.jpg"
   },
   {
    "id": 3019,
@@ -260,7 +277,12 @@
    "quality": "80 K.N. BLEACH NETTLE",
    "colour": "WHITE",
    "size": "300x400cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "300 X 400",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/03/LALIT-AGRAWAL-PHOTO-1.jpg",
@@ -380,10 +402,10 @@
    ],
    "tags": [],
    "design_no": "TC 7075",
-   "material": null,
+   "material": "Sumakh Hemp Bleach Hemp",
    "quality": "80 K.N. HEMP SUMAKH (DOUBLE WASH)",
    "colour": "NATURAL",
-   "size": null,
+   "size": "140 x 200 cm",
    "sizes": [
     {
      "size": "500 x 700",
@@ -391,6 +413,13 @@
     }
    ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/80-k-n-hemp-sumakh-carpet/r-150-1.jpg",
+     "alt": "R 150 \u00b7 Sumakh Hemp Bleach Hemp \u00b7 140 x 200 cm",
+     "width": 2269,
+     "height": 1936
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/03/sumakh-1.jpg",
      "local": "assets/images/products/80-k-n-hemp-sumakh-carpet/sumakh-1.jpg",
@@ -406,7 +435,7 @@
      "height": 902
     }
    ],
-   "primary_image": "assets/images/products/80-k-n-hemp-sumakh-carpet/sumakh-1.jpg"
+   "primary_image": "assets/images/products/80-k-n-hemp-sumakh-carpet/r-150-1.jpg"
   },
   {
    "id": 3008,
@@ -623,7 +652,12 @@
    "quality": "100 Knot",
    "colour": "mix",
    "size": "125x185cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "125 X 185",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/fnqakvs7exrmt0cwhtf8q8gzmw.png",
@@ -669,7 +703,12 @@
    "quality": "100 Knot",
    "colour": "Mix",
    "size": "142x198cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 198",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/0t5zk9z1t9rmt0cwht893zhydm.png",
@@ -715,7 +754,12 @@
    "quality": "100 Knot",
    "colour": "Burnt Orange",
    "size": "124x187cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "124 X 187",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/wmremove-transformed-2.png",
@@ -761,7 +805,12 @@
    "quality": "Kilim Bleach Nettle",
    "colour": "Mix",
    "size": "143x200cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "143 X 200",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/wmremove-transformed-1.png",
@@ -807,7 +856,12 @@
    "quality": "100Knot",
    "colour": "Green",
    "size": "380x550cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "380 X 550",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/removed-ai.png",
@@ -839,7 +893,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "170x240cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/upscalemedia-transformed-1-scaled.png",
@@ -878,7 +937,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "170x240cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-19-at-2.36.32-PM.jpeg",
@@ -905,13 +969,25 @@
     }
    ],
    "tags": [],
-   "design_no": null,
+   "design_no": "TC 7054",
    "material": "100% Silk",
-   "quality": "100 KNOT",
+   "quality": "100 K.N.",
    "colour": "Mix",
    "size": "170x240cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/q-120/q-120-1.jpg",
+     "alt": "Q 120 \u00b7 100% Silk \u00b7 170 x 240 cm",
+     "width": 1871,
+     "height": 1299
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-19-at-2.48.00-PM.jpeg",
      "local": "assets/images/products/q-120/WhatsApp-Image-2026-02-19-at-2.48.00-PM.jpeg",
@@ -920,7 +996,7 @@
      "height": 1120
     }
    ],
-   "primary_image": "assets/images/products/q-120/WhatsApp-Image-2026-02-19-at-2.48.00-PM.jpeg"
+   "primary_image": "assets/images/products/q-120/q-120-1.jpg"
   },
   {
    "id": 2966,
@@ -942,7 +1018,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "200x300cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "200 X 300",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-2.50.16-PM.jpeg",
@@ -974,7 +1055,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "240x240cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "240 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-1.48.07-PM.jpeg",
@@ -1006,7 +1092,12 @@
    "quality": "100 KNOT",
    "colour": "Light honey",
    "size": "250x350cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "250 X 350",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.03.29-PM.jpeg",
@@ -1035,11 +1126,23 @@
    "tags": [],
    "design_no": "TC 4001",
    "material": "Wool Nettle Loop Cut",
-   "quality": "100 KNOT",
+   "quality": "100 K.N.",
    "colour": "Brown",
    "size": "240x320cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "240 X 320",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-1042/l-1042-1.jpg",
+     "alt": "L 1042 \u00b7 Wool Nettle Loop Cut \u00b7 240 x 320 cm",
+     "width": 1570,
+     "height": 1044
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.02.08-PM.jpeg",
      "local": "assets/images/products/l-1042/WhatsApp-Image-2026-02-18-at-12.02.08-PM.jpeg",
@@ -1048,7 +1151,7 @@
      "height": 1044
     }
    ],
-   "primary_image": "assets/images/products/l-1042/WhatsApp-Image-2026-02-18-at-12.02.08-PM.jpeg"
+   "primary_image": "assets/images/products/l-1042/l-1042-1.jpg"
   },
   {
    "id": 2962,
@@ -1067,11 +1170,23 @@
    "tags": [],
    "design_no": "TC 3078",
    "material": "Wool linen",
-   "quality": "100 KNOT",
+   "quality": "100 K.N.",
    "colour": "Silver",
    "size": "250x300cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-953/l-953-1.jpg",
+     "alt": "L 953 \u00b7 Wool Linen Bamboo \u00b7 250 x 300 cm",
+     "width": 1313,
+     "height": 981
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.01.45-PM.jpeg",
      "local": "assets/images/products/l-953/WhatsApp-Image-2026-02-18-at-12.01.45-PM.jpeg",
@@ -1080,7 +1195,7 @@
      "height": 981
     }
    ],
-   "primary_image": "assets/images/products/l-953/WhatsApp-Image-2026-02-18-at-12.01.45-PM.jpeg"
+   "primary_image": "assets/images/products/l-953/l-953-1.jpg"
   },
   {
    "id": 2960,
@@ -1102,7 +1217,12 @@
    "quality": "100 KNOT",
    "colour": "Light Rose",
    "size": "250x300cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.01.31-PM.jpeg",
@@ -1131,11 +1251,23 @@
    "tags": [],
    "design_no": "TC 3031",
    "material": "Wool silk",
-   "quality": "100 KNOT",
+   "quality": "100 K.N.",
    "colour": "Blue",
    "size": "250x300cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-133/l-133-1.jpg",
+     "alt": "L 133 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1797
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.01.18-PM.jpeg",
      "local": "assets/images/products/l-133/WhatsApp-Image-2026-02-18-at-12.01.18-PM.jpeg",
@@ -1144,7 +1276,7 @@
      "height": 1197
     }
    ],
-   "primary_image": "assets/images/products/l-133/WhatsApp-Image-2026-02-18-at-12.01.18-PM.jpeg"
+   "primary_image": "assets/images/products/l-133/l-133-1.jpg"
   },
   {
    "id": 2957,
@@ -1166,7 +1298,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "170x240cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.00.40-PM.jpeg",
@@ -1198,7 +1335,12 @@
    "quality": "100 KNOT",
    "colour": "Red",
    "size": "250x300cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-18-at-12.00.25-PM.jpeg",
@@ -1230,7 +1372,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-6.jpeg",
@@ -1262,7 +1409,12 @@
    "quality": "100 KNOT",
    "colour": "Black and White",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-5.jpeg",
@@ -1294,7 +1446,12 @@
    "quality": "100 KNOT",
    "colour": "Black",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-4.jpeg",
@@ -1326,7 +1483,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-3.jpeg",
@@ -1358,7 +1520,12 @@
    "quality": "100 KNOT",
    "colour": "Grey",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-2.jpeg",
@@ -1390,7 +1557,12 @@
    "quality": "100 KNOT",
    "colour": "Mix",
    "size": "60x90cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "60 X 90",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2026/02/sample-1-1.jpeg",
@@ -1435,7 +1607,12 @@
    "quality": "100 knots",
    "colour": "Honey",
    "size": "183 x 267 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "183 X 267",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/11/b1.jpg",
@@ -1494,7 +1671,12 @@
    "quality": "100 Knots",
    "colour": "Camel",
    "size": "185 x 268 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "185 X 268",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/11/A1.jpg",
@@ -1553,7 +1735,12 @@
    "quality": "80 Knot",
    "colour": "Black",
    "size": "177 x 240 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "177 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/bl.jpg",
@@ -1612,7 +1799,12 @@
    "quality": "100 Knot",
    "colour": "D.Beige",
    "size": "140 x 199 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "140 X 199",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/go.jpg",
@@ -1671,7 +1863,12 @@
    "quality": "80 Knot",
    "colour": "Mint",
    "size": "175 x 236 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "175 X 236",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/gb1.jpg",
@@ -1730,7 +1927,12 @@
    "quality": "100 knots",
    "colour": "Mix",
    "size": "252 x 306 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "252 X 306",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/7.jpg",
@@ -1789,7 +1991,12 @@
    "quality": "80 Knots",
    "colour": "Natural",
    "size": "170 x 236 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 236",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/line-1.jpg",
@@ -1848,7 +2055,12 @@
    "quality": "100 knots",
    "colour": "Mix",
    "size": "183 x 279 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "183 X 279",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/m1.jpg",
@@ -1907,7 +2119,12 @@
    "quality": "80 Knots",
    "colour": "Beige",
    "size": "173 x 240 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "173 X 240",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/g11.jpg",
@@ -1966,7 +2183,12 @@
    "quality": "100 Knots",
    "colour": "Natural",
    "size": "152 x 206 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "152 X 206",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/w1.jpg",
@@ -2025,7 +2247,12 @@
    "quality": "100 Knots",
    "colour": "Natural",
    "size": "152 x 198 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "152 X 198",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/l1.jpg",
@@ -2079,13 +2306,32 @@
      "name": "Wool Silk"
     }
    ],
-   "design_no": null,
+   "design_no": "TC 2904",
    "material": "Wool Silk",
-   "quality": "100 Knots",
+   "quality": "100 K.N.",
    "colour": "Rust",
    "size": "143 x 200 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "143 X 200",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l946-rust-wool-silk-carpet/l-946-1.jpg",
+     "alt": "L 946 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 2400,
+     "height": 1793
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/l946-rust-wool-silk-carpet/l-946-2.jpg",
+     "alt": "L 946 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 1818,
+     "height": 1936
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/ru1.jpg",
      "local": "assets/images/products/l946-rust-wool-silk-carpet/ru1.jpg",
@@ -2108,7 +2354,7 @@
      "height": 720
     }
    ],
-   "primary_image": "assets/images/products/l946-rust-wool-silk-carpet/ru1.jpg"
+   "primary_image": "assets/images/products/l946-rust-wool-silk-carpet/l-946-1.jpg"
   },
   {
    "id": 1750,
@@ -2143,7 +2389,12 @@
    "quality": "100 Knots",
    "colour": "Silver",
    "size": "142 x 198 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 198",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/gg1.jpg",
@@ -2202,7 +2453,12 @@
    "quality": "100 Knots",
    "colour": "Brown",
    "size": "153 x 197 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "153 X 197",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/z1.jpg",
@@ -2261,7 +2517,12 @@
    "quality": "100 Knots",
    "colour": "Green",
    "size": "140 x 200 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "140 X 200",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/G1.jpg",
@@ -2320,7 +2581,12 @@
    "quality": "80 Knots",
    "colour": "Orange",
    "size": "172 x 244 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "172 X 244",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/o1.jpg",
@@ -2383,7 +2649,12 @@
    "quality": "80KPSI",
    "colour": "Natural and White",
    "size": "300x400cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "300 X 400",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/sp.jpg",
@@ -2442,7 +2713,12 @@
    "quality": "100 knots",
    "colour": "Red",
    "size": "140 x 201 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "140 X 201",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/red.jpg",
@@ -2501,7 +2777,12 @@
    "quality": "100 knots",
    "colour": "Silver",
    "size": "142 x 198 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 198",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/nn.jpg",
@@ -2560,7 +2841,12 @@
    "quality": "100 knots",
    "colour": "Black",
    "size": "145 x 200 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "145 X 200",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/b1.jpg",
@@ -2619,7 +2905,12 @@
    "quality": "100 Knots",
    "colour": "Brown",
    "size": "142 x 223 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 223",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/kk.jpg",
@@ -2678,7 +2969,12 @@
    "quality": "80 Knot",
    "colour": "Red",
    "size": "176 x 241 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "176 X 241",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/i1.jpg",
@@ -2737,7 +3033,12 @@
    "quality": "100 Knot",
    "colour": "White",
    "size": "170 x 227 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 227",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/12.jpg",
@@ -2796,7 +3097,12 @@
    "quality": "80 Knot",
    "colour": "Terracotta",
    "size": "176 x 239 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "176 X 239",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/08/12.jpeg",
@@ -2855,7 +3161,12 @@
    "quality": "100 Knot",
    "colour": "Silver and Black",
    "size": "140 x 194 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "140 X 194",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/6.jpg",
@@ -2914,7 +3225,12 @@
    "quality": "80 Knots",
    "colour": "Natural",
    "size": "171 x 237 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "171 X 237",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/9.jpg",
@@ -2973,7 +3289,12 @@
    "quality": "80 Knot",
    "colour": "Red",
    "size": "170 x 239 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 239",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/10.jpg",
@@ -3032,7 +3353,12 @@
    "quality": "100 Knots",
    "colour": "Black",
    "size": "143 x 200 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "143 X 200",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/black-mix.jpg",
@@ -3091,7 +3417,12 @@
    "quality": "80 Knot",
    "colour": "Natural",
    "size": "167 x 239 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "167 X 239",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/11.jpg",
@@ -3150,7 +3481,12 @@
    "quality": "80 Knot",
    "colour": "Gold",
    "size": "170 x 239 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "170 X 239",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/13.jpg",
@@ -3204,13 +3540,25 @@
      "name": "Silver"
     }
    ],
-   "design_no": null,
+   "design_no": "TC 2928",
    "material": "Linen Bamboo",
-   "quality": "100 Knots",
+   "quality": "100 K.N.",
    "colour": "Silver",
    "size": "142 x 199 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 199",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/k851-silver-linen-bamboo-carpet/k-851-1.jpg",
+     "alt": "K 851 \u00b7 Wool Linen Bamboo \u00b7 140 x 200 cm",
+     "width": 1740,
+     "height": 1936
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/08/2.jpeg",
      "local": "assets/images/products/k851-silver-linen-bamboo-carpet/2.jpeg",
@@ -3233,7 +3581,7 @@
      "height": null
     }
    ],
-   "primary_image": "assets/images/products/k851-silver-linen-bamboo-carpet/2.jpeg"
+   "primary_image": "assets/images/products/k851-silver-linen-bamboo-carpet/k-851-1.jpg"
   },
   {
    "id": 1591,
@@ -3263,13 +3611,25 @@
      "name": "Carpets"
     }
    ],
-   "design_no": null,
+   "design_no": "TC 2802",
    "material": "100% Pashmina",
-   "quality": "100 Knots",
+   "quality": "100 K.N.",
    "colour": "Silver",
    "size": "140 x 202 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "140 X 202",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/4368-terracotta-hemp-wool-carpet/j-972-1.jpg",
+     "alt": "J 972 \u00b7 100% Pashmina \u00b7 140 x 200 cm",
+     "width": 2400,
+     "height": 1654
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/10/1-1.jpg",
      "local": "assets/images/products/4368-terracotta-hemp-wool-carpet/1-1.jpg",
@@ -3292,7 +3652,7 @@
      "height": 720
     }
    ],
-   "primary_image": "assets/images/products/4368-terracotta-hemp-wool-carpet/1-1.jpg"
+   "primary_image": "assets/images/products/4368-terracotta-hemp-wool-carpet/j-972-1.jpg"
   },
   {
    "id": 1588,
@@ -3327,7 +3687,12 @@
    "quality": "100 Knots",
    "colour": "Natural",
    "size": "142 x 201 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "142 X 201",
+     "pcs": 1
+    }
+   ],
    "images": [
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/08/7.jpeg",
@@ -3381,13 +3746,32 @@
      "name": "Wool Silk"
     }
    ],
-   "design_no": null,
+   "design_no": "TC 3040",
    "material": "Wool Silk",
-   "quality": "100 Knots",
+   "quality": "100 K.N.",
    "colour": "Blue",
    "size": "143 x 199 cm",
-   "sizes": null,
+   "sizes": [
+    {
+     "size": "143 X 199",
+     "pcs": 1
+    }
+   ],
    "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/tc3040-blue-wool-silk-carpet/l-305-1.jpg",
+     "alt": "L 305 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 2400,
+     "height": 1793
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/tc3040-blue-wool-silk-carpet/l-305-2.jpg",
+     "alt": "L 305 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 1822,
+     "height": 1870
+    },
     {
      "url": "https://kantipurcarpets.com/wp-content/uploads/2021/08/6.jpeg",
      "local": "assets/images/products/tc3040-blue-wool-silk-carpet/6.jpeg",
@@ -3410,7 +3794,708 @@
      "height": null
     }
    ],
-   "primary_image": "assets/images/products/tc3040-blue-wool-silk-carpet/6.jpeg"
+   "primary_image": "assets/images/products/tc3040-blue-wool-silk-carpet/l-305-1.jpg"
+  },
+  {
+   "id": 3045,
+   "name": "K 1772 Brown 100% Silk Carpet",
+   "slug": "k-1772",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/k-1772/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "silk",
+     "name": "100% Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 3003",
+   "material": "100% Silk",
+   "quality": "100 K.N.",
+   "colour": "Brown",
+   "size": "140 x 200 cm",
+   "sizes": [
+    {
+     "size": "140 X 200",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/k-1772/k-1772-1.jpg",
+     "alt": "K 1772 \u00b7 100% Silk \u00b7 140 x 200 cm",
+     "width": 1936,
+     "height": 1936
+    }
+   ],
+   "primary_image": "assets/images/products/k-1772/k-1772-1.jpg"
+  },
+  {
+   "id": 3046,
+   "name": "K 937 Grey Beige Bamboo Carpet",
+   "slug": "k-937",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/k-937/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "bamboo",
+     "name": "100% Bamboo"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "Bamboo",
+   "quality": "100 K.N.",
+   "colour": "Grey Beige",
+   "size": "140 x 200 cm",
+   "sizes": [
+    {
+     "size": "140 X 200",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/k-937/k-937-1.jpg",
+     "alt": "K 937 \u00b7 Bamboo \u00b7 140 x 200 cm",
+     "width": 1780,
+     "height": 1870
+    }
+   ],
+   "primary_image": "assets/images/products/k-937/k-937-1.jpg"
+  },
+  {
+   "id": 3047,
+   "name": "KCC 138 100% Silk Carpet",
+   "slug": "kcc-138",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/kcc-138/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "silk",
+     "name": "100% Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "100% Silk",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-138/kcc-138-1.jpg",
+     "alt": "KCC 138 \u00b7 100% Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-138/kcc-138-2.jpg",
+     "alt": "KCC 138 \u00b7 100% Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/kcc-138/kcc-138-1.jpg"
+  },
+  {
+   "id": 3048,
+   "name": "KCC 143 Wool Silk Carpet",
+   "slug": "kcc-143",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/kcc-143/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-143/kcc-143-1.jpg",
+     "alt": "KCC 143 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/kcc-143/kcc-143-1.jpg"
+  },
+  {
+   "id": 3049,
+   "name": "KCC 144 Wool Silk Carpet",
+   "slug": "kcc-144",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/kcc-144/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "250 x 350 cm",
+   "sizes": [
+    {
+     "size": "250 X 350",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-144/kcc-144-1.jpg",
+     "alt": "KCC 144 \u00b7 Wool Silk \u00b7 250 x 350 cm",
+     "width": 2400,
+     "height": 1600
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-144/kcc-144-2.jpg",
+     "alt": "KCC 144 \u00b7 Wool Silk \u00b7 250 x 350 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/kcc-144/kcc-144-1.jpg"
+  },
+  {
+   "id": 3050,
+   "name": "KCC 20 Red Black Linen Carpet",
+   "slug": "kcc-20",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/kcc-20/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-linen",
+     "name": "Wool linen"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 2714",
+   "material": "Linen",
+   "quality": "100 K.N.",
+   "colour": "Red Black",
+   "size": "140 x 200 cm",
+   "sizes": [
+    {
+     "size": "140 X 200",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/kcc-20/kcc-20-1.jpg",
+     "alt": "KCC 20 \u00b7 Linen \u00b7 140 x 200 cm",
+     "width": 1953,
+     "height": 1936
+    }
+   ],
+   "primary_image": "assets/images/products/kcc-20/kcc-20-1.jpg"
+  },
+  {
+   "id": 3051,
+   "name": "L 691 Bg Wool Silk Carpet",
+   "slug": "l-691",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/l-691/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 3062",
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": "Bg",
+   "size": "170 x 240 cm",
+   "sizes": [
+    {
+     "size": "170 X 240",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-691/l-691-1.jpg",
+     "alt": "L 691 \u00b7 Wool Silk \u00b7 170 x 240 cm",
+     "width": 1920,
+     "height": 1080
+    }
+   ],
+   "primary_image": "assets/images/products/l-691/l-691-1.jpg"
+  },
+  {
+   "id": 3052,
+   "name": "L 843 Tk Wool Nettle Silk Carpet",
+   "slug": "l-843",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/l-843/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-nettle",
+     "name": "Wool Nettle"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 3079",
+   "material": "Wool Nettle Silk",
+   "quality": "100 K.N.",
+   "colour": "Tk",
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-843/l-843-1.jpg",
+     "alt": "L 843 \u00b7 Wool Nettle Silk \u00b7 250 x 300 cm",
+     "width": 1322,
+     "height": 958
+    }
+   ],
+   "primary_image": "assets/images/products/l-843/l-843-1.jpg"
+  },
+  {
+   "id": 3053,
+   "name": "L 994 Red Mix Wool Silk Carpet",
+   "slug": "l-994",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/l-994/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 2904",
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": "Red Mix",
+   "size": "140 x 200 cm",
+   "sizes": [
+    {
+     "size": "140 X 200",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/l-994/l-994-1.jpg",
+     "alt": "L 994 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 2400,
+     "height": 1793
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/l-994/l-994-2.jpg",
+     "alt": "L 994 \u00b7 Wool Silk \u00b7 140 x 200 cm",
+     "width": 1894,
+     "height": 1936
+    }
+   ],
+   "primary_image": "assets/images/products/l-994/l-994-1.jpg"
+  },
+  {
+   "id": 3054,
+   "name": "P 17 Natural Nettle Bleach Nettle Carpet",
+   "slug": "p-17",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/p-17/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "bleach-nettle",
+     "name": "Bleach Nettle"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7002",
+   "material": "Nettle Bleach Nettle",
+   "quality": "80 K.N.",
+   "colour": "Natural",
+   "size": "100 x 130 cm",
+   "sizes": [
+    {
+     "size": "100 X 130",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/p-17/p-17-1.jpg",
+     "alt": "P 17 \u00b7 Nettle Bleach Nettle \u00b7 100 x 130 cm",
+     "width": 2400,
+     "height": 1893
+    }
+   ],
+   "primary_image": "assets/images/products/p-17/p-17-1.jpg"
+  },
+  {
+   "id": 3055,
+   "name": "P 187 Mix 100% Bamboo Carpet",
+   "slug": "p-187",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/p-187/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "bamboo",
+     "name": "100% Bamboo"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7000",
+   "material": "100% Bamboo",
+   "quality": "100 K.N.",
+   "colour": "Mix",
+   "size": "100 x 130 cm",
+   "sizes": [
+    {
+     "size": "100 X 130",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/p-187/p-187-1.jpg",
+     "alt": "P 187 \u00b7 100% Bamboo \u00b7 100 x 130 cm",
+     "width": 1869,
+     "height": 1936
+    }
+   ],
+   "primary_image": "assets/images/products/p-187/p-187-1.jpg"
+  },
+  {
+   "id": 3056,
+   "name": "Q 01 Mix Bamboo Silk Carpet",
+   "slug": "q-01",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/q-01/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "bamboo-silk",
+     "name": "Bamboo Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 2551",
+   "material": "Bamboo Silk",
+   "quality": "100 K.N.",
+   "colour": "Mix",
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/q-01/q-01-1.jpg",
+     "alt": "Q 01 \u00b7 Bamboo Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/q-01/q-01-1.jpg"
+  },
+  {
+   "id": 3057,
+   "name": "Q 144 Mix Wool Silk Carpet",
+   "slug": "q-144",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/q-144/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7042",
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": "Mix",
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/q-144/q-144-1.jpg",
+     "alt": "Q 144 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1793
+    }
+   ],
+   "primary_image": "assets/images/products/q-144/q-144-1.jpg"
+  },
+  {
+   "id": 3058,
+   "name": "Q 168 Beige Wool Silk Carpet",
+   "slug": "q-168",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/q-168/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7040",
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": "Beige",
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/q-168/q-168-1.jpg",
+     "alt": "Q 168 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1793
+    }
+   ],
+   "primary_image": "assets/images/products/q-168/q-168-1.jpg"
+  },
+  {
+   "id": 3059,
+   "name": "TC 7093 Wool Bamboo Carpet",
+   "slug": "tc-7093",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/tc-7093/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-bamboo",
+     "name": "Wool Bamboo"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7093",
+   "material": "Wool Bamboo",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "350 x 550 cm",
+   "sizes": [
+    {
+     "size": "350 X 550",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/tc-7093/tc-7093-1.jpg",
+     "alt": "TC 7093 \u00b7 Wool Bamboo \u00b7 350 x 550 cm",
+     "width": 2400,
+     "height": 1800
+    }
+   ],
+   "primary_image": "assets/images/products/tc-7093/tc-7093-1.jpg"
+  },
+  {
+   "id": 3060,
+   "name": "V 54 Black 100% Wool Carpet",
+   "slug": "v-54",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/v-54/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "100-wool",
+     "name": "100% Wool"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "100% Wool",
+   "quality": "100 K.N.",
+   "colour": "Black",
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/v-54/v-54-1.jpg",
+     "alt": "V 54 \u00b7 100% Wool \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/v-54/v-54-1.jpg"
+  },
+  {
+   "id": 3061,
+   "name": "V 944 Wool Silk Carpet",
+   "slug": "v-944",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/v-944/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "wool-silk",
+     "name": "Wool Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": "TC 7042",
+   "material": "Wool Silk",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/v-944/v-944-1.jpg",
+     "alt": "V 944 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/v-944/v-944-2.jpg",
+     "alt": "V 944 \u00b7 Wool Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/v-944/v-944-1.jpg"
+  },
+  {
+   "id": 3062,
+   "name": "W 312 100% Silk Carpet",
+   "slug": "w-312",
+   "sku": "",
+   "url": "https://kantipurcarpets.com/product/w-312/",
+   "price_npr": null,
+   "on_sale": false,
+   "categories": [
+    {
+     "slug": "silk",
+     "name": "100% Silk"
+    }
+   ],
+   "tags": [],
+   "design_no": null,
+   "material": "100% Silk",
+   "quality": "100 K.N.",
+   "colour": null,
+   "size": "250 x 300 cm",
+   "sizes": [
+    {
+     "size": "250 X 300",
+     "pcs": 1
+    }
+   ],
+   "images": [
+    {
+     "url": null,
+     "local": "assets/images/products/w-312/w-312-1.jpg",
+     "alt": "W 312 \u00b7 100% Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    },
+    {
+     "url": null,
+     "local": "assets/images/products/w-312/w-312-2.jpg",
+     "alt": "W 312 \u00b7 100% Silk \u00b7 250 x 300 cm",
+     "width": 2400,
+     "height": 1600
+    }
+   ],
+   "primary_image": "assets/images/products/w-312/w-312-1.jpg"
   }
  ]
 }

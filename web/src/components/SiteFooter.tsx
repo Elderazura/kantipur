@@ -36,6 +36,7 @@ export default async function SiteFooter() {
                 alt=""
                 width={210}
                 height={98}
+                sizes="80px"
                 className="h-8 w-auto shrink-0 brightness-0 invert opacity-90 transition-opacity group-hover:opacity-100 sm:h-9"
               />
               <span className="min-w-0 flex flex-col leading-none">

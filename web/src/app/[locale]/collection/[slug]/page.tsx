@@ -14,7 +14,11 @@ import { breadcrumbJsonLd, productJsonLd } from "@/lib/jsonld";
 import { Link } from "@/i18n/navigation";
 
 export function generateStaticParams() {
-  return getAllProducts().map((product) => ({ slug: product.slug }));
+  // A piece with no usable frame has nothing to show, so it gets no page —
+  // matching the collection grid and the sitemap, which both skip them.
+  return getAllProducts()
+    .filter((product) => product.primaryImage)
+    .map((product) => ({ slug: product.slug }));
 }
 
 export async function generateMetadata({
@@ -24,7 +28,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product) return {};
+  if (!product || !product.primaryImage) return {};
 
   const t = await getTranslations({ locale, namespace: "piece" });
   const facts = [
@@ -79,7 +83,9 @@ export default async function PieceDetailPage({
   setRequestLocale(locale);
 
   const product = getProductBySlug(slug);
-  if (!product) notFound();
+  // No usable frame means no page — the grid and sitemap skip these too, so
+  // serving an empty gallery would only be a dead end for a visitor.
+  if (!product || !product.primaryImage) notFound();
 
   const t = await getTranslations("piece");
   const tCta = await getTranslations("cta");

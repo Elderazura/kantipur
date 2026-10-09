@@ -19,7 +19,7 @@ export default async function PeopleSection() {
                   src="/assets/images/site/Nepali-Handmade-Carpet.jpg"
                   alt={t("imageAlt")}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 48vw"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"
                   className="object-cover"
                 />
               </Parallax>

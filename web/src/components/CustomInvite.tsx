@@ -41,7 +41,7 @@ export default async function CustomInvite() {
             src="/assets/images/custom/path-visit.jpg"
             alt={t("customImageAlt")}
             fill
-            sizes="(max-width: 1024px) 100vw, 48vw"
+            sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"
             className="object-cover object-[center_15%]"
           />
           <div
