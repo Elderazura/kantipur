@@ -70,7 +70,7 @@ export default async function Home({
         imageAlt={t("commissionAlt")}
         eyebrow={t("commissionEyebrow")}
         title={t("commissionTitle")}
-        ctaHref="/custom"
+        ctaHref="/bespoke"
         ctaLabel={tCta("startCommission")}
       />
       <div className="hidden md:block">

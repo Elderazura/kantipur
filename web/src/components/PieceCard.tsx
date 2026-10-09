@@ -59,11 +59,11 @@ export default function PieceCard({ product, featured = false }: PieceCardProps)
 
         <span
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
 
         {product.knots ? (
-          <span className="absolute start-3 top-3 rounded-full border border-paper/25 bg-ink/45 px-2.5 py-1 font-ui text-[0.72rem] tracking-[0.12em] uppercase text-paper backdrop-blur-[2px]">
+          <span className="absolute start-3 top-3 rounded-full border border-paper/30 bg-ink/75 px-2.5 py-1 font-ui text-[0.72rem] tracking-[0.12em] uppercase text-paper backdrop-blur-[2px]">
             {product.knots} K.N.
           </span>
         ) : null}

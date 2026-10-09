@@ -43,7 +43,7 @@ export default async function HomeTrustBrief() {
 
         <Reveal delay={0.08}>
           <Link
-            href="/heritage"
+            href="/house"
             className="group mt-7 inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-madder underline decoration-madder/40 underline-offset-[7px] hover:decoration-madder"
           >
             {tPeople("cta")}

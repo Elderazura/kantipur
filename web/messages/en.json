@@ -39,7 +39,8 @@
     "closeMenu": "Close menu",
     "menuLabel": "Menu",
     "designers": "Designers",
-    "hospitality": "Hospitality"
+    "hospitality": "Hospitality",
+    "skipToContent": "Skip to content"
   },
   "cta": {
     "exploreCollection": "View the collection",
@@ -262,7 +263,11 @@
     "closingNote": "Every commission begins the same way: the room, the light it gets, and how long you intend to keep it.",
     "browseCollection": "See the collection",
     "contactCta": "Start a conversation",
-    "whatsappHint": "Or begin on WhatsApp"
+    "whatsappHint": "Or begin on WhatsApp",
+    "audienceEyebrow": "Who we work with",
+    "audienceTitle": "One standard, whoever the brief comes from",
+    "trackPrivateT": "Private commissions",
+    "trackPrivateB": "A single piece for a particular room — your colour, your dimensions, woven once and not repeated."
   },
   "piece": {
     "designNo": "Design no.",

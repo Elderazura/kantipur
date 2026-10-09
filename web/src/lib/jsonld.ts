@@ -96,3 +96,66 @@ export function allLocalePaths(path: string): string[] {
   const clean = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
   return routing.locales.map((locale) => `/${locale}${clean}`);
 }
+
+/** Catalogue index — tells a crawler the gallery is a list, and how long. */
+export function collectionJsonLd(
+  locale: string,
+  name: string,
+  description: string,
+  products: { slug: string; name: string }[],
+) {
+  const url = `${siteUrl()}/${locale}/collection`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: products.length,
+      itemListElement: products.slice(0, 50).map((product, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: product.name,
+        url: `${siteUrl()}/${locale}/collection/${product.slug}`,
+      })),
+    },
+  };
+}
+
+/** Commissioning is a service, not a product — this is what /bespoke offers. */
+export function serviceJsonLd(locale: string, name: string, description: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    serviceType: "Bespoke hand-knotted carpet commission",
+    provider: { "@type": "Organization", name: "Kantipur Carpet Craft Industries" },
+    areaServed: "Worldwide",
+    url: `${siteUrl()}/${locale}/bespoke`,
+    audience: [
+      { "@type": "Audience", audienceType: "Private clients" },
+      { "@type": "Audience", audienceType: "Architects and interior designers" },
+      { "@type": "Audience", audienceType: "Hospitality" },
+    ],
+  };
+}
+
+export function pageJsonLd(
+  locale: string,
+  type: "AboutPage" | "ContactPage",
+  path: string,
+  name: string,
+  description: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    name,
+    description,
+    url: `${siteUrl()}/${locale}${path}`,
+    isPartOf: { "@type": "WebSite", name: "Kantipur Carpets", url: `${siteUrl()}/${locale}` },
+  };
+}

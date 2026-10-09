@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -8,7 +9,13 @@ const KNOT_STEPS = [1, 2, 3] as const;
 const FIBRES = ["wool", "silk", "hemp", "nettle", "bamboo", "linen", "pashmina", "banana"] as const;
 const LOOM_STATS = ["looms", "weavers", "designs"] as const;
 
-export default async function HeritagePageView() {
+/**
+ * The House — the craft and the company in one narrative. `company` is the
+ * firm's own story (scale, reach, the sister house), slotted in after the
+ * people and before the two houses; it used to be a separate /about page that
+ * read as a duplicate of this one.
+ */
+export default async function HeritagePageView({ company }: { company?: ReactNode }) {
   const t = await getTranslations("heritagePage");
   const tf = await getTranslations("fibre");
 
@@ -95,7 +102,7 @@ export default async function HeritagePageView() {
       <section className="bg-ink text-paper" aria-labelledby="heritage-timeline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-10 sm:py-24 lg:max-w-7xl lg:py-32">
           <Reveal>
-            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/65">
               {t("timelineEyebrow")}
             </p>
             <h2
@@ -315,7 +322,7 @@ export default async function HeritagePageView() {
 
           <div>
             <Reveal>
-              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
+              <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/65">
                 {t("peopleEyebrow")}
               </p>
               <h2 className="mt-6 max-w-[20ch] font-display text-[clamp(1.9rem,4vw,3rem)] leading-[1.06]">
@@ -342,6 +349,8 @@ export default async function HeritagePageView() {
           </div>
         </div>
       </section>
+
+      {company}
 
       {/* Two houses */}
       <section className="border-b border-rule bg-paper">

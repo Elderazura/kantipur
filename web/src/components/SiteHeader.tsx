@@ -8,14 +8,14 @@ import { useScrolledPast } from "@/lib/useScrolledPast";
 import LocaleSwitcher from "./LocaleSwitcher";
 import MobileNav from "./MobileNav";
 
-/* Order follows the brand navigation: what you can buy, what we can make for
-   you, how it is made, who makes it. */
+/* Four destinations: what you can buy, what we can make for you, who we are,
+   how to reach us. Bespoke absorbed the old Designers and Hospitality pages,
+   and The House absorbed Craft — each pair was selling the same thing. */
 const NAV_ITEMS = [
   { href: "/collection", key: "collection" as const },
-  { href: "/custom", key: "custom" as const },
-  { href: "/designers", key: "designers" as const },
-  { href: "/heritage", key: "heritage" as const },
-  { href: "/about", key: "about" as const },
+  { href: "/bespoke", key: "custom" as const },
+  { href: "/house", key: "about" as const },
+  { href: "/contact", key: "contact" as const },
 ];
 
 export default function SiteHeader() {

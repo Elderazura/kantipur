@@ -18,7 +18,7 @@ export default function TradePage({
   itemsTitle,
   items,
   ctaLabel,
-  ctaHref = "/custom#begin",
+  ctaHref = "/bespoke#begin",
   closingTitle,
   closingBody,
 }: {

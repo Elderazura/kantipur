@@ -77,7 +77,7 @@ export default async function FaqSection({
           <p className="mt-6 text-center md:hidden">
             <Link
               href="/contact"
-              className="font-ui text-xs tracking-[0.16em] uppercase text-madder underline decoration-madder/40 underline-offset-[7px] hover:decoration-madder"
+              className="inline-flex min-h-11 items-center font-ui text-xs tracking-[0.16em] uppercase text-madder underline decoration-madder/40 underline-offset-[7px] hover:decoration-madder"
             >
               {tCta("inquire")}
             </Link>

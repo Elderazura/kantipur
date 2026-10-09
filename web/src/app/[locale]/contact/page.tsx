@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import InquireForm from "@/components/InquireForm";
 import { localeAlternates } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, pageJsonLd } from "@/lib/jsonld";
 
 export async function generateMetadata({
   params,
@@ -43,8 +45,19 @@ export default async function ContactPage({
     }
   }
 
+  const tNav = await getTranslations("nav");
+
   return (
     <main className="flex flex-1 flex-col bg-paper">
+      <JsonLd
+        data={[
+          pageJsonLd(locale, "ContactPage", "/contact", t("title"), t("intro")),
+          breadcrumbJsonLd(locale, [
+            { name: tNav("home"), path: "/" },
+            { name: tNav("contact"), path: "/contact" },
+          ]),
+        ]}
+      />
       <div className="mx-auto w-full max-w-3xl px-5 py-12 sm:px-10 sm:py-20 lg:py-28 xl:max-w-4xl">
         <header>
           <h1 className="text-balance font-display text-3xl leading-tight tracking-wide text-ink sm:text-4xl lg:text-5xl xl:text-[3.25rem]">
@@ -63,7 +76,7 @@ export default async function ContactPage({
             <br />
             <a
               href={`tel:${t("phone").replace(/\s/g, "")}`}
-              className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
+              className="inline-flex min-h-11 items-center text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
             >
               {t("phone")}
             </a>
@@ -75,14 +88,14 @@ export default async function ContactPage({
             <br />
             <a
               href={`mailto:${t("emailPrimary")}`}
-              className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
+              className="inline-flex min-h-11 items-center text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
             >
               {t("emailPrimary")}
             </a>
             <br />
             <a
               href={`mailto:${t("emailSecondary")}`}
-              className="text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
+              className="inline-flex min-h-11 items-center text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
             >
               {t("emailSecondary")}
             </a>

@@ -21,6 +21,23 @@ const nextConfig: NextConfig = {
     // default four hours only throws away work.
     minimumCacheTTL: 2678400, // 31 days
   },
+
+  // The IA collapsed from seven content pages to four: Bespoke absorbed
+  // Designers and Hospitality, The House absorbed Craft. These keep the old
+  // URLs — and whatever rank they carry — pointing at the merged pages.
+  async redirects() {
+    const MERGED: Record<string, string> = {
+      custom: "bespoke",
+      designers: "bespoke",
+      hospitality: "bespoke",
+      heritage: "house",
+      about: "house",
+    };
+    return Object.entries(MERGED).flatMap(([from, to]) => [
+      { source: `/:locale(en|de|fr|ar)/${from}`, destination: `/:locale/${to}`, permanent: true },
+      { source: `/${from}`, destination: `/${to}`, permanent: true },
+    ]);
+  },
 };
 
 export default withNextIntl(nextConfig);

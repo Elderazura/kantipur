@@ -3,16 +3,7 @@ import { routing } from "@/i18n/routing";
 import { getAllProducts } from "@/lib/catalog";
 import { siteUrl } from "@/lib/seo";
 
-const STATIC_PATHS = [
-  "",
-  "/collection",
-  "/custom",
-  "/designers",
-  "/hospitality",
-  "/heritage",
-  "/about",
-  "/contact",
-] as const;
+const STATIC_PATHS = ["", "/collection", "/bespoke", "/house", "/contact"] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteUrl();

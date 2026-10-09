@@ -60,7 +60,7 @@ export default async function PeopleSection() {
 
             <Reveal delay={0.15}>
               <Link
-                href="/heritage"
+                href="/house"
                 className="group mt-9 inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-madder underline decoration-madder/40 underline-offset-[7px] hover:decoration-madder"
               >
                 {t("cta")}

@@ -24,7 +24,7 @@ export default async function StatementSection() {
 
         <Reveal delay={0.28}>
           <Link
-            href="/about"
+            href="/house"
             className="group mt-10 inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.2em] uppercase text-madder underline decoration-madder/35 underline-offset-[8px] transition-colors hover:decoration-madder sm:mt-12"
           >
             {t("cta")}

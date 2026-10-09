@@ -28,7 +28,7 @@ export default function LocaleSwitcher({
     <nav
       aria-label="Language"
       className={`font-ui text-xs tracking-[0.12em] ${
-        dark ? "text-paper/45" : "text-ink-muted"
+        dark ? "text-paper/65" : "text-ink-muted"
       } ${className}`}
     >
       <ul className={`flex items-center ${compact ? "gap-1" : "gap-1.5"}`}>
@@ -36,10 +36,14 @@ export default function LocaleSwitcher({
           const active = loc === locale;
           return (
             <li key={loc} className="flex items-center gap-1.5">
+              {/* A rule, not a character: a text "|" is held to the 4.5:1 text
+                  contrast rule at a weight that would overpower the switcher,
+                  while a border is exempt and reads the same. */}
               {i > 0 && (
-                <span aria-hidden="true" className={dark ? "text-paper/25" : "text-rule"}>
-                  |
-                </span>
+                <span
+                  aria-hidden="true"
+                  className={`h-3 w-px ${dark ? "bg-paper/40" : "bg-rule"}`}
+                />
               )}
               <Link
                 href={pathname}

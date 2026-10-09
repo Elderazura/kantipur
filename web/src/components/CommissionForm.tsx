@@ -1,5 +1,6 @@
 "use client";
 
+import type { FormEvent } from "react";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
@@ -123,8 +124,17 @@ export default function CommissionForm() {
     );
   }
 
+  // Enter should move the brief along, not do nothing — so this is a real
+  // form, with the step buttons as its submit control.
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!canAdvance || status === "sending") return;
+    if (step < STEPS.length - 1) setStep((s) => s + 1);
+    else void submit();
+  }
+
   return (
-    <div className="border border-rule bg-surface">
+    <form onSubmit={handleSubmit} noValidate className="border border-rule bg-surface">
       {/* Progress — four marks, current one filled */}
       <ol className="flex border-b border-rule" aria-label={t("progressLabel")}>
         {STEPS.map((key, i) => (
@@ -323,8 +333,7 @@ export default function CommissionForm() {
 
           {step < STEPS.length - 1 ? (
             <button
-              type="button"
-              onClick={() => setStep((s) => s + 1)}
+              type="submit"
               disabled={!canAdvance}
               className="inline-flex min-h-12 items-center gap-2.5 border border-ink px-6 py-3 font-ui text-[0.74rem] tracking-[0.18em] uppercase text-ink transition-colors hover:bg-ink hover:text-paper disabled:cursor-not-allowed disabled:border-rule disabled:text-ink-muted disabled:hover:bg-transparent"
             >
@@ -333,8 +342,7 @@ export default function CommissionForm() {
             </button>
           ) : (
             <button
-              type="button"
-              onClick={submit}
+              type="submit"
               disabled={!canAdvance || status === "sending"}
               className="inline-flex min-h-12 items-center gap-2.5 bg-ink px-7 py-3 font-ui text-[0.74rem] tracking-[0.18em] uppercase text-paper transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
             >
@@ -343,6 +351,6 @@ export default function CommissionForm() {
           )}
         </div>
       </div>
-    </div>
+    </form>
   );
 }

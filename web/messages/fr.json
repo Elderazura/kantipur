@@ -18,7 +18,8 @@
     "closeMenu": "Fermer le menu",
     "menuLabel": "Menu",
     "designers": "Prescripteurs",
-    "hospitality": "Hôtellerie"
+    "hospitality": "Hôtellerie",
+    "skipToContent": "Aller au contenu"
   },
   "cta": {
     "exploreCollection": "Voir la collection",
@@ -127,7 +128,6 @@
     "weaveBody": "Votre commande est nouée à la main sur nos métiers à Katmandou — chevet, pièce ou grande salle — selon les mêmes standards éthiques et d’export que chaque tapis de la collection.",
     "onlineCta": "Réserver un appel ou écrire",
     "visitCta": "Organiser une visite d'atelier",
-    "learnMore": "En savoir plus sur les commandes",
     "closingNote": "Chaque commande commence de la même façon : la pièce, sa lumière, et combien de temps vous comptez la garder.",
     "browseCollection": "Voir la collection",
     "heroLead": "Quand la pièce demande une couleur, une taille ou un motif absent du sol, nous tissons sur commande — avec vous, de la première conversation au dernier nœud.",
@@ -160,7 +160,11 @@
     "scaleEyebrow": "Échelle",
     "scaleTitle": "Du chevet à la salle de réception",
     "scaleBody": "Chaque commande est coupée au centimètre pour la pièce, le couloir ou la salle à habiller — pas choisie dans une liste standard. Des pièces de grande salle, vingt-cinq sur quarante pieds et plus, sont sorties de nos métiers à Katmandou, toutes nouées à la main au même standard que la collection.",
-    "scaleExampleLabel": "Pieds · une récente commande pour salle"
+    "scaleExampleLabel": "Pieds · une récente commande pour salle",
+    "audienceEyebrow": "Avec qui nous travaillons",
+    "audienceTitle": "Une seule exigence, quel que soit le commanditaire",
+    "trackPrivateT": "Commandes privées",
+    "trackPrivateB": "Une pièce unique pour une pièce précise — votre couleur, vos dimensions, nouée une fois et jamais répétée."
   },
   "piece": {
     "designNo": "N° de dessin",

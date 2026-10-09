@@ -30,7 +30,7 @@ export default async function HeritageStory() {
 
         <Reveal delay={0.2} className="mt-8 md:hidden">
           <Link
-            href="/heritage"
+            href="/house"
             className="group inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-paper underline decoration-madder decoration-2 underline-offset-[7px]"
           >
             {t("originCta")}
@@ -82,7 +82,7 @@ export default async function HeritageStory() {
 
           <Reveal delay={0.2}>
             <Link
-              href="/heritage"
+              href="/house"
               className="group mt-9 inline-flex min-h-11 items-center gap-2 font-ui text-xs tracking-[0.18em] uppercase text-paper underline decoration-madder decoration-2 underline-offset-[7px]"
             >
               {t("originCta")}
@@ -129,7 +129,7 @@ export default async function HeritageStory() {
             {t("pull")}
             <span className="text-madder">”</span>
           </blockquote>
-          <p className="mt-7 font-ui text-[0.66rem] tracking-[0.26em] uppercase text-paper/45">
+          <p className="mt-7 font-ui text-[0.66rem] tracking-[0.26em] uppercase text-paper/65">
             {t("pullAttrib")}
           </p>
         </Reveal>

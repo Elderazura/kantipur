@@ -125,7 +125,7 @@ export default function FeaturedGallery({
           </div>
           <Link
             href="/collection"
-            className="font-ui text-xs tracking-[0.18em] uppercase text-madder underline decoration-madder/40 underline-offset-4 hover:decoration-madder"
+            className="inline-flex min-h-11 items-center font-ui text-xs tracking-[0.18em] uppercase text-madder underline decoration-madder/40 underline-offset-4 hover:decoration-madder"
           >
             {viewAllLabel}
           </Link>
@@ -163,7 +163,7 @@ export default function FeaturedGallery({
                       <span className="h-px w-8 bg-madder/70" aria-hidden />
                       <span className="font-ui text-[0.66rem] tabular-nums tracking-[0.22em] uppercase text-ink-muted">
                         {String(active + 1).padStart(2, "0")}
-                        <span className="text-rule"> / </span>
+                        <span className="text-ink-muted/80"> / </span>
                         {String(count).padStart(2, "0")}
                       </span>
                     </div>

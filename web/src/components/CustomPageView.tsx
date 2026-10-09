@@ -182,7 +182,7 @@ export default async function CustomPageView() {
       <section className="border-b border-rule bg-ink text-paper" aria-labelledby="custom-process-heading">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-10 sm:py-20 lg:max-w-7xl lg:py-24">
           <Reveal>
-            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/45">
+            <p className="font-ui text-[0.72rem] tracking-[0.28em] uppercase text-paper/65">
               {t("processEyebrow")}
             </p>
             <h2

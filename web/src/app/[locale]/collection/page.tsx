@@ -14,6 +14,8 @@ import {
 } from "@/lib/catalog";
 import { toPublicImageSrc } from "@/lib/images";
 import { localeAlternates } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, collectionJsonLd } from "@/lib/jsonld";
 
 function decodeParam(value: string | string[] | undefined): string | undefined {
   const raw = Array.isArray(value) ? value[0] : value;
@@ -85,8 +87,19 @@ export default async function CollectionPage({
     .map(toCardProduct)
     .filter((p): p is PieceCardProduct => p !== null);
 
+  const tNav = await getTranslations("nav");
+
   return (
     <main className="flex flex-1 flex-col bg-paper">
+      <JsonLd
+        data={[
+          collectionJsonLd(locale, t("title"), t("intro"), galleryReady),
+          breadcrumbJsonLd(locale, [
+            { name: tNav("home"), path: "/" },
+            { name: tNav("collection"), path: "/collection" },
+          ]),
+        ]}
+      />
       <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-10 sm:py-14 lg:max-w-7xl">
         <CollectionIntro total={galleryReady.length} />
 

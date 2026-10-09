@@ -23,7 +23,7 @@ export default async function ClosingInvitation() {
 
         <Reveal delay={0.35}>
           <Link
-            href="/custom"
+            href="/bespoke"
             className="group mt-12 inline-flex min-h-12 items-center gap-3 border border-ink px-7 py-4 font-ui text-xs tracking-[0.2em] uppercase text-ink transition-colors duration-300 hover:bg-ink hover:text-paper sm:mt-14"
           >
             {t("cta")}

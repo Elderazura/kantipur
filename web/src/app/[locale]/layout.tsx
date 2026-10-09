@@ -71,6 +71,7 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as never)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tNav = await getTranslations("nav");
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
@@ -82,9 +83,16 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col overflow-x-hidden font-body">
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={[organizationJsonLd(locale), webSiteJsonLd(locale)]} />
+          {/* Keyboard users land here first and can jump the header (WCAG 2.4.1). */}
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-[100] focus:inline-flex focus:min-h-11 focus:items-center focus:bg-ink focus:px-5 focus:py-3 focus:font-ui focus:text-xs focus:tracking-[0.18em] focus:uppercase focus:text-paper"
+          >
+            {tNav("skipToContent")}
+          </a>
           <SiteHeader />
           <HeaderSpacer />
-          {children}
+          <div id="main">{children}</div>
           <SiteFooter />
           <WhatsAppFloat />
         </NextIntlClientProvider>

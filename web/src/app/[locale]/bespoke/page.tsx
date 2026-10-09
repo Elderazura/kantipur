@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import BespokeTracks from "@/components/BespokeTracks";
 import CommissionForm from "@/components/CommissionForm";
 import CustomPageView from "@/components/CustomPageView";
 import { localeAlternates } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, serviceJsonLd } from "@/lib/jsonld";
 
 export async function generateMetadata({
   params,
@@ -15,13 +18,17 @@ export async function generateMetadata({
     title: t("title"),
     description: t("heroLead"),
     alternates: {
-      canonical: `/${locale}/custom`,
-      languages: localeAlternates("/custom"),
+      canonical: `/${locale}/bespoke`,
+      languages: localeAlternates("/bespoke"),
     },
   };
 }
 
-export default async function CustomPage({
+/**
+ * Commissioning, start to finish. Replaces the former /custom, /designers and
+ * /hospitality, which each sold the same proposition to a different reader.
+ */
+export default async function BespokePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -29,10 +36,22 @@ export default async function CustomPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "commission" });
+  const tCustom = await getTranslations({ locale, namespace: "custom" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   return (
     <>
+      <JsonLd
+        data={[
+          serviceJsonLd(locale, tCustom("title"), tCustom("heroLead")),
+          breadcrumbJsonLd(locale, [
+            { name: tNav("home"), path: "/" },
+            { name: tNav("custom"), path: "/bespoke" },
+          ]),
+        ]}
+      />
       <CustomPageView />
+      <BespokeTracks />
 
       <section id="begin" className="border-t border-rule bg-paper">
         <div className="mx-auto max-w-4xl px-5 py-20 sm:px-10 sm:py-28">

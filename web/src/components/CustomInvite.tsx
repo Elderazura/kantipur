@@ -28,7 +28,7 @@ export default async function CustomInvite() {
               {t("customBody")}
             </p>
             <Link
-              href="/custom"
+              href="/bespoke"
               className="mt-8 inline-flex min-h-11 items-center font-ui text-sm tracking-[0.16em] uppercase text-paper underline decoration-madder decoration-2 underline-offset-[8px]"
             >
               {tNav("custom")}
