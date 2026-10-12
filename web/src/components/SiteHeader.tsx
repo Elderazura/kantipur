@@ -45,17 +45,35 @@ export default function SiteHeader() {
           aria-label={tMeta("siteName")}
           className="group flex min-w-0 flex-1 items-center gap-2.5 sm:gap-3"
         >
-          <Image
-            src="/assets/images/site/logo-mark.png"
-            alt=""
-            width={210}
-            height={98}
-            sizes="80px"
-            priority
-            className={`h-7 w-auto shrink-0 transition-[filter,opacity] duration-500 sm:h-9 ${
-              solid ? "" : "brightness-0 invert opacity-90"
-            }`}
-          />
+          {/* Two marks, cross-faded. The mandala's linework is carried by tone
+              inside opaque pixels, so brightness(0)+invert(1) flattened it to a
+              solid ivory blob over the hero — the reversed asset keeps the
+              gaps transparent instead. */}
+          <span className="relative block h-7 w-auto shrink-0 sm:h-9">
+            <Image
+              src="/assets/images/site/logo-mark.png"
+              alt=""
+              width={210}
+              height={98}
+              sizes="80px"
+              priority
+              className={`h-7 w-auto transition-opacity duration-500 sm:h-9 ${
+                solid ? "opacity-100" : "opacity-0"
+              }`}
+            />
+            <Image
+              src="/assets/images/site/logo-mark-reversed.png"
+              alt=""
+              width={210}
+              height={98}
+              sizes="80px"
+              priority
+              aria-hidden
+              className={`absolute inset-0 h-7 w-auto transition-opacity duration-500 sm:h-9 ${
+                solid ? "opacity-0" : "opacity-90"
+              }`}
+            />
+          </span>
           <span className="hidden min-[380px]:flex min-w-0 flex-col leading-none">
             <span
               className={`truncate font-display text-lg tracking-[0.06em] transition-colors duration-500 sm:text-[1.4rem] ${

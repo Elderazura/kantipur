@@ -29,12 +29,12 @@ export default async function SiteFooter() {
           <div className="min-w-0 lg:pe-6">
             <Link href="/" className="group inline-flex min-w-0 items-center gap-3">
               <Image
-                src="/assets/images/site/logo-mark.png"
+                src="/assets/images/site/logo-mark-reversed.png"
                 alt=""
                 width={210}
                 height={98}
                 sizes="80px"
-                className="h-8 w-auto shrink-0 brightness-0 invert opacity-90 transition-opacity group-hover:opacity-100 sm:h-9"
+                className="h-8 w-auto shrink-0 opacity-90 transition-opacity group-hover:opacity-100 sm:h-9"
               />
               <span className="min-w-0 flex flex-col leading-none">
                 <span className="truncate font-display text-lg tracking-[0.06em] sm:text-xl">
