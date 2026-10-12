@@ -38,7 +38,7 @@ export default async function CustomInvite() {
 
         <Reveal className="relative min-h-[280px] sm:min-h-[360px] lg:min-h-full">
           <Image
-            src="/assets/images/custom/path-visit.jpg"
+            src="/assets/images/products/tc3040-blue-wool-silk-carpet/l-305-1.jpg"
             alt={t("customImageAlt")}
             fill
             sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"

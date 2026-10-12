@@ -5,9 +5,9 @@ import { Reveal, Stagger, StaggerItem, WordsUp, Parallax } from "./motion/Reveal
 import CustomCapabilities from "./custom/CustomCapabilities";
 
 const STEPS = [
-  { key: "talk", image: "/assets/images/custom/step-talk.jpg" },
-  { key: "shape", image: "/assets/images/custom/step-shape.jpg" },
-  { key: "weave", image: "/assets/images/custom/step-weave.jpg" },
+  { key: "talk", image: "/assets/images/products/l-133/l-133-1.jpg" },
+  { key: "shape", image: "/assets/images/products/l946-rust-wool-silk-carpet/l-946-1.jpg" },
+  { key: "weave", image: "/assets/images/products/80-k-n-natural-nettle-bleach-nettle-carpet/o-235-1.jpg" },
 ] as const;
 
 export default async function CustomPageView() {
@@ -89,7 +89,7 @@ export default async function CustomPageView() {
           </div>
           <Reveal className="relative min-h-[220px] sm:min-h-[280px] lg:min-h-full">
             <Image
-              src="/assets/images/custom/scale-weaving.jpg"
+              src="/assets/images/products/r-131/upscalemedia-transformed-1-scaled.jpg"
               alt={t("scaleImageAlt")}
               fill
               sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 640px"
@@ -118,7 +118,7 @@ export default async function CustomPageView() {
             <Reveal className="group flex flex-col overflow-hidden border border-rule bg-paper">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
-                  src="/assets/images/custom/path-online.jpg"
+                  src="/assets/images/products/80-k-n-banana-carpet/IMG_2457-TC-2352-SILVER-80-K.N.-BANANA-300X400CM-1.jpg"
                   alt={t("pathOnlineImageAlt")}
                   fill
                   sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
@@ -148,7 +148,7 @@ export default async function CustomPageView() {
             <Reveal delay={0.08} className="group flex flex-col overflow-hidden border border-rule bg-paper">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
-                  src="/assets/images/custom/path-visit.jpg"
+                  src="/assets/images/products/tc3040-blue-wool-silk-carpet/l-305-1.jpg"
                   alt={t("pathVisitImageAlt")}
                   fill
                   sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
@@ -243,7 +243,7 @@ export default async function CustomPageView() {
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/4] lg:aspect-[4/5]">
               <Image
-                src="/assets/images/custom/story-fibres.jpg"
+                src="/assets/images/products/wool-linen-bamboo-carpet/IMG_2888-Z-275-60-K.N.-WOOL-LINEN-BAMBOO-170X240CM-2.jpg"
                 alt={t("imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
@@ -258,7 +258,7 @@ export default async function CustomPageView() {
       <section className="relative overflow-hidden bg-ink text-paper">
         <div aria-hidden className="absolute inset-0">
           <Image
-            src="/assets/images/custom/hero-loom.jpg"
+            src="/assets/images/products/4368-terracotta-hemp-wool-carpet/j-972-1.jpg"
             alt=""
             fill
             sizes="100vw"
