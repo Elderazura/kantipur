@@ -17,6 +17,11 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#1a1814",
+  // The house is ivory and charcoal in every condition. Declaring a single
+  // scheme stops Chrome's Auto Dark Theme from re-tinting the page on a phone
+  // set to dark, and keeps form fields and scrollbars on the light UA styling
+  // iOS would otherwise invert.
+  colorScheme: "light",
 };
 
 export function generateStaticParams() {

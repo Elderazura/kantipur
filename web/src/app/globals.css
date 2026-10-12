@@ -30,7 +30,32 @@
   --font-ui: var(--font-ui), system-ui, sans-serif;
 }
 
+/* Chrome paints autofilled fields with its own background, and in dark mode
+   that is a near-black that wins over any bg-* class. The inset shadow is the
+   only reliable way to hold the field on paper. */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-paper) inset;
+  box-shadow: 0 0 0 1000px var(--color-paper) inset;
+  -webkit-text-fill-color: var(--color-ink);
+  caret-color: var(--color-ink);
+}
+
+/* Radios and checkboxes are UA-painted; without this they take the platform
+   blue rather than the house accent. */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--color-madder);
+}
+
 html {
+  /* Paired with the color-scheme meta tag in the locale layout. This is the
+     half the browser reads for UA-painted surfaces: form controls, scrollbars,
+     spellcheck underlines and the canvas behind the page. */
+  color-scheme: light;
   background: var(--color-paper);
   color: var(--color-ink);
   overflow-x: clip;
