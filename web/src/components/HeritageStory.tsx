@@ -47,7 +47,7 @@ export default async function HeritageStory() {
           <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/4] lg:aspect-[4/5]">
             <Parallax distance={34} className="absolute inset-[-12%]">
               <Image
-                src="/assets/images/site/IMG_9255-scaled.jpg"
+                src="/assets/images/site/Wool-Silk-scaled.jpg"
                 alt={t("imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 52vw, 680px"

@@ -145,7 +145,7 @@ export default async function HeritagePageView({ company }: { company?: ReactNod
             <Reveal>
               <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/4] lg:aspect-[4/5] lg:sticky lg:top-28">
                 <Image
-                  src="/assets/images/site/Wool-Silk-scaled.jpg"
+                  src="/assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-1.jpg"
                   alt={t("knotImageAlt")}
                   fill
                   sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 46vw, 600px"
@@ -310,7 +310,7 @@ export default async function HeritagePageView({ company }: { company?: ReactNod
             <div className="relative aspect-[4/5] overflow-hidden">
               <Parallax distance={28} className="absolute inset-[-10%]">
                 <Image
-                  src="/assets/images/site/IMG_9255-scaled.jpg"
+                  src="/assets/images/products/w-312/w-312-1.jpg"
                   alt={t("peopleImageAlt")}
                   fill
                   sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"

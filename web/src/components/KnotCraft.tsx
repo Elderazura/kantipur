@@ -77,7 +77,7 @@ export default function KnotCraft() {
             <div className="relative overflow-hidden border border-rule bg-paper">
               <div className="relative aspect-[16/10]">
                 <Image
-                  src="/assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-1.jpg"
+                  src="/assets/images/products/hemp-wool-carpet-stock/TC-1468-B-BLACK-80-K.N.-HEMP-WOOL-CLOSE-VIEW-2.jpg"
                   alt={t("macroAlt")}
                   fill
                   sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 48vw, 620px"

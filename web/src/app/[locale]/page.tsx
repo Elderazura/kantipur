@@ -30,7 +30,9 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
 
   return {
-    title: t("homeTitle"),
+    // title.template on a layout does not apply to a page in the same route
+    // segment, so the homepage has to carry the brand itself.
+    title: `${t("homeTitle")} — ${t("siteName")}`,
     description: t("homeDescription"),
     alternates: {
       canonical: `/${locale}`,

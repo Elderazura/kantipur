@@ -49,6 +49,7 @@ export default async function SiteFooter() {
             {/* The brand line, set as two statements rather than a sentence. */}
             <p className="mt-7 max-w-sm font-display text-lg leading-[1.25] text-paper sm:text-xl">
               <span className="block">{tMeta("brandLine1")}</span>
+              {" "}
               <span className="block text-paper/70">{tMeta("brandLine2")}</span>
             </p>
             <p className="mt-4 max-w-sm font-body text-sm leading-relaxed text-paper/55">

@@ -19,7 +19,7 @@ export default async function CustomPageView() {
       <section className="relative isolate min-h-[50svh] overflow-hidden bg-ink sm:min-h-[56svh] lg:min-h-[62vh]">
         <Parallax distance={36} className="absolute inset-[-10%]">
           <Image
-            src="/assets/images/custom/step-weave.jpg"
+            src="/assets/images/site/Wool-Silk-scaled.jpg"
             alt={t("heroImageAlt")}
             fill
             priority

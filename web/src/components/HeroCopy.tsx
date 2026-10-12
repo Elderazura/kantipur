@@ -19,15 +19,11 @@ export default function HeroCopy({
   titleTop,
   titleBottom,
   line,
-  siteName,
-  tagline,
   children,
 }: {
   titleTop: string;
   titleBottom: string;
   line: string;
-  siteName: string;
-  tagline: string;
   children: ReactNode;
 }) {
   const reduce = useReducedMotion();
@@ -46,12 +42,9 @@ export default function HeroCopy({
         <span style={rise(0.15)} className="hero-rise block">
           {titleTop}
         </span>
+        {" "}
         <span style={rise(0.28)} className="hero-rise block italic text-paper/85">
           {titleBottom}
-        </span>
-        <span className="sr-only">
-          {" "}
-          {siteName} — {tagline}
         </span>
       </h1>
 

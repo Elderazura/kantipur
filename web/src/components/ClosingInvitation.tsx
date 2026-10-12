@@ -16,6 +16,7 @@ export default async function ClosingInvitation() {
           <span className="block">
             <WordsUp text={t("title1")} />
           </span>
+          {" "}
           <span className="block italic text-ink-muted">
             <WordsUp text={t("title2")} delay={0.2} />
           </span>

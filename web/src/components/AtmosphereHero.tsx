@@ -34,8 +34,6 @@ export default async function AtmosphereHero() {
         titleTop={t("heroTitleTop")}
         titleBottom={t("heroTitleBottom")}
         line={t("heroLine")}
-        siteName={tMeta("siteName")}
-        tagline={tMeta("tagline")}
       >
         <Link
           href="/collection"
